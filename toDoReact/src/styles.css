@@ -1,0 +1,11 @@
+.main-section{
+    background-color: #ffa500;
+    margin: 40px 20%;
+    padding: 50px;
+    color: #3a23ab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
