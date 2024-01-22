@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoItem from '../TodoItem/TodoItem';
+import "./todoList.css"
 
 const TodoList = ({ todos, toggleTodo, deleteTodo }) => {
     if (todos.length === 0) {
