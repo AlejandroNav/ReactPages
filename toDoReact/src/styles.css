@@ -1,4 +1,8 @@
-.main-section{
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@300&display=swap');
+
+
+
+.main-section {
     background-color: #ffa500;
     margin: 40px 20%;
     padding: 50px;
@@ -8,4 +12,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
+
+.header {
+    font-size: 85px;
+    font-family: 'Nunito', sans-serif;}

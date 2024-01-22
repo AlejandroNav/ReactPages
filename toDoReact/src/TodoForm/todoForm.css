@@ -1,0 +1,33 @@
+.new-item-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item-desc{
+    font-size: 30px;
+}
+.todoForm-input{
+    font-size: 20px;
+    width: 97%;
+    background-color: transparent;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.todoForm-button{
+    background-color: transparent;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: purple ;
+    color:  #ffa500;
+    font-size: 25px;
+    transition: 1s;
+    cursor: pointer;
+}
+.todoForm-button:hover{
+    background-color: rgb(156, 21, 156);
+}

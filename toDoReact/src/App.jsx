@@ -1,52 +1,50 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './app.css'
 import './styles.css'
+import TodoForm from './TodoForm/TodoForm'
+import TodoList from './TodoList/TodoList'
 function App() {
-  const [newItem, setNewItem] = useState("")
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState(() => {
+    const localValue = localStorage.getItem("ITEMS")
+    if (localValue == null) {
+      return []
+    } else {
+      return JSON.parse(localValue)
+    }
+  })
 
-  function handleSubmit(e) {
-    e.preventDefault()
-    setTodos([...todos, { id: crypto.randomUUID(), title: newItem, completed: false }])
+  useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(todos))
+  }, [todos])
+
+  function addTodo(title) {
+    setTodos(currentTodos => {
+      return [
+        ...currentTodos,
+        { id: crypto.randomUUID(), title, completed: false }
+      ]
+    });
   }
-
-  console.log(todos);
+  function toggleTodo(id, completed) {
+    setTodos(currentTodos => {
+      return currentTodos.map(todo => {
+        if (todo.id === id) {
+          return { ...todo, completed }
+        }
+        return todo
+      })
+    })
+  }
+  function deleteTodo(id) {
+    setTodos(currentTodos => {
+      return currentTodos.filter(todo => todo.id !== id)
+    })
+  }
   return (
     <div className='main-section'>
-      <form onSubmit={handleSubmit} className='new-item-form' action="">
-        <div className="row">
-          <label htmlFor="item">Nueva Entrada</label>
-          <input type="text" id='item' />
-        </div>
-        <button className='button'>Anadir</button>
-      </form>
-
-
-      
+      <TodoForm addTodoProp={addTodo} />
       <h1 className='header'>Lista por hacer</h1>
-      <ul className='list'>
-        <li>
-          <label htmlFor="">
-            <input type="checkbox" name="" id="" />
-            Item 1
-          </label>
-          <button className='buttonDelete'>Borrar</button>
-        </li>
-        <li>
-          <label htmlFor="">
-            <input type="checkbox" name="" id="" />
-            Item 1
-          </label>
-          <button className='buttonDelete'>Borrar</button>
-        </li>
-        <li>
-          <label htmlFor="">
-            <input type="checkbox" name="" id="" />
-            Item 1
-          </label>
-          <button className='buttonDelete'>Borrar</button>
-        </li>
-      </ul>
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
   )
 }
