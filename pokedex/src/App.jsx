@@ -1,13 +1,18 @@
+import  Pokemons  from "./components/Pokemons/Pokemons";
+import  Aside  from "./components/Aside/Aside";
 
 function App() {
 
   return (
-    <>
-    <h1 className="text-2xl font-bold">Hola</h1>
-      <p className="text-2xl font-bold">
-        Pokedex
-      </p>
-    </>
+    <section>
+      <main>
+        <h1 className="text-2xl">Pokedex</h1>
+        <Pokemons />
+        <Aside />
+
+
+      </main>
+    </section>
   )
 }
 
