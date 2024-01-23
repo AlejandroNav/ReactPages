@@ -1,0 +1,12 @@
+.item-div{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    color: orange;
+}
+.buttonDelete{
+    color: orange;
+}
+.checksy{
+    width: 20px;
+}

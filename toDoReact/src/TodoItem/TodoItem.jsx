@@ -1,22 +1,25 @@
 import React from 'react';
-
+import './todoItem.css'
 const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
     return (
         <li>
-            <div><label htmlFor=''>
+            <label htmlFor=''>
                 {title}
             </label>
-            <input
-                type='checkbox'
-                checked={completed}
-                onChange={(e) => toggleTodo(id, e.target.checked)}
-            /></div>
-            <button
-                className='buttonDelete'
-                onClick={() => deleteTodo(id)}
-            >
-                Borrar
-            </button>
+            <div className='item-div'>
+                <input
+                    className='checksy'
+                    type='checkbox'
+                    checked={completed}
+                    onChange={(e) => toggleTodo(id, e.target.checked)}
+                />
+                <button
+                    className='buttonDelete'
+                    onClick={() => deleteTodo(id)}
+                >
+                    Borrar
+                </button>
+            </div>
         </li>
     );
 };

@@ -42,8 +42,8 @@ function App() {
   }
   return (
     <div className='main-section'>
-      <TodoForm addTodoProp={addTodo} />
       <h1 className='header'>Lista por hacer</h1>
+      <TodoForm addTodoProp={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
   )

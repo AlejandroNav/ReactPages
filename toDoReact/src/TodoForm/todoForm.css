@@ -3,6 +3,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
 }
 .item-desc{
     font-size: 30px;
