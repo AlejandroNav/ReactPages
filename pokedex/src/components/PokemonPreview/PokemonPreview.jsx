@@ -14,20 +14,25 @@ const PokemonPreview = ({ pokemonURL }) => {
 
     return (
         <article>
+        {pokemon && (
             <header>
-                <img src={pokemon.sprites.versions["generation-v"]['black-white'].front_default} alt="" />
+                <img src={pokemon.sprites.versions["generation-v"]['black-white'].front_default} alt="" className=" w-32 "  />
+                <img src={pokemon.sprites.versions["generation-v"]['black-white']['animated'].front_default} alt="" className=" w-32 "  />
             </header>
-            <span>Numero</span>
-            <h4>{pokemon !== null ? (
+        )}
+        <span>Numero</span>
+        <h4>
+            {pokemon !== null ? (
                 <p>{pokemon.name}</p>
             ) : (
                 <p>Loading...</p>
-            )}</h4>
-            <ul>
-                <li>Tipo 1</li>
-                <li>tipo 2</li>
-            </ul>
-        </article>
+            )}
+        </h4>
+        <ul>
+            <li>Tipo 1</li>
+            <li>tipo 2</li>
+        </ul>
+    </article>
     )
 }
 

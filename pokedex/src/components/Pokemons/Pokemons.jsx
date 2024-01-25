@@ -6,7 +6,7 @@ import PokemonList from '../PokemonList/PokemonList'
 const Pokemons = () => {
   const [allPokemons, setallPokemons] = useState([])
   useEffect(() => {
-    axios.get("https://pokeapi.co/api/v2/pokemon?limit=1025")
+    axios.get("https://pokeapi.co/api/v2/pokemon?limit=898")
       .then(({ data }) => setallPokemons(data.results))
       .catch((err) => console.log(err))
   }, [])
