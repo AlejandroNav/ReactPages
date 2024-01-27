@@ -1,5 +1,6 @@
 import Pokemons from "./components/Pokemons/Pokemons";
 import Asides from "./components/Asides/Asides";
+import ModalPokemon from "./components/ModalPokemon/ModalPokemon";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
   bg-slate-300 grid grid-cols-1 lg:grid-cols-[1fr_350px]">
         <Pokemons />
         <Asides />
+        <ModalPokemon />
       </main>
     </section>
   )
