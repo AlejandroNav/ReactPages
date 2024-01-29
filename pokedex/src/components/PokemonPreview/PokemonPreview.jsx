@@ -44,16 +44,13 @@ const PokemonPreview = ({ pokemonURL,onClick }) => {
 
     return (
         <article
-        onClick={onClick}
-            className='text-center  relative bg-white rounded-3xl pb-2 
-            hover:shadow-lg border-2 border-transparent hover:border-slate-500
-            cursor-pointer group  '>
+        onClick={() => onClick(pokemon)}
+            className='text-center  relative bg-white rounded-3xl pb-2 hover:shadow-lg border-2 border-transparent hover:border-slate-500 cursor-pointer group  '>
             <header className='h-10'>
                 <img
                     src={pokemon.sprites.versions["generation-v"]['black-white'].front_default}
                     alt=""
-                    className="w-28 absolute left-1/2 -translate-x-1/2 top-0 
-                    -translate-y-16 tr group-hover:scale-125 transition-transform"
+                    className="w-28 absolute left-1/2 -translate-x-1/2 top-0 -translate-y-16 tr group-hover:scale-125 transition-transform"
                 />
             </header>
             <span className='text-xs text-slate-400'>Nº {pokemon.id}</span>
