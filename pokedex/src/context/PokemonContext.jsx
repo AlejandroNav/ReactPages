@@ -4,7 +4,8 @@ import {
     formatTypes,
     formatAbilities,
     getPokemonDescription,
-    getEvolutions
+    getEvolutions,
+    getImageByPokemon
 } from "../helpers/pokemon";
 import axios from "axios";
 
@@ -19,7 +20,7 @@ const PokemonProvider = ({ children }) => {
         const { data: dataEvolution } = await axios.get(
             dataSpecies.evolution_chain.url
         );
-
+        
         const { id, name, height, weight, types, stats, abilities } = pokemonInfo
         const evolutions = await getEvolutions(dataEvolution)
         setpokemonDetail({
@@ -32,8 +33,8 @@ const PokemonProvider = ({ children }) => {
             abilities: formatAbilities(abilities),
             description: getPokemonDescription(dataSpecies),
             evolutions,
+            image: getImageByPokemon(pokemonInfo.sprites)
         })
-        console.log(pokemonDetail);
         setshowDetailPokemon(true)
     }
 
