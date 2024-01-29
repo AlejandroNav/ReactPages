@@ -6,10 +6,10 @@ const PokemonPreview = ({ pokemonURL,onClick }) => {
     const colorByType = {
         normal: 'bg-gray-500',
         fire: 'bg-red-500',
-        water: 'bg-blue-500',
+        water: 'bg-blue-600',
         grass: 'bg-green-400',
         electric: 'bg-yellow-500',
-        ice: 'bg-blue-200',
+        ice: 'bg-blue-300',
         fighting: 'bg-red-800',
         poison: 'bg-purple-400',
         ground: 'bg-yellow-800',

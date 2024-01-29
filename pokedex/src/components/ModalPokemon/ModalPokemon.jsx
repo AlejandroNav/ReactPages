@@ -6,10 +6,10 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
     const colorByType = {
         normal: 'bg-gray-500',
         fire: 'bg-red-500',
-        water: 'bg-blue-500',
+        water: 'bg-blue-600',
         grass: 'bg-green-400',
         electric: 'bg-yellow-500',
-        ice: 'bg-blue-200',
+        ice: 'bg-blue-300',
         fighting: 'bg-red-800',
         poison: 'bg-purple-400',
         ground: 'bg-yellow-800',
@@ -63,39 +63,81 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 className='absolute top-4 right-4 bg-white rounded-xl hover:opacity-80 transition-opacity'>
                 <IconX size={40} stroke={2} />
             </button>
-            <article className={`bg-white h-[80%] absolute w-full  rounded-t-3xl text-center transition-all duration-700
+            <article className={`px-8 flex flex-col gap-2 content-start bg-white h-[80%] absolute w-full  rounded-t-3xl text-center transition-all duration-700
             ${showModal ? 'bottom-0' : '-bottom-full'
                 }`}>
                 <header>
-                    <img src="" alt="" />
-
+                    <img src={pokemon?.image} alt="" />
                 </header>
-                <span>Number 1</span>
-                <div className='m-6'>
-                    <div className='flex flex-col items-start'>
-                        <p className='mb-2'>Type:</p>
+                <span className='text-slate-400 text-sm font-semibold'>Number {pokemon?.id} </span>
+                <h2 className='capitalize text-2xl font-bold'>{pokemon?.name} </h2>
+                <article className='m-6 w-3/4'>
+                    <div className='flex items-center text-lg'>
+                        <p className='mb-1 w-20'>Type:</p>
                         <ul className='flex gap-3 flex-wrap justify-start'>
                             {pokemon?.types.map((type) => (
                                 <li
                                     key={type}
-                                    className={`w-32 p1 rounded-md px-2 text-white ${colorByType[type]}`}>{type}</li>
+                                    className={`w-40 p1 rounded-md px-8 py-1 text-white capitalize ${colorByType[type]}`}>{type}</li>
                             ))}
                         </ul>
                     </div>
-
-                    <div className='flex flex-col items-start mt-4 mb-2'>
-                        <p className='mb-2'>Weak to:</p>
+                    <div className='flex items-center mt-4 mb-1'>
+                        <p className='mb-1 w-20'>Weakness:</p>
                         <ul className='justify-start flex gap-3 flex-wrap'>
                             {getWeaknesses(pokemon?.types).map((weakness) => (
                                 <li
                                     key={weakness}
-                                    className={`p1 w-32 rounded-md px-2 text-white ${colorByType[weakness]}`}>
+                                    className={`p1 w-36 rounded-md px-2 text-white capitalize ${colorByType[weakness]}`}>
                                     {weakness}
                                 </li>
                             ))}
                         </ul>
                     </div>
+                </article>
+                <div>
+                    <h4 className='capitalize text-lg font-bold '>Pokedex entry</h4>
+                    <p className='text-slate-500'>{pokemon?.description}</p>
                 </div>
+
+                <section className='grid grid-cols-2 rounded-2xl'>
+                    <div>
+                        <h5 className='capitalize font-bold'>Height</h5>
+                        <span className='block bg-slate-300 rounded-lg py-1  mx-2'>2.7 m</span>
+                    </div>
+                    <div>
+                        <h5 className='capitalize  font-bold'>Weight</h5>
+                        <span className='block bg-slate-300 rounded-lg py-1 mx-2'>30 kg</span>
+                    </div>
+                </section>
+                <section>
+                    <h4 className='capitalize text-lg font-bold'>Abilities</h4>
+                    <div className='grid grid-cols-2 rounded-2xl'>
+                        {
+                            pokemon?.abilities.map((ability)=>(
+                                <span className=' block capitalize bg-slate-300 rounded-lg py-1 my-1 mx-2'>{ability}</span>
+                            ))
+                        }
+                    </div>
+                </section>
+                <section>
+                    <h4 className='capitalize text-lg font-bold'>Stats</h4>
+                    <ul className='flex'>
+                        <li>Stat</li>
+                        <li>Stat</li>
+                        <li>Stat</li>
+                        <li>Stat</li>
+                        <li>Stat</li>
+                        <li>Stat</li>
+                        <li>Stat</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 className='capitalize text-lg font-bold'>Evolutions</h4>
+                </section>
+
+
             </article>
         </section>
     )
