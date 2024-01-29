@@ -42,6 +42,36 @@ const PokemonPreview = ({ pokemonURL, onClick }) => {
 
     const capitalizedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
 
+    const weaknessesByType = {
+        normal: ['fighting'],
+        fire: ['water', 'rock'],
+        water: ['electric', 'grass'],
+        electric: ['ground'],
+        grass: ['fire', 'ice', 'poison', 'flying'],
+        ice: ['fire', 'fighting', 'rock'],
+        fighting: ['flying', 'psychic', 'fairy'],
+        poison: ['ground', 'psychic'],
+        ground: ['water', 'grass', 'ice'],
+        flying: ['electric', 'ice', 'rock'],
+        psychic: ['bug', 'ghost', 'dark'],
+        bug: ['fire', 'flying', 'rock'],
+        rock: ['water', 'grass', 'fighting', 'ground', 'steel'],
+        ghost: ['ghost', 'dark'],
+        dark: ['fighting', 'bug', 'fairy'],
+        steel: ['fire', 'fighting', 'ground'],
+        fairy: ['poison', 'steel'],
+        dragon: ['ice', 'dragon', 'fairy'],
+        // Add more weaknesses for other types
+    };
+    const getWeaknesses = (types) => {
+        const weaknesses = types.reduce((allWeaknesses, type) => {
+            const typeWeaknesses = weaknessesByType[type] || [];
+            return [...allWeaknesses, ...typeWeaknesses];
+        }, []);
+
+        // Remove duplicates if any
+        return Array.from(new Set(weaknesses));
+    };
     return (
         <article
             onClick={() => onClick(pokemon)}
@@ -64,10 +94,14 @@ const PokemonPreview = ({ pokemonURL, onClick }) => {
                         className={`p1 rounded-md px-2 text-white ${colorByType[type.type.name]}`}>{type.type.name}</li>
                 ))}
             </ul>
-            <ul className='flex gap-3 justify-center mt-3'>
-                Weak:{pokemon.types.map((type) => (
-                    <li key={type.type.name}
-                        className={` p1 rounded-md px-2 text-white ${colorByType[type.type.name]}`}>{type.type.name}</li>
+
+            <ul className='flex flex-wrap m-2 bg-slate-300 rounded-md p-2'>
+                {getWeaknesses(pokemon?.types.map(typeData => typeData.type.name)).map((weakness) => (
+                    <li
+                        key={weakness}
+                        className={` w-16 rounded-md text-white capitalize  mb-2 mx-1 ${colorByType[weakness]}`}>
+                        {weakness}
+                    </li>
                 ))}
             </ul>
         </article>

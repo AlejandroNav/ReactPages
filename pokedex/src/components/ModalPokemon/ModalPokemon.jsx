@@ -45,6 +45,11 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         // Add more weaknesses for other types
     };
     const getWeaknesses = (types) => {
+        // Check if types is undefined or null
+        if (!types) {
+            return [];
+        }
+
         const weaknesses = types.reduce((allWeaknesses, type) => {
             const typeWeaknesses = weaknessesByType[type] || [];
             return [...allWeaknesses, ...typeWeaknesses];
@@ -114,7 +119,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                     <h4 className='capitalize text-lg font-bold'>Abilities</h4>
                     <div className='grid grid-cols-2 rounded-2xl'>
                         {
-                            pokemon?.abilities.map((ability)=>(
+                            pokemon?.abilities.map((ability) => (
                                 <span className=' block capitalize bg-slate-300 rounded-lg py-1 my-1 mx-2'>{ability}</span>
                             ))
                         }
