@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const PokemonPreview = ({ pokemonURL }) => {
+const PokemonPreview = ({ pokemonURL,onClick }) => {
     const [pokemon, setPokemon] = useState(null);
     const colorByType = {
         normal: 'bg-gray-500',
@@ -44,6 +44,7 @@ const PokemonPreview = ({ pokemonURL }) => {
 
     return (
         <article
+        onClick={onClick}
             className='text-center  relative bg-white rounded-3xl pb-2 
             hover:shadow-lg border-2 border-transparent hover:border-slate-500
             cursor-pointer group  '>
