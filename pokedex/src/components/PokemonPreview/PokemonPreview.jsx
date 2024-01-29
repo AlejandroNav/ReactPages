@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const PokemonPreview = ({ pokemonURL,onClick }) => {
+const PokemonPreview = ({ pokemonURL, onClick }) => {
     const [pokemon, setPokemon] = useState(null);
     const colorByType = {
         normal: 'bg-gray-500',
@@ -44,7 +44,7 @@ const PokemonPreview = ({ pokemonURL,onClick }) => {
 
     return (
         <article
-        onClick={() => onClick(pokemon)}
+            onClick={() => onClick(pokemon)}
             className='text-center  relative bg-white rounded-3xl pb-2 hover:shadow-lg border-2 border-transparent hover:border-slate-500 cursor-pointer group  '>
             <header className='h-10'>
                 <img
@@ -67,7 +67,7 @@ const PokemonPreview = ({ pokemonURL,onClick }) => {
             <ul className='flex gap-3 justify-center mt-3'>
                 Weak:{pokemon.types.map((type) => (
                     <li key={type.type.name}
-                    className={` p1 rounded-md px-2 text-white ${colorByType[type.type.name]}`}>{type.type.name}</li>
+                        className={` p1 rounded-md px-2 text-white ${colorByType[type.type.name]}`}>{type.type.name}</li>
                 ))}
             </ul>
         </article>
