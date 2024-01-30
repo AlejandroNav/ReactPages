@@ -44,6 +44,17 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         dragon: ['ice', 'dragon', 'fairy'],
         // Add more weaknesses for other types
     };
+
+    const colorByStat = {
+        HP: '[&>div]: bg-red-600',
+        ATK: '[&>div]: bg-orange-500',
+        DEF: '[&>div]: bg-lime-600',
+        SpA: '[&>div]: bg-teal-600',
+        SpD: '[&>div]: bg-indigo-500',
+        SPD: '[&>div]: bg-pink-400',
+        TOT: '[&>div]: bg-zinc-500',
+
+    }
     const getWeaknesses = (types) => {
         // Check if types is undefined or null
         if (!types) {
@@ -104,7 +115,6 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                     <h4 className='capitalize text-lg font-bold '>Pokedex entry</h4>
                     <p className='text-slate-500'>{pokemon?.description}</p>
                 </div>
-
                 <section className='grid grid-cols-2 rounded-2xl'>
                     <div>
                         <h5 className='capitalize font-bold'>Height</h5>
@@ -127,22 +137,26 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 </section>
                 <section>
                     <h4 className='capitalize text-lg font-bold'>Stats</h4>
-                    <ul className='flex'>
-                        <li>Stat</li>
-                        <li>Stat</li>
-                        <li>Stat</li>
-                        <li>Stat</li>
-                        <li>Stat</li>
-                        <li>Stat</li>
-                        <li>Stat</li>
+                    <ul className='flex justify-center gap-4 '>
+                        {
+                            pokemon?.stats.map((stat) => (
+                                <li className={`bg-indigo-400 p-2 min-w-12 rounded-lg ${colorByStat[stat.name]}`}>
+                                    <div className='rounded-full w-8 h-8 flex items-center justify-center text-fuchsia-50'>
+                                        <span className='text-sm'>
+                                            {stat.name}
+                                        </span>
+                                    </div>
+                                    <span className='font-bold'>
+                                        {stat.base_stat}
+                                    </span>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </section>
-
                 <section>
                     <h4 className='capitalize text-lg font-bold'>Evolutions</h4>
                 </section>
-
-
             </article>
         </section>
     )
