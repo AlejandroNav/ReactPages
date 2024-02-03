@@ -2,7 +2,7 @@ import { IconX, IconXboxX, IconXxx } from '@tabler/icons-react'
 import React from 'react'
 
 const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
-    console.log(pokemon);
+
     const colorByType = {
         normal: 'bg-gray-500',
         fire: 'bg-red-500',
@@ -23,27 +23,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         fairy: 'bg-pink-300',
         dragon: 'bg-indigo-700'
     };
-    const weaknessesByType = {
-        normal: ['fighting'],
-        fire: ['water', 'rock'],
-        water: ['electric', 'grass'],
-        electric: ['ground'],
-        grass: ['fire', 'ice', 'poison', 'flying'],
-        ice: ['fire', 'fighting', 'rock'],
-        fighting: ['flying', 'psychic', 'fairy'],
-        poison: ['ground', 'psychic'],
-        ground: ['water', 'grass', 'ice'],
-        flying: ['electric', 'ice', 'rock'],
-        psychic: ['bug', 'ghost', 'dark'],
-        bug: ['fire', 'flying', 'rock'],
-        rock: ['water', 'grass', 'fighting', 'ground', 'steel'],
-        ghost: ['ghost', 'dark'],
-        dark: ['fighting', 'bug', 'fairy'],
-        steel: ['fire', 'fighting', 'ground'],
-        fairy: ['poison', 'steel'],
-        dragon: ['ice', 'dragon', 'fairy'],
-        // Add more weaknesses for other types
-    };
+
 
     const colorByStat = {
         HP: '[&>div]: bg-red-600',
@@ -55,19 +35,54 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         TOT: '[&>div]: bg-zinc-500',
 
     }
+
+
     const getWeaknesses = (types) => {
+
         // Check if types is undefined or null
         if (!types) {
             return [];
         }
+        const typeChart = {
+            normal: { weaknesses: ['fighting'], resistances: [] },
+            fire: { weaknesses: ['water', 'rock'], resistances: ['fire', 'grass', 'ice', 'bug', 'steel'] },
+            water: { weaknesses: ['electric', 'grass'], resistances: ['fire', 'water', 'ice', 'steel'] },
+            electric: { weaknesses: ['ground'], resistances: ['electric', 'flying', 'steel'] },
+            grass: { weaknesses: ['fire', 'ice', 'poison', 'flying'], resistances: ['water', 'electric', 'grass', 'ground'] },
+            ice: { weaknesses: ['fire', 'fighting', 'rock', 'steel'], resistances: ['ice'] },
+            fighting: { weaknesses: ['flying', 'psychic', 'fairy'], resistances: ['bug', 'dark', 'rock'] },
+            poison: { weaknesses: ['ground', 'psychic'], resistances: ['fighting', 'poison', 'bug', 'fairy'] },
+            ground: { weaknesses: ['water', 'ice', 'grass'], resistances: ['poison', 'rock', 'electric'] },
+            flying: { weaknesses: ['electric', 'ice', 'rock'], resistances: ['fighting', 'bug', 'grass'] },
+            psychic: { weaknesses: ['bug', 'ghost', 'dark'], resistances: ['fighting', 'psychic'] },
+            bug: { weaknesses: ['fire', 'flying', 'rock'], resistances: ['fighting', 'ground', 'grass'] },
+            rock: { weaknesses: ['water', 'grass', 'fighting', 'ground', 'steel'], resistances: ['normal', 'flying', 'poison', 'fire'] },
+            ghost: { weaknesses: ['ghost', 'dark'], resistances: ['poison', 'bug', 'normal', 'fighting'] },
+            dragon: { weaknesses: ['ice', 'dragon', 'fairy'], resistances: ['fire', 'water', 'grass', 'electric'] },
+            dark: { weaknesses: ['fighting', 'bug', 'fairy'], resistances: ['ghost', 'dark'] },
+            steel: { weaknesses: ['fire', 'fighting', 'ground'], resistances: ['normal', 'flying', 'rock', 'bug', 'steel', 'grass', 'psychic', 'ice', 'dragon', 'fairy'] },
+            fairy: { weaknesses: ['poison', 'steel'], resistances: ['fighting', 'bug', 'dark'] },
+        };
 
-        const weaknesses = types.reduce((allWeaknesses, type) => {
-            const typeWeaknesses = weaknessesByType[type] || [];
-            return [...allWeaknesses, ...typeWeaknesses];
-        }, []);
+        let weaknesses = [];
 
-        // Remove duplicates if any
-        return Array.from(new Set(weaknesses));
+        // Loop through each type of the Pokemon
+        types.forEach((type) => { // Check if the type has weaknesses and resistances in the type chart
+            if (typeChart[type]) {// Add weaknesses first
+                weaknesses = weaknesses.concat(typeChart[type].weaknesses);
+            }
+        });
+        weaknesses = [...new Set(weaknesses)];// Remove duplicate weaknesses
+        if (types.length === 2) {// Handle dual types and adjust weaknesses based on resistances
+            const [type1, type2] = types;
+            // Remove resistances for both types
+            const dualTypeWeaknesses1 = typeChart[type1].weaknesses.filter((weakness) => !typeChart[type2].resistances.includes(weakness));
+            const dualTypeWeaknesses2 = typeChart[type2].weaknesses.filter((weakness) => !typeChart[type1].resistances.includes(weakness));
+            // Combine and remove duplicate weaknesses
+            weaknesses = weaknesses.filter((weakness) => !typeChart[type1].resistances.includes(weakness));
+            weaknesses = [...new Set(dualTypeWeaknesses1.concat(dualTypeWeaknesses2))];
+        }
+        return weaknesses;
     };
 
     return (
@@ -87,20 +102,25 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 </header>
                 <span className='text-slate-400 text-sm font-semibold'>Number {pokemon?.id} </span>
                 <h2 className='capitalize text-2xl font-bold'>{pokemon?.name} </h2>
-                <article className='m-6 w-3/4'>
-                    <div className='flex items-center text-lg'>
-                        <p className='mb-1 w-20'>Type:</p>
-                        <ul className='flex gap-3 flex-wrap justify-start'>
+                <article className='m-6'>
+                    <div className='flex flex-col items-center text-lg'>
+                        <p className='mb-1 w-full text-center'>Type:</p>
+
+                        <ul className='flex flex-wrap justify-center gap-2'>
                             {pokemon?.types.map((type) => (
                                 <li
                                     key={type}
-                                    className={`w-40 p1 rounded-md px-8 py-1 text-white capitalize ${colorByType[type]}`}>{type}</li>
+                                    className={`w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 p1 rounded-md px-4 py-1 text-white capitalize ${colorByType[type]}`}>
+                                    {type}
+                                </li>
                             ))}
                         </ul>
                     </div>
-                    <div className='flex items-center mt-4 mb-1'>
-                        <p className='mb-1 w-20'>Weakness:</p>
-                        <ul className='justify-start flex gap-3 flex-wrap'>
+                    <div className='flex flex-col items-center mt-4 mb-1'>
+
+                        <p className='mb-1 w-full text-center'>Weakness:</p>
+
+                        <ul className='flex flex-wrap justify-center gap-2'>
                             {getWeaknesses(pokemon?.types).map((weakness) => (
                                 <li
                                     key={weakness}
