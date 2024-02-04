@@ -21,7 +21,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         dark: 'bg-gray-800',
         steel: 'bg-gray-400',
         fairy: 'bg-pink-300',
-        dragon: 'bg-indigo-700'
+        dragon: 'bg-indigo-800'
     };
 
 
