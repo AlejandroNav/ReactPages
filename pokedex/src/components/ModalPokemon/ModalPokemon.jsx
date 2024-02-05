@@ -2,7 +2,6 @@ import { IconX, IconXboxX, IconXxx } from '@tabler/icons-react'
 import React from 'react'
 
 const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
-
     const colorByType = {
         normal: 'bg-gray-500',
         fire: 'bg-red-500',
@@ -23,8 +22,6 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         fairy: 'bg-pink-300',
         dragon: 'bg-indigo-800'
     };
-
-
     const colorByStat = {
         HP: '[&>div]: bg-red-600',
         ATK: '[&>div]: bg-orange-500',
@@ -33,12 +30,10 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         SpD: '[&>div]: bg-indigo-500',
         SPD: '[&>div]: bg-pink-400',
         TOT: '[&>div]: bg-zinc-500',
-
     }
 
-
+    // 
     const getWeaknesses = (types) => {
-
         // Check if types is undefined or null
         if (!types) {
             return [];
@@ -63,9 +58,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
             steel: { weaknesses: ['fire', 'fighting', 'ground'], resistances: ['normal', 'flying', 'rock', 'bug', 'steel', 'grass', 'psychic', 'ice', 'dragon', 'fairy'] },
             fairy: { weaknesses: ['poison', 'steel'], resistances: ['fighting', 'bug', 'dark'] },
         };
-
         let weaknesses = [];
-
         // Loop through each type of the Pokemon
         types.forEach((type) => { // Check if the type has weaknesses and resistances in the type chart
             if (typeChart[type]) {// Add weaknesses first
@@ -84,7 +77,6 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         }
         return weaknesses;
     };
-
     return (
         <section className={`fixed top-0 left-0 right-0 h-screen bg-orange-400 transition-all duration-500
             ${showModal ? "visible opacity-100" : "invisible opacity-0"
@@ -105,7 +97,6 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 <article className='m-6'>
                     <div className='flex flex-col items-center text-lg'>
                         <p className='mb-1 w-full text-center'>Type:</p>
-
                         <ul className='flex flex-wrap justify-center gap-2'>
                             {pokemon?.types.map((type) => (
                                 <li
@@ -117,9 +108,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                         </ul>
                     </div>
                     <div className='flex flex-col items-center mt-4 mb-1'>
-
                         <p className='mb-1 w-full text-center'>Weakness:</p>
-
                         <ul className='flex flex-wrap justify-center gap-2'>
                             {getWeaknesses(pokemon?.types).map((weakness) => (
                                 <li
@@ -181,5 +170,4 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
         </section>
     )
 }
-
 export default ModalPokemon
