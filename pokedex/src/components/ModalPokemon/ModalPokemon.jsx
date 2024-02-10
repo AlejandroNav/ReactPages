@@ -1,5 +1,6 @@
 import { IconX, IconXboxX, IconXxx } from '@tabler/icons-react'
 import React from 'react'
+import Evolutions from '../Evolutions/Evolutions';
 
 const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
     const colorByType = {
@@ -86,7 +87,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 className='absolute top-4 right-4 bg-white rounded-xl hover:opacity-80 transition-opacity'>
                 <IconX size={40} stroke={2} />
             </button>
-            <article className={`px-8 flex flex-col gap-2 content-start bg-white h-[80%] absolute w-full  rounded-t-3xl text-center transition-all duration-700
+            <article className={`px-8 flex flex-col gap-2 content-start bg-white h-[80%] absolute w-full  rounded-t-3xl text-center transition-all duration-700 overflow-y-auto
             ${showModal ? 'bottom-0' : '-bottom-full'
                 }`}>
                 <header>
@@ -94,7 +95,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 </header>
                 <span className='text-slate-400 text-sm font-semibold'>Number {pokemon?.id} </span>
                 <h2 className='capitalize text-2xl font-bold'>{pokemon?.name} </h2>
-                <article className='m-6'>
+                <article className='m-2'>
                     <div className='flex flex-col items-center text-lg'>
                         <p className='mb-1 w-full text-center'>Type:</p>
                         <ul className='flex flex-wrap justify-center gap-2'>
@@ -165,9 +166,12 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 </section>
                 <section>
                     <h4 className='capitalize text-lg font-bold'>Evolutions</h4>
+                    <Evolutions evolutions={pokemon?.evolutions ?? []} />
                 </section>
             </article>
         </section>
     )
+    // make the structure for the evolutions
+
 }
 export default ModalPokemon
