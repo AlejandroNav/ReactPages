@@ -44,7 +44,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
             fire: { weaknesses: ['water', 'rock'], resistances: ['fire', 'grass', 'ice', 'bug', 'steel'] },
             water: { weaknesses: ['electric', 'grass'], resistances: ['fire', 'water', 'ice', 'steel'] },
             electric: { weaknesses: ['ground'], resistances: ['electric', 'flying', 'steel'] },
-            grass: { weaknesses: ['fire', 'ice', 'poison', 'flying'], resistances: ['water', 'electric', 'grass', 'ground'] },
+            grass: { weaknesses: ['fire', 'ice', 'poison', 'flying', 'bug'], resistances: ['water', 'electric', 'grass', 'ground'] },
             ice: { weaknesses: ['fire', 'fighting', 'rock', 'steel'], resistances: ['ice'] },
             fighting: { weaknesses: ['flying', 'psychic', 'fairy'], resistances: ['bug', 'dark', 'rock'] },
             poison: { weaknesses: ['ground', 'psychic'], resistances: ['fighting', 'poison', 'bug', 'fairy'] },
@@ -87,15 +87,16 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 className='absolute top-4 right-4 bg-white rounded-xl hover:opacity-80 transition-opacity'>
                 <IconX size={40} stroke={2} />
             </button>
+
+            <header>
+                <img src={pokemon?.image} alt="" className='w-40 absolute left-1/2 -translate-x-1/2 top-[5%] z-10 ' />
+            </header>
             <article className={`px-8 flex flex-col gap-2 content-start bg-white h-[80%] absolute w-full  rounded-t-3xl text-center transition-all duration-700 overflow-y-auto
             ${showModal ? 'bottom-0' : '-bottom-full'
                 }`}>
-                <header>
-                    <img src={pokemon?.image} alt="" />
-                </header>
-                <span className='text-slate-400 text-sm font-semibold'>Number {pokemon?.id} </span>
+                <span className='text-slate-400 text-sm font-semibold pt-[3%]'>Number {pokemon?.id} </span>
                 <h2 className='capitalize text-2xl font-bold'>{pokemon?.name} </h2>
-                <article className='m-2'>
+                <article className='m-0'>
                     <div className='flex flex-col items-center text-lg'>
                         <p className='mb-1 w-full text-center'>Type:</p>
                         <ul className='flex flex-wrap justify-center gap-2'>
@@ -108,7 +109,7 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                             ))}
                         </ul>
                     </div>
-                    <div className='flex flex-col items-center mt-4 mb-1'>
+                    <div className='flex flex-col items-center mt-1 mb-1'>
                         <p className='mb-1 w-full text-center'>Weakness:</p>
                         <ul className='flex flex-wrap justify-center gap-2'>
                             {getWeaknesses(pokemon?.types).map((weakness) => (
@@ -147,11 +148,11 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                 </section>
                 <section>
                     <h4 className='capitalize text-lg font-bold'>Stats</h4>
-                    <ul className='flex justify-center gap-4 '>
+                    <ul className='flex justify-center gap-1 sm:gap-2 md:gap-4'>
                         {
                             pokemon?.stats.map((stat) => (
-                                <li className={`bg-indigo-400 p-2 min-w-12 rounded-lg ${colorByStat[stat.name]}`}>
-                                    <div className='rounded-full w-8 h-8 flex items-center justify-center text-fuchsia-50'>
+                                <li className={`bg-indigo-400 p-2 min-w-12 rounded-lg ${colorByStat[stat.name]} `}>
+                                    <div className='rounded-full w-8 h-8 flex items-center justify-center text-fuchsia-50 '>
                                         <span className='text-sm'>
                                             {stat.name}
                                         </span>
