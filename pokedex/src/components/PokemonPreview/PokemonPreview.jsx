@@ -94,16 +94,6 @@ const PokemonPreview = ({ pokemonURL, onClick }) => {
                         className={`p1 rounded-md px-2 text-white ${colorByType[type.type.name]}`}>{type.type.name}</li>
                 ))}
             </ul>
-
-            <ul className='flex flex-wrap m-2 bg-slate-300 rounded-md p-2'>
-                {getWeaknesses(pokemon?.types.map(typeData => typeData.type.name)).map((weakness) => (
-                    <li
-                        key={weakness}
-                        className={` w-16 rounded-md text-white capitalize  mb-2 mx-1 ${colorByType[weakness]}`}>
-                        {weakness}
-                    </li>
-                ))}
-            </ul>
         </article>
     );
 }
