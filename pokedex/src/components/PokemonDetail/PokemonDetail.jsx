@@ -1,8 +1,6 @@
-import { IconX, IconXboxX, IconXxx } from '@tabler/icons-react'
 import React from 'react'
 import Evolutions from '../Evolutions/Evolutions';
-
-const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
+const PokemonDetail = ({ pokemon }) => {
     const colorByType = {
         normal: 'bg-gray-500',
         fire: 'bg-red-500',
@@ -80,24 +78,14 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
     };
 
     return (
-        <section className={`fixed lg:hidden top-0 left-0 right-0 h-screen  transition-all duration-500
-            ${showModal ? "visible opacity-100" : "invisible opacity-0"
-            } ${colorByType[pokemon?.types[0]]}`}>
-            <button
-                onClick={onCloseModal}
-                className='absolute top-4 right-4 bg-white rounded-xl hover:opacity-80 transition-opacity'>
-                <IconX size={40} stroke={2} />
-            </button>
-
+        <>
             <header>
                 <div className=''>
-                    <img src={pokemon?.image} alt="" className='w-32 absolute left-1/2 -translate-x-1/2 top-[5%] z-10 ' />
+                    <img src={pokemon?.image} alt="" className='w-32 absolute left-1/2 -translate-x-1/2 top-[-17%] z-10 ' />
                 </div>
             </header>
-
-            <article className={` px-8 flex flex-col gap-2 content-start bg-white h-[80%] absolute w-full  rounded-t-3xl text-center transition-all duration-700 overflow-y-auto
-           hidden-scroll ${showModal ? 'bottom-0' : '-bottom-full'
-                }`}>
+            <article className={` px-8 flex flex-col gap-2 content-start bg-white absolute w-full  rounded-t-3xl text-center transition-all duration-700 overflow-y-auto
+           hidden-scroll}`}>
                 <span className='text-slate-400 text-sm font-semibold pt-[3%]'>Number {pokemon?.id} </span>
                 <h2 className='capitalize text-2xl font-bold'>{pokemon?.name} </h2>
                 <article className='m-0'>
@@ -173,10 +161,10 @@ const ModalPokemon = ({ showModal, onCloseModal, pokemon }) => {
                     <h4 className='capitalize text-lg font-bold'>Evolutions</h4>
                     <Evolutions evolutions={pokemon?.evolutions ?? []} />
                 </section>
-            </article>
-        </section>
-    )
-    // make the structure for the evolutions
 
+            </article>
+        </>
+    )
 }
-export default ModalPokemon
+
+export default PokemonDetail

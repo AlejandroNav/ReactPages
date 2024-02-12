@@ -12,7 +12,7 @@ function App() {
     <section className=" h-screen  overflow-y-auto">
       <main className="font-outfit min-h-svh max-w-[1500px] mx-auto bg-slate-300 grid grid-cols-1 lg:grid-cols-[1fr_350px]">
         <Pokemons />
-        <Asides />
+        <Asides pokemon={pokemonDetail}/>
         <ModalPokemon 
         showModal={showDetailPokemon} 
         onCloseModal={closePokemonDetail}
