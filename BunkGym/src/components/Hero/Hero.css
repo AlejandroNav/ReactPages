@@ -1,4 +1,85 @@
-.hero{
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.hero {
     display: flex;
     justify-content: space-between;
+    background-color: var(--darkGrey4)
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    flex: 3;
+    gap: 2rem;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(110, 110, 110);
+    border: solid 3px black;
+    flex: 1;
+}
+
+.hero-ad {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    background-color: var(--darkerGrey5);
+    color: var(--lightgrey1);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-ad>span {
+    z-index: 2;
+}
+
+.hero-ad>div {
+    position: absolute;
+    width: 5.4rem;
+    height: 80%;
+    border-radius: 3rem;
+    background-color: var(--orange3);
+    left: 8px;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--lightgrey1);
+    text-transform: uppercase;
+    text-overflow: inherit;
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif;
+    font-style: oblique 14deg;
+}
+
+
+.hero-text-1 {
+    color: var(--orange3);
+}
+.hero-text>div:nth-of-type(3){
+
+    color: var(--lightgrey1);
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-family: roboto;
 }
