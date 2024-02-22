@@ -54,15 +54,14 @@ const Hero = () => {
 
             </div>
             <div className="hero-right">
-                <button className='hero-btn'>Contactanos</button>
+                <button className='hero-btn hero-btn-contact'>Contactanos</button>
                 <img src={adorno1} alt="" className='hero-adorno' />
                 <div className='hero-heart'>
-                    
-                    <img src={heart} alt="" className='hero-adorno' />
-                    <span></span><span></span>
+                    <img src={heart} alt="" className='hero-corazon' />
+                    <span>Heart Rate </span><span>130 BPM</span>
                 </div>
                 <img src={adorno2} alt="" className='hero-adorno' />
-                <img src={mantrans} alt="" className='hero-adorno' />
+                <img src={mantrans} alt="" className='hero-image' />
             </div>
 
         </div>
