@@ -1,0 +1,63 @@
+.Programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    background-color: var(--appColor6);
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+}
+
+.Programs-header{
+    margin-top: 2rem;
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar los items horizontalmente */
+    width: 100%; /* El contenedor abarca el 80% del ancho de la página */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+
+.card {
+    width: calc(30.333% - 20px); /* Ajustar el ancho para 3 tarjetas por fila, considerando el margen */
+    height: 14rem;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra opcional para mejor estética */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.card P{
+    font-size: 1rem;
+}
+/* Selector para colorear las tarjetas impares */
+.card:nth-child(odd) {
+    background-color: var(--lightgrey1);
+    
+    
+}
+
+/* Selector para colorear las tarjetas pares */
+.card:nth-child(even) {
+    background-color: var(--darkGrey4);
+    color: var(--lightgrey1);
+    opacity: 0.7; /* Aplicar transparencia al elemento completo */
+}

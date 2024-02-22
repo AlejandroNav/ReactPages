@@ -5,9 +5,10 @@ import NumberCounter from '../numberCounter/numberCounter'
 import adorno1 from '../../assets/adorno1.avif'
 import adorno2 from '../../assets/adorno2.avif'
 import LogoWhite from '../../assets/bunk-white.avif'
-import man from '../../assets/man.avif'
+import calories from '../../assets/calories.avif'
 import heart from '../../assets/heart.avif'
 import mantrans from '../../assets/man-transparent.png'
+
 
 const Hero = () => {
     return (
@@ -60,8 +61,16 @@ const Hero = () => {
                     <img src={heart} alt="" className='hero-corazon' />
                     <span>Heart Rate </span><span>130 BPM</span>
                 </div>
-                <img src={adorno2} alt="" className='hero-adorno' />
+                <img src={adorno2} alt="" className='hero-adorno2' />
                 <img src={mantrans} alt="" className='hero-image' />
+                <div className='hero-calories'>
+                    <img className='hero-calories-img' src={calories} alt="" />
+                    <div className='hero-calories-text'>
+                        <span>Cambiar por renderizado del gym</span>
+                       
+                    </div>
+                    <img src={adorno2} alt="" className='hero-adorno3' />
+                </div>
             </div>
 
         </div>
