@@ -21,24 +21,26 @@
 }
 
 .container {
+    gap: 2%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar los items horizontalmente */
-    width: 100%; /* El contenedor abarca el 80% del ancho de la página */
-    margin: 0 auto; /* Centrar el contenedor en la página */
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 
 .card {
-    width: calc(30.333% - 20px); /* Ajustar el ancho para 3 tarjetas por fila, considerando el margen */
-    height: 14rem;
-    margin: 10px;
-    padding: 20px;
+    width: calc(25% - 20px); /* Ajustar el ancho para 3 tarjetas por fila, considerando el margen */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra opcional para mejor estética */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 1rem 2rem;
+    height: 40%;
     
 }
 .card h2 {
@@ -47,6 +49,8 @@
 }
 .card P{
     font-size: 1rem;
+    width: 80%;
+    line-height: 1.6;
 }
 /* Selector para colorear las tarjetas impares */
 .card:nth-child(odd) {

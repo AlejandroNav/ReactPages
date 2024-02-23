@@ -67,7 +67,6 @@ const Hero = () => {
                     <img className='hero-calories-img' src={calories} alt="" />
                     <div className='hero-calories-text'>
                         <span>Cambiar por renderizado del gym</span>
-                       
                     </div>
                     <img src={adorno2} alt="" className='hero-adorno3' />
                 </div>

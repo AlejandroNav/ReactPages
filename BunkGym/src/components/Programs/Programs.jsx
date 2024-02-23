@@ -30,11 +30,10 @@ const Programs = () => {
                     <p>Integramos la actividad física en la rutina formativa mediante gimnasios móviles, fomentando el deporte entre los estudiantes.</p>
                 </div>
                 <div class="card">
-                    <h2>CENTROS EDUCATIVOS </h2>
-                    <p>Maximizamos la experiencia y satisfacción de los usuarios al añadir valor a las instalaciones deportivas, ofreciendo más opciones para un entrenamiento variado y personalizado.</p>
+                    <h2>CENTROS DEPORTIVOS </h2>
+                    <p>Maximizamos la experiencia de los usuarios al añadir valor a las instalaciones deportivas, ofreciendo opciones para un entrenamiento variado y personalizado.</p>
                 </div>
             </div>
-
         </div>
     )
 }
