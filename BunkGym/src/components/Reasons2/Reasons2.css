@@ -1,0 +1,20 @@
+
+.card-2{
+    width: calc(45% - 20px); /* Ajustar el ancho para 3 tarjetas por fila, considerando el margen */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra opcional para mejor estética */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 2rem;
+    height: 40%;
+    width: 400px;
+}
+.orange{
+    color: var(--orange3);
+}
+.reason2-img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
