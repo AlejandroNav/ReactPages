@@ -5,6 +5,7 @@ import Programs from './components/Programs/Programs'
 import Reasons from './components/Reasons/Reasons'
 import Reasons2 from './components/Reasons2/Reasons2'
 import Planes from './components/Planes/Planes'
+import Plans from './components/Plans/Plans'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
       <Reasons/>
       <Reasons2/>
       <Planes/>
+      <Plans/>
     </>
   )
 }

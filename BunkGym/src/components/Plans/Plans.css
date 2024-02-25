@@ -1,0 +1,74 @@
+.plans-container {
+    background-color: var(--darkerGrey5);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.plan-2 {
+    display: flex;
+    flex-direction: column;
+    color: var(--lightgrey1);
+    background-color: var(--darkGrey4);
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.plan-2:nth-child(2) {
+    background-color: var(--orange3);
+    transform: scale(1.1);
+}
+
+.plan-2>svg {
+    fill: var(--orange3);
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan-2:nth-child(2)>svg {
+    fill: var(--lightgrey1);
+
+}
+
+.plan-2>:nth-child(2) {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.plan-2>:nth-child(3) {
+    font-size: 3rem;
+}
+
+.plan-2>:nth-child(5)>div {
+    font-size: 0.8rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature{
+    display: flex;
+    gap: 1rem;
+}
+.feature > img{
+    width: 1rem;
+    height: 1rem;
+}
+.plans > :nth-child(2) >button{
+    color: var(--orange3);
+}

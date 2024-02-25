@@ -15,7 +15,7 @@ const Planes = () => {
             <div className="planes">
                 <div className="plan">
                     <h4>DISEÑO Y EQUIPAMIENTO FITNESS</h4>
-                    <span>Creamos espacios de entrenamiento de todo tipo y suministramos un material de fabricación propia de última generación.</span>
+                    <span className='plan-minortext'>Creamos espacios de entrenamiento de todo tipo y suministramos un material de fabricación propia de última generación.</span>
                     <div className="planes-features">
                         <div>
                             <img src={palomita} alt="" /> <span>ventaja 1</span>
