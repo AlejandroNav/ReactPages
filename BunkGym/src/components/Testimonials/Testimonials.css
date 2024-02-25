@@ -24,7 +24,7 @@
 }
 
 .Testimonials-left>span:nth-of-type(1){
-    color: var(--orange3);
+    color: var(--lightgrey1);
     font-size: 2rem;
     font-weight: 700;
 
@@ -79,7 +79,7 @@
     width: 17rem;
     height: 19rem;
     position: absolute;
-    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+    background: linear-gradient(210.41deg, #eeeeee 1.14%, #000000 100.75%);
 
     border-radius: 3px;
     top: 4rem;

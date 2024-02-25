@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero'
 import Programs from './components/Programs/Programs'
 import Reasons from './components/Reasons/Reasons'
@@ -9,18 +10,49 @@ import Plans from './components/Plans/Plans'
 import Testimonials from './components/Testimonials/Testimonials'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState('home');
+
   return (
     <>
-      <Hero />
-      <Programs />
-      <Reasons />
-      <Reasons2 />
-      <Planes />
-      <Plans />
-      <Testimonials />
+      <Header setCurrentPage={setCurrentPage} />
+      {currentPage === 'home' && (
+        <>
+          <Hero />
+          <Programs />
+          <Reasons />
+          <Reasons2 />
+          <Planes />
+          <Plans />
+          <Testimonials />
+        </>
+      )}
+      {currentPage === 'quienesSomos' && (
+        <>
+          <Hero />
+          <Planes />
+          {/* Insert other components you want on the Quienes somos page */}
+        </>
+      )}
+      {currentPage === 'particulares' && (
+        <>
+          <Planes />
+          {/* Insert other components you want on the Particulares page */}
+        </>
+      )}
+      {currentPage === 'ayuntamientos' && (
+        <>
+          <Reasons2 />
+          {/* Insert other components you want on the Ayuntamientos page */}
+        </>
+      )}
+      {currentPage === 'empresas' && (
+        <>
+          <Reasons />
+          <Planes />
+          {/* Insert other components you want on the Empresas page */}
+        </>)}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

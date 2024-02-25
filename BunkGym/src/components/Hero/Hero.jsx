@@ -10,21 +10,25 @@ import heart from '../../assets/heart.avif'
 import mantrans from '../../assets/man-transparent.png'
 
 
-const Hero = () => {
+const Hero = ({ children, setCurrentPage }) => {
     return (
         <div className="hero">
             <div className="hero-left">
-                <Header />
                 <div className="hero-ad">
                     <div className='hero-ad-circle'></div>
-                    <span>Tu empresa, tu estilo, tu Bunkgym. </span>
+                    <span>Somos Fuerza. Somos Excelencia. Somos Sostenibilidad. </span>
                 </div>
                 <div className="hero-text">
                     <div>
-                        <span className='hero-text-1'>Bunkgym</span> <span >Nacidos para</span>
+                        <span className='hero-text-1'>SOMOS BUNKGYM</span> <span >Nacidos</span>
                     </div>
                     <div>
-                        <span>marcar </span> <span className='stroke-text'>la diferencia</span>
+                        <span>para </span> <span className='stroke-text'>revolucionar</span>
+
+
+                    </div>
+                    <div>
+                        <span> el mundo del fitness</span>
                     </div>
                     <div>
                         <p>Somos una marca de fitness focalizada en diseñar, fabricar e instalar gimnasios portátiles integrados en contenedores de barco.</p>
@@ -61,14 +65,12 @@ const Hero = () => {
                     <img src={heart} alt="" className='hero-corazon' />
                     <span>Heart Rate </span><span>130 BPM</span>
                 </div>
-                <img src={adorno2} alt="" className='hero-adorno2' />
                 <img src={mantrans} alt="" className='hero-image' />
                 <div className='hero-calories'>
                     <img className='hero-calories-img' src={calories} alt="" />
                     <div className='hero-calories-text'>
                         <span>Cambiar por renderizado del gym</span>
                     </div>
-                    <img src={adorno2} alt="" className='hero-adorno3' />
                 </div>
             </div>
 

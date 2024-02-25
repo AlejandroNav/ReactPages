@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
-    flex: 3;
+    flex: 4;
     gap: 2rem;
 }
 
@@ -73,7 +73,7 @@
     color: var(--orange3);
 }
 
-.hero-text>div:nth-of-type(3) {
+.hero-text>div:nth-of-type(4) {
 
     color: var(--lightgrey1);
     font-size: 1.3rem;
@@ -194,8 +194,8 @@
 }
 .hero-adorno2{
     position: absolute;
-    width: 370px;
-    right: 8rem;
+    width: 150px;
+    right: 18rem;
     top: 13rem;
     z-index: 1;
 }

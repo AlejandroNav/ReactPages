@@ -8,9 +8,9 @@ const Reasons2 = () => {
     return (
         <div className='Programs' id='programs'>
             <div className="Programs-header">
-                <span className='stroke-text'> EXPERIENCIA 360 </span>
+                <span className='stroke-text-white'> EXPERIENCIA 360 </span>
                 <span className='orange'>  EXPERIENCIA 360 </span>
-                <span className='stroke-text'> EXPERIENCIA 360</span>
+                <span className='stroke-text-white'> EXPERIENCIA 360</span>
             </div>
             <div class="container">
                 <div class="card">

@@ -21,7 +21,7 @@ const Plans = () => {
                     <div className='plan-2' key={i}>
                         {plan.icon}
                         <span>{plan.name}</span>
-                        <span> ${plan.price}</span>
+                        <span> €{plan.price}</span>
                         <div className="features">
                             {plan.features.map((feature, i) => (
                                 <div className="feature" key={i}>
@@ -31,9 +31,9 @@ const Plans = () => {
                             ))}
                         </div>
                         <div>
-                            <span> See more benefits ➡️</span>
+                            <span> Mas información ➡️</span>
                         </div>
-                        <button className='hero-btn' style={{ backgroundColor: 'white', color: 'black' }}>Join Now</button>
+                        <button className='hero-btn' style={{ backgroundColor: 'white', color: 'black' }}>Unete</button>
                     </div>
                 ))}
             </div>

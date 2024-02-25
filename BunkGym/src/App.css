@@ -140,19 +140,18 @@ table {
 	font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0;
 	padding: 0;
-	--lightgrey1: #e6e6e6;
-	--gray2: #9c9c9c;
-	--orange3: #f48915;
-	--darkGrey4: #464646;
-	--darkerGrey5: #3a3a3a;
+	--lightgrey1: #ffffff;
+	--orange3: #707070;
+	--darkGrey4: #000000;
+	--darkerGrey5: #727272;
 	--caloryCard5: rgb(138, 133, 128);
 	--appColor6: #3c3f45;
-	--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+	--planCard: linear-gradient(210.41deg, #e7e7e7 1.14%, #272727 100.75%);
 }
 
 .stroke-text {
 	color: transparent;
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color:var(--orange3);
 }
 .stroke-text-white {

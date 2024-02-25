@@ -12,7 +12,7 @@ const Testimonials = () => {
             <div className="Testimonials">
                 <div className='Testimonials-left'>
                     <span>Testimonios</span>
-                    <span className='stroke-text'>Lo que dicen</span>
+                    <span className='stroke-text-white'>Lo que dicen</span>
                     <span>De nosotros</span>
                     <span>
                         {testimonialsData[selected].review}
