@@ -147,7 +147,7 @@ table {
 	--darkerGrey5: #3a3a3a;
 	--caloryCard5: rgb(138, 133, 128);
 	--appColor6: #3c3f45;
-	--planCard7: linear-gradient(210.41deg, #fa5043 1.14%, #ffa739 100.75%)
+	--planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
 }
 
 .stroke-text {

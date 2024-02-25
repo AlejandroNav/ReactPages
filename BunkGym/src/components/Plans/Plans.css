@@ -72,3 +72,12 @@
 .plans > :nth-child(2) >button{
     color: var(--orange3);
 }
+.plans-title{
+    display: flex;
+    align-items: space-around;
+    width: 60%;
+    justify-content: space-between;
+    gap: 4rem;
+    font-size: 3rem;
+    font-weight: 700;
+}

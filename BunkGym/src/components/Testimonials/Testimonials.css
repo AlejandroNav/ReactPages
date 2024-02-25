@@ -1,0 +1,98 @@
+.Testimonials-container{
+    padding :3rem 2rem;
+    background-color: var(--appColor6);
+    min-height: 30rem;
+}
+
+
+.Testimonials{
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: var(--appColor6);
+    
+}
+
+.Testimonials-left{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    gap: 1.8rem;
+    color: var(--lightgrey1);
+    text-transform: uppercase;
+    font-family: roboto;
+}
+
+.Testimonials-left>span:nth-of-type(1){
+    color: var(--orange3);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.Testimonials-left>span:nth-of-type(2){
+    font-size: 3rem;
+    font-weight: 700;
+}
+.Testimonials-left>span:nth-of-type(3){
+    font-size: 4rem;
+    color: var(--lightgrey1);
+    text-transform: none;
+    font-weight: 400;
+}
+
+.Testimonials-left>span:nth-of-type(4){
+    color: var(--lightgrey1);
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-family: roboto;
+    text-align: justify;
+    width: 90%;
+}
+.Testimonials-right{
+    flex: 1;
+    position: relative;
+    min-height: 27rem;
+}
+.Testimonials-right>img{
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+}
+.Testimonials-right>:nth-child(1){
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    background-color: transparent;
+    border: 3px solid var(--orange3);
+    border-radius: 3px;
+    top: 1rem;
+    right: 9rem;
+}
+.Testimonials-right>:nth-child(2){
+    width: 17rem;
+    height: 19rem;
+    position: absolute;
+    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+
+    border-radius: 3px;
+    top: 4rem;
+    right: 7rem;
+}
+.arrows img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+.arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 8rem;
+}
