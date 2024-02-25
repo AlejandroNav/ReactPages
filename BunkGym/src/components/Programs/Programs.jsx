@@ -4,9 +4,14 @@ const Programs = () => {
     return (
         <div className='Programs' id='programs'>
             <div className="Programs-header">
-                <span className='stroke-text-white'> Explora </span>
-                <span>  Nuestras </span>
-                <span className='stroke-text-white'> Opciones</span>
+                <span className='stroke-text-white'> ¿PARA QUIEN ES BUNKGYM?
+                </span>
+            </div>
+            <div className='program-subtitle'>
+                <p>Bunkgym es para los inconformistas, los deportistas, las personas que apuestan por tener un cuerpo saludable, para los que quieren cuidar de sus familias, empleados, alumnos o habitantes de su municipio.
+                </p>
+                <h3 className='orange'>Bunkgym es para todos. </h3>
+
             </div>
             <div class="container">
                 <div class="card">

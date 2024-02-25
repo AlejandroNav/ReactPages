@@ -1,0 +1,63 @@
+.planes-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkGrey4);
+    justify-content: center;
+    align-items: center;
+}
+
+.planes {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 7%;
+}
+
+.planes-features {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.planes-features div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.planes-features img {
+    width: 1.6rem;
+}
+.planes-features span {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+        background-color: var(--appColor6);
+    color: var(--lightgrey1);
+    padding: 1rem;
+    width: 25%;
+    min-height: 500px;
+}
+
+.plan h4 {
+    letter-spacing: 3px;
+    line-height: 1.2;
+    color: var(--lightgrey1);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.plan span {
+    color: var(--lightgrey1);
+}
+.plan-minortext{
+    color: var(--lightgrey1);
+    font-size: .8rem;
+}
