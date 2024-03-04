@@ -16,21 +16,19 @@ const Hero = ({ children, setCurrentPage }) => {
             <div className="hero-left">
                 <div className="hero-ad">
                     <div className='hero-ad-circle'></div>
-                    <span>Somos Fuerza. Somos Excelencia. Somos Sostenibilidad. </span>
+                    <span>Somos Fuerza. Somos Excelencia. Somos Sostenibilidad. Somos Innovación. Somos Salud.</span>
                 </div>
                 <div className="hero-text">
                     <div>
-                        <span className='hero-text-1'>SOMOS BUNKGYM</span> <span >Nacidos</span>
+                        <span className='stroke-text' >SOMOS BUNKGYM</span> <span >venimos</span>
                     </div>
                     <div>
-                        <span>para </span> <span className='stroke-text'>revolucionar</span>
-
-
+                        <span>a revolucionar</span> <span className='stroke-text'>el mundo</span>
                     </div>
                     <div>
-                        <span> el mundo del fitness</span>
+                        <span>del Deporte</span>
                     </div>
-                    <div>
+                    <div className='hero-text-p'>
                         <p>Somos una marca de fitness focalizada en diseñar, fabricar e instalar gimnasios portátiles integrados en contenedores de barco.</p>
                     </div>
                 </div>
@@ -59,19 +57,7 @@ const Hero = ({ children, setCurrentPage }) => {
 
             </div>
             <div className="hero-right">
-                <button className='hero-btn hero-btn-contact'>Contactanos</button>
-                <img src={adorno1} alt="" className='hero-adorno' />
-                <div className='hero-heart'>
-                    <img src={heart} alt="" className='hero-corazon' />
-                    <span>Heart Rate </span><span>130 BPM</span>
-                </div>
                 <img src={mantrans} alt="" className='hero-image' />
-                <div className='hero-calories'>
-                    <img className='hero-calories-img' src={calories} alt="" />
-                    <div className='hero-calories-text'>
-                        <span>Cambiar por renderizado del gym</span>
-                    </div>
-                </div>
             </div>
 
         </div>

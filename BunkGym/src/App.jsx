@@ -39,13 +39,13 @@ function App() {
           {/* Insert other components you want on the Particulares page */}
         </>
       )}
-      {currentPage === 'ayuntamientos' && (
+      {currentPage === 'crossfit' && (
         <>
           <Reasons2 />
           {/* Insert other components you want on the Ayuntamientos page */}
         </>
       )}
-      {currentPage === 'empresas' && (
+      {currentPage === 'gimnasios' && (
         <>
           <Reasons />
           <Planes />

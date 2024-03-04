@@ -9,10 +9,10 @@ const Header = ({ setCurrentPage }) => {
             <ul className='header-menu'>
                 <li onClick={() => setCurrentPage('home')}>Home</li>
                 <li onClick={() => setCurrentPage('quienesSomos')}>Quienes somos</li>
-                <li onClick={() => setCurrentPage('particulares')}>Particulares</li>
-                <li onClick={() => setCurrentPage('ayuntamientos')}>Ayuntamientos</li>
-                <li onClick={() => setCurrentPage('empresas')}>Empresas</li>
-                <li onClick={() => setCurrentPage('comunidades')}>Comunidades</li>
+                <li onClick={() => setCurrentPage('particulares')}>Tipos de Clientes</li>
+                <li onClick={() => setCurrentPage('crossfit')}>Bunkgyms</li>
+                <li onClick={() => setCurrentPage('gimnasios')}>Mas Bunkgym</li>
+                <li onClick={() => setCurrentPage('comunidades')}>Contacto</li>
                 
             </ul>
         </div>
