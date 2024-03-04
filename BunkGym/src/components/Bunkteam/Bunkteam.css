@@ -1,0 +1,72 @@
+.bunkteam-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    background-color: rgb(254, 243, 243);
+    min-height: 480px;
+    color: rgb(15, 12, 12);
+    padding-bottom: 1.5rem;
+}
+.bunkteam-title{
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+}
+.bunkteam-subtitle{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(102, 102, 102);
+    margin: 8px 15%;
+    line-height: 1.2;
+}
+.bunkteam-figures {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+.bunkteam-figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 190px;
+    text-align: center;
+}
+.bunkteam-figure > span {
+    height: 20px;
+    color: rgb(102, 102, 102);
+}
+
+.bunkteam-figure>span:nth-of-type(1) {
+    color: rgb(24, 24, 24);
+    font-size: 2rem;
+}
+.bunkteam-buttons{
+    display: flex;
+    gap: 1rem;
+}
+.bunkteam-figure {
+    transition: transform 0.3s ease-in-out;
+}
+
+.bunkteam-figure:hover {
+    transform: scale(1.2);
+}
+.bunkteam-button {
+    background-color: rgb(20, 19, 19);
+    color: var(--lightgrey1);
+    border: 4px solid transparent;
+    transition: 300ms all ;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    padding: 0.6rem 2rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+.bunkteam-button:hover{
+    border: 4px solid rgb(28, 26, 26);
+    background-color: transparent;
+    color: rgb(48, 46, 46);
+}

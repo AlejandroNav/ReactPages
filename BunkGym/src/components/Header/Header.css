@@ -4,7 +4,6 @@
     background-color: #1a1a1a;
     padding-left: 1rem;
     padding-right: 5rem;
-    padding-top: 1rem;
     
 }
 .logo{
@@ -19,8 +18,18 @@
     color: aliceblue;
 }
 .header-menu>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    padding: 0.5rem;
+    width: 8rem;
+    height: 80%;
+    border-radius: 0px;
+    font-size: 1.2 rem;
+    text-align: center;
 }
 .header-menu>li:hover{
     color: var(--orange3);
+    background-color: rgb(226, 226, 226);
 }

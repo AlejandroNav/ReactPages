@@ -1,0 +1,62 @@
+.card-section-360 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgb(254, 243, 243);
+}
+
+.cardTitle-360 {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    color: rgb(48, 46, 46);
+}
+
+.card-container-360 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 16px;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.card-360 {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #d6d5d5;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(39, 39, 39, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-360 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-360 h3,
+.card-360 p {
+    margin: 10px 0;
+    /* Adds a little space around text */
+}
+.card-360 h3{
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+}
+.card-360 p {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(98, 98, 98);
+}
+
+.dark-background {
+    background-color: rgb(20, 18, 18);
+    color: rgb(233, 233, 233);
+}
