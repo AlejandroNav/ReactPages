@@ -11,6 +11,10 @@ import Testimonials from './components/Testimonials/Testimonials'
 import Bunkteam from './components/Bunkteam/Bunkteam';
 import ImageSection from './components/ImageSection/ImageSection';
 import Experiencia360 from './components/Experiencia360/Experiencia360';
+import Paraquien from './components/Paraquien/Paraquien';
+import MasBunkgym from './components/MasBunkgym/MasBunkgym';
+import Call from './components/Call/Call';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -24,7 +28,10 @@ function App() {
           <Bunkteam />
           <ImageSection />
           <Experiencia360 />
-
+          <Paraquien />
+          <MasBunkgym />
+          <Call />
+          <Footer />
         </>
       )}
       {currentPage === 'quienesSomos' && (
@@ -32,14 +39,14 @@ function App() {
           <Hero />
           <Planes />
           <Plans />
-          {/* Insert other components you want on the Quienes somos page */}
+          <Footer />
         </>
       )}
       {currentPage === 'particulares' && (
         <>
           <Planes />
           <Testimonials />
-          {/* Insert other components you want on the Particulares page */}
+          <Footer />
         </>
       )}
       {currentPage === 'crossfit' && (
@@ -47,13 +54,14 @@ function App() {
           <Programs />
           <Reasons2 />
           <Reasons />
-          {/* Insert other components you want on the Ayuntamientos page */}
+          <Footer />
         </>
       )}
       {currentPage === 'gimnasios' && (
         <>
           <Reasons />
           <Planes />
+          <Footer />
           {/* Insert other components you want on the Empresas page */}
         </>)}
     </>

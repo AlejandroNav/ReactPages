@@ -41,7 +41,8 @@ const Experiencia360 = () => {
             <h2 className=' cardTitle-360'>Experiencia 360</h2>
             <div className='card-container-360'>
                 {cards.map((card, index) => (
-                    <div key={index} className={`card-360 ${card.specialStyle || ''}`}>
+                    <div key={index} className={`card-360
+                     ${card.specialStyle || ''}`}>
                         {card.type === 'text' ? (
                             <>
                                 <h3>{card.subtitle}</h3>

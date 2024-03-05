@@ -160,3 +160,24 @@ table {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #dbdbdb;
 }
+
+
+.blur{
+	position: absolute;
+	width: 22rem;
+	height: 14rem;
+	border-radius: 50%;
+	background: #a6a6a6;
+	filter: blur(172px);
+	z-index: -9;
+}
+
+.blur-dark{
+	position: absolute;
+	width: 22rem;
+	height: 14rem;
+	border-radius: 50%;
+	background: #870909;
+	filter: blur(272px);
+	z-index: -9;
+}

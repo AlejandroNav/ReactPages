@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 3rem;
     background-color: rgb(254, 243, 243);
 }
 
@@ -15,7 +15,8 @@
 
 .card-container-360 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* Creates 3 columns */
     gap: 16px;
     justify-content: center;
     padding: 2rem 0;
@@ -30,7 +31,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.5rem 1.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.card-360:hover {
+    transform: scale(1.15);
+    z-index: 2;
+    background-color: rgb(15, 15, 15);
+    color: rgb(203, 203, 203);
 }
 
 .card-360 img {
@@ -41,13 +51,16 @@
 
 .card-360 h3,
 .card-360 p {
-    margin: 10px 0;
+    margin: 13px 0;
+    margin-left: 15px;
     /* Adds a little space around text */
 }
-.card-360 h3{
+
+.card-360 h3 {
     font-family: 'Merriweather', serif;
     font-size: 2rem;
 }
+
 .card-360 p {
     font-family: 'roboto', sans-serif;
     font-size: 1.2rem;

@@ -1,0 +1,82 @@
+.paraquien-container {
+
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 15%;
+}
+
+.paraquien-title {
+    padding-top:3rem ;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+}
+
+.paraquien-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(202, 199, 199);
+    line-height: 1.4;
+}
+
+.paraquien-img-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.paraquien-text-sm {
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: center;
+}
+
+.paraquien-img-container img {
+    width: 250px;
+    height: 600px;
+    object-fit: cover;
+}
+.image-wrapper {
+    position: relative;
+    height: 550px; /* Adjust based on your preference */
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255); /* Choose text color that contrasts well with your images */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 2rem; /* Adjust based on your preference */
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-wrapper:hover .hover-text {
+    opacity: 1;
+}

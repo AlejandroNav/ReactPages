@@ -13,6 +13,8 @@ import mantrans from '../../assets/man-transparent.png'
 const Hero = ({ children, setCurrentPage }) => {
     return (
         <div className="hero">
+            <div className=' hero-blur'></div>
+            <div className=' hero-blur2'></div>
             <div className="hero-left">
                 <div className="hero-ad">
                     <div className='hero-ad-circle'></div>
