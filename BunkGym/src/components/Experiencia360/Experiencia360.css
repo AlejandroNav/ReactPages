@@ -1,3 +1,5 @@
+/* Experiencia360.css */
+
 .card-section-360 {
     display: flex;
     flex-direction: column;
@@ -7,40 +9,58 @@
     background-color: rgb(254, 243, 243);
 }
 
-.cardTitle-360 {
-    font-family: 'Merriweather', serif;
-    font-size: 4rem;
-    color: rgb(48, 46, 46);
-}
-
 .card-container-360 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Creates 3 columns */
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
     padding: 2rem 0;
 }
 
 .card-360 {
-    width: 600px;
-    height: 300px;
+    width: 650px;
+    height:370px;
     border: 1px solid #d6d5d5;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(39, 39, 39, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem 1.5rem;
     transition: all 0.4s ease-in-out;
+    position: relative;
 }
 
+.card-360 .card-front,
+.card-360 .card-back {
+    position: absolute;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
 
-.card-360:hover {
-    transform: scale(1.15);
-    z-index: 2;
-    background: rgb(43, 43, 43);
-background: linear-gradient(0deg, rgb(31, 31, 31) 18%, rgba(45,45,45,1) 68%);
+.card-360 .card-front{width: 100%;
+position: relative;}
+
+
+
+.card-360 .card-back {
+    transform: rotateY(180deg);
+    background-color: rgb(20, 18, 18);
+    color: rgb(233, 233, 233);
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 1.5rem 3rem;
+    
+}
+
+.card-360.is-flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.card-360.is-flipped .card-back {
+    transform: rotateY(0deg);
 }
 
 .card-360 img {
@@ -49,27 +69,33 @@ background: linear-gradient(0deg, rgb(31, 31, 31) 18%, rgba(45,45,45,1) 68%);
     object-fit: cover;
 }
 
-.card-360 h3,
-.card-360 p {
-    margin: 13px 0;
-    margin-left: 15px;
-    /* Adds a little space around text */
-}
 
 .card-360 h3 {
-    font-family: 'Merriweather', serif;
-    font-size: 2rem;
+    font-family: 'Anton', serif;
+    font-weight: 300;
+    font-style: oblique 14deg;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
 }
 
 .card-360 p {
     font-family: 'roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.5;
-    color: rgb(98, 98, 98);
 }
 
-.dark-background {
-    background-color: rgb(20, 18, 18);
-    color: rgb(233, 233, 233);
+.card-title-flipped {
+    text-align: center;
+    font-family: 'Anton', serif;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(225, 225, 225, 0.452);
+    z-index: 3;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: .6rem;
+    margin-left: 0;
 }

@@ -13,10 +13,12 @@
 
 .paraquien-title {
     padding-top:3rem ;
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: 'Merriweather', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'anton', serif;
+    font-style: oblique 14deg;
     letter-spacing: 3px;
+    -webkit-text-stroke-width: 1px;
 }
 
 .paraquien-text {
@@ -76,7 +78,12 @@
     text-align: center;
     padding: 10px;
 }
-
+.hover-text >p{
+    position: absolute;
+    left: 12rem;
+    transform: rotate(270deg);
+    font-size: 3rem;
+}
 .image-wrapper:hover .hover-text {
     opacity: 1;
 }

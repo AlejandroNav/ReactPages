@@ -33,14 +33,23 @@
     text-align: center;
 }
 .mas-bunkgym-list{
-    width: 80%;
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 1rem;
     font-size: 1.1rem;
+    min-height: 22rem;
 }
 .mas-bunkgym-item{
     font-weight: bold;
     color: #333;    
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.mas-bunkgym-plus{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
 }

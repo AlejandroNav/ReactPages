@@ -38,12 +38,14 @@
 }
 
 .call-title{
-    font-size: 4rem;
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
+    font-size: 5rem;
+    font-family: 'anton', serif;
+   
+    font-style: oblique 14deg;
+    letter-spacing: 3px;
 }
 
-.call-subtitle{
-    font-size: 2.5rem;
-    color: rgb(202, 199, 199);
+.call-text{
+    width: 70%;
+    text-align: center;
 }
