@@ -1,42 +1,65 @@
 .image-section {
-    padding: 5rem;
-    background-color: rgb(15, 12, 12);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.image-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(116, 116, 116, 1) 0%, rgba(31, 31, 31, 1) 35%, rgba(105, 105, 105, 1) 69%, rgba(38, 38, 38, 1) 100%);
+
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.image-section-2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+}
+.image-container2 {
+  display: flex;
+  position: relative;
+  width: 330px;
+  height: 640px;
+  overflow: hidden;
 }
 
-.image-container {
-    position: relative;
-    width: 200px;
-    height: 500px;
-    overflow: hidden;
-}
 .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .image-container:hover img {
-    transform: scale(1.1); /* Simple zoom effect on hover */
-  }
-  
-  .back-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease, visibility 0.5s;
-  }
-  
-  .image-container:hover .back-text {
-    visibility: visible;
-    opacity: 1;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  /* Simple zoom effect on hover */
+}
+
+.back-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.image-container:hover .back-text {
+  visibility: visible;
+  opacity: 1;
+}

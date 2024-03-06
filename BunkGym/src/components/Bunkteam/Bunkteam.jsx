@@ -2,14 +2,27 @@ import React from 'react'
 
 import NumberCounter from '../numberCounter/numberCounter'
 import "./Bunkteam.css"
+import adorno1 from '../../assets/adorno1.avif'
+import adorno2 from '../../assets/adorno2.avif'
+import adorno3 from '../../assets/adorno3.png'
 
 const Bunkteam = () => {
     return (
         <div className='bunkteam-container'>
-            <h2 className='bunkteam-title'>Bunkgym Team</h2>
+
+            <h2 className='bunkteam-title stroke-text-black-title'>
+                BUNKGYM TEAM
+                <img src={adorno2} alt="" className='bunkteam-adorno1' />
+                <img src={adorno1} alt="" className='bunkteam-adorno2' />
+                <img src={adorno3} alt="" className='bunkteam-adorno3' />
+            </h2>
+                <p className='bunkteam-subtitle'>Somos una marca de fitness focalizada en diseñar, fabricar e instalar gimnasios portátiles integrados en contenedores de barco.</p>
+
             <p className='bunkteam-subtitle'>Hemos llegado para dar solución a los problemas de los gimnasios convencionales,
                 mediante una experiencia más emocionante, flexible, personalizada, que ofrece la
-                libertad de entrenar en cualquier lugar siendo cualquier tipo de persona</p>
+                libertad de entrenar en cualquier lugar siendo cualquier tipo de persona.
+                <div className='bunkteam-blur'></div></p>
+                
             <div className="bunkteam-figures">
                 <div className="bunkteam-figure">
                     <span>+<NumberCounter endValue={30} /></span>
@@ -29,8 +42,7 @@ const Bunkteam = () => {
                 </div>
             </div>
             <div className="bunkteam-buttons">
-                <button className="bunkteam-button">Empieza ahora</button>
-                <button className="bunkteam-button">Conoce más</button>
+                <button className="bunkteam-button">Conocenos más</button>
             </div>
         </div>
     )

@@ -1,9 +1,10 @@
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: #1a1a1a;
+    background-color: #000000;
     padding-left: 1rem;
     padding-right: 5rem;
+    padding-bottom: .5rem;
     
 }
 .logo{
@@ -30,6 +31,6 @@
     text-align: center;
 }
 .header-menu>li:hover{
-    color: var(--orange3);
+    color: black;
     background-color: rgb(226, 226, 226);
 }

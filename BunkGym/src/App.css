@@ -157,11 +157,24 @@ table {
 }
 .stroke-text-white {
 	color: transparent;
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #dbdbdb;
 }
-
-
+.stroke-text-black {        
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #141414;
+}
+.stroke-text-black-title {    
+	font-family: 'Anton', serif;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    font-style: oblique 14deg;
+	font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #141414;
+}
 .blur{
 	position: absolute;
 	width: 22rem;

@@ -1,7 +1,6 @@
 .mas-bunkgym-container {
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to top, #808080 0%, #ffffff 10%);
     padding: 2rem 20%;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;

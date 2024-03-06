@@ -4,15 +4,18 @@
     justify-content:  space-around;
     align-items: center;
     background-color: rgb(254, 243, 243);
-    min-height: 480px;
+    min-height: 580px;
     color: rgb(15, 12, 12);
-    padding-bottom: 1.5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden; 
 }
 .bunkteam-title{
-    font-family: 'Merriweather', serif;
-    font-size: 4rem;
+    position: relative;
 }
 .bunkteam-subtitle{
+    position: relative;
     font-size: 1.5rem;
     font-style: italic;
     color: rgb(102, 102, 102);
@@ -25,12 +28,14 @@
     align-items: center;
     justify-content: space-around;
     width: 80%;
+    z-index: 1;
+    padding-bottom: 3rem;
 }
 .bunkteam-figure{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
     width: 190px;
     text-align: center;
 }
@@ -41,7 +46,11 @@
 
 .bunkteam-figure>span:nth-of-type(1) {
     color: rgb(24, 24, 24);
-    font-size: 2rem;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Anton', serif;
+    letter-spacing: 4px;
+    
 }
 .bunkteam-buttons{
     display: flex;
@@ -64,9 +73,37 @@
     padding: 0.6rem 2rem;
     font-weight: bolder;
     margin-top: 1rem;
+    z-index: 2;
 }
 .bunkteam-button:hover{
     border: 4px solid rgb(28, 26, 26);
-    background-color: transparent;
+    background-color: white;
     color: rgb(48, 46, 46);
+}
+
+
+.bunkteam-adorno1{
+    position: absolute;
+    width: 100%;
+    top: -10rem;
+    left:37rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.bunkteam-adorno2{
+    position: absolute;
+    width: 100%;
+    top: 29rem;
+    left:0rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.bunkteam-adorno3{
+    transform: rotate(90deg);
+    position: absolute;
+    width: 50%;
+    top: 10rem;
+    left:-34rem;
+    z-index: 1;
+    overflow: hidden;
 }

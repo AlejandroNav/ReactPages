@@ -15,7 +15,7 @@
 
 .card-container-360 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* Creates 3 columns */
     gap: 16px;
     justify-content: center;
@@ -23,8 +23,8 @@
 }
 
 .card-360 {
-    width: 300px;
-    height: 400px;
+    width: 600px;
+    height: 300px;
     border: 1px solid #d6d5d5;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(39, 39, 39, 0.2);
@@ -39,8 +39,8 @@
 .card-360:hover {
     transform: scale(1.15);
     z-index: 2;
-    background-color: rgb(15, 15, 15);
-    color: rgb(203, 203, 203);
+    background: rgb(43, 43, 43);
+background: linear-gradient(0deg, rgb(31, 31, 31) 18%, rgba(45,45,45,1) 68%);
 }
 
 .card-360 img {
