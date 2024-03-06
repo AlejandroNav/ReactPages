@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import image1 from '../../assets/gym1.avif';
-import image2 from '../../assets/gym2.avif';
-import image3 from '../../assets/gym3.avif';
-import image4 from '../../assets/gym4.avif';
+import adorno1 from '../../assets/adorno1.avif'
+import adorno2 from '../../assets/adorno2.avif'
+import adorno3 from '../../assets/adorno3.png'
 import marca from '../../assets/marca.png';
 import design from '../../assets/design.png';
 import fabricante from '../../assets/fabricante.png';
@@ -55,6 +54,10 @@ const Experiencia360 = () => {
 
     return (
         <div className="card-section-360">
+            <img src={adorno1} className='card-adorno1 card-adornos' />
+            <img src={adorno1} className='card-adorno4 card-adornos' />
+            <img src={adorno2} className='card-adorno2 card-adornos' />
+            <img src={adorno3} className='card-adorno3 card-adornos' />
             <h2 className='stroke-text-black-title'>Experiencia 360</h2> 
             <div className='card-container-360'>
                 {cards.map((card, index) => (
