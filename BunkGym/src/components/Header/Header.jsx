@@ -10,12 +10,24 @@ const Header = () => {
                 <img src={LogoWhite} alt="Bunkgym Logo" className="logo" />
             </Link>
             <ul className='header-menu'>
-                <li className='header-menu-item'><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} >Home</Link></li>
-                <li className='header-menu-item'><Link to="/quienesSomos" style={{ textDecoration: 'none', color: 'inherit' }}>Quienes somos</Link></li>
-                <li className='header-menu-item'><Link to="/particulares" style={{ textDecoration: 'none', color: 'inherit' }}>Particulares</Link></li>
-                <li className='header-menu-item'><Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>Crossfit</Link></li>
-                <li className='header-menu-item'><Link to="/gimnasios" style={{ textDecoration: 'none', color: 'inherit' }}>Gimnasios</Link></li>
-                <li className='header-menu-item'><Link to="/comunidades" style={{ textDecoration: 'none', color: 'inherit' }}>Comunidades</Link></li>
+                <Link to="/"  style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <li className='header-menu-item header-menu-item-text' >Home</li>
+                </Link>
+                <Link to="/quienesSomos"  style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <li className='header-menu-item header-menu-item-text'>Quienes somos</li>
+                </Link>
+                <Link to="/particulares"  style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <li className='header-menu-item  header-menu-item-text'>Particulares</li>
+                </Link>
+                <Link to="/crossfit"  style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <li className='header-menu-item  header-menu-item-text'>Crossfit</li>
+                </Link>
+                <Link to="/gimnasios"  style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <li className='header-menu-item  header-menu-item-text'>Gimnasios</li>
+                </Link>
+                <Link to="/comunidades"  style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <li className='header-menu-item header-menu-item-text'>Comunidades</li>
+                </Link>
             </ul>
         </div>
     );
