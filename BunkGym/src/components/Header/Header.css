@@ -25,7 +25,7 @@
     justify-content: center;
     cursor: pointer;
     padding: 0.5rem;
-    width: 8rem;
+    width: 9rem;
     height: 4.8rem;
     border-radius: 0px;
     font-size: 1.2 rem;
@@ -34,7 +34,7 @@
 }
 .header-menu-item:hover{
     color: black;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
 }
 .header-menu-item {
     text-decoration: none; /* Remove underline */
@@ -42,13 +42,9 @@
 }
 
 .header-menu-item-text{
-    text-decoration: none; /* Remove underline */
-    color: rgb(252, 252, 252); /* Inherit text color from parent */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-    font-family: roboto;
     letter-spacing: 1px;
-    text-decoration: none; /* Remove underline */
 }

@@ -13,11 +13,11 @@ const Header = () => {
                 <img src={LogoWhite} alt="Bunkgym Logo" className="logo" />
             </div>
             <ul className='header-menu'>
-                <li className='header-menu-item' onClick={() => navigateTo('/')}>Home</li>
-                <li className='header-menu-item' onClick={() => navigateTo('/quienesSomos')}>Quienes somos</li>
-                <li className='header-menu-item' onClick={() => navigateTo('/particulares')}>Tipos de Clientes</li>
-                <li className='header-menu-item' onClick={() => navigateTo('/crossfit')}>Bunkgyms</li>
-                <li className='header-menu-item' onClick={() => navigateTo('/gimnasios')}>Mas Bunkgym</li>
+                <li className='header-menu-item' onClick={() => navigateTo('/')}><p className='header-menu-item-text'>Home</p></li>
+                <li className='header-menu-item' onClick={() => navigateTo('/quienesSomos')}><p className='header-menu-item-text'>Quienes somos</p></li>
+                <li className='header-menu-item' onClick={() => navigateTo('/particulares')}> <p className='header-menu-item-text'>Particulares</p> </li>
+                <li className='header-menu-item' onClick={() => navigateTo('/crossfit')}> <p className='header-menu-item-text'>Crossfit</p></li>
+                <li className='header-menu-item' onClick={() => navigateTo('/gimnasios')}> <p className='header-menu-item-text'>Gimnasios</p> </li>
                 <li className='header-menu-item' onClick={() => navigateTo('/comunidades')}><p className='header-menu-item-text'>Comunidades</p></li>
             </ul>
         </div>

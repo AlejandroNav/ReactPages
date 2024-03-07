@@ -51,9 +51,8 @@ function Home() {
 function QuienesSomos() {
   return (
     <>
-      <Hero />
-      <Planes />
-      <Plans />
+      <Bunkteam />
+      <Call />
     </>
   );
 }
