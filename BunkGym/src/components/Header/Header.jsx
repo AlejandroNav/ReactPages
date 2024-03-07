@@ -1,24 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoWhite from '../../assets/bunk-white.avif';
 import './Header.css';
 
 const Header = () => {
-    const navigateTo = (path) => {
-        window.location.href = path; // Navigate to the specified path
-    };
-
     return (
         <div className='header'>
-            <div className="logo-link" onClick={() => navigateTo('/')}>
+            <Link to="/" className="logo-link">
                 <img src={LogoWhite} alt="Bunkgym Logo" className="logo" />
-            </div>
+            </Link>
             <ul className='header-menu'>
-                <li className='header-menu-item' onClick={() => navigateTo('/')}><p className='header-menu-item-text'>Home</p></li>
-                <li className='header-menu-item' onClick={() => navigateTo('/quienesSomos')}><p className='header-menu-item-text'>Quienes somos</p></li>
-                <li className='header-menu-item' onClick={() => navigateTo('/particulares')}> <p className='header-menu-item-text'>Particulares</p> </li>
-                <li className='header-menu-item' onClick={() => navigateTo('/crossfit')}> <p className='header-menu-item-text'>Crossfit</p></li>
-                <li className='header-menu-item' onClick={() => navigateTo('/gimnasios')}> <p className='header-menu-item-text'>Gimnasios</p> </li>
-                <li className='header-menu-item' onClick={() => navigateTo('/comunidades')}><p className='header-menu-item-text'>Comunidades</p></li>
+                <li className='header-menu-item'><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} >Home</Link></li>
+                <li className='header-menu-item'><Link to="/quienesSomos" style={{ textDecoration: 'none', color: 'inherit' }}>Quienes somos</Link></li>
+                <li className='header-menu-item'><Link to="/particulares" style={{ textDecoration: 'none', color: 'inherit' }}>Particulares</Link></li>
+                <li className='header-menu-item'><Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>Crossfit</Link></li>
+                <li className='header-menu-item'><Link to="/gimnasios" style={{ textDecoration: 'none', color: 'inherit' }}>Gimnasios</Link></li>
+                <li className='header-menu-item'><Link to="/comunidades" style={{ textDecoration: 'none', color: 'inherit' }}>Comunidades</Link></li>
             </ul>
         </div>
     );
