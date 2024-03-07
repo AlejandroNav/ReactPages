@@ -29,14 +29,16 @@ const Paraquien = () => {
             <ul className="paraquien-img-container">
                 {images.map((image, index) => (
                     <li key={index}
+
                         onMouseEnter={() => setHoveredImage(index)}
                         onMouseLeave={() => setHoveredImage(null)}
                         className="image-wrapper">
+                        <p className='hover-text'>{image.text}</p>
                         <img src={image.src} alt="" style={{
                             width: hoveredImage === index ? '400px' : '200px',
                             transition: 'width 0.3s ease'
                         }} />
-                        {hoveredImage === index && <div className="hover-text"><p>{image.text}</p></div>}
+                        <div className=""></div>
                     </li>
                 ))}
             </ul>

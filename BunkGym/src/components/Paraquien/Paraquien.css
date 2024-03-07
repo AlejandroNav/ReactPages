@@ -12,7 +12,7 @@
 }
 
 .paraquien-title {
-    padding-top:3rem ;
+    padding-top: 3rem;
     font-size: 5rem;
     font-weight: 600;
     font-family: 'anton', serif;
@@ -41,14 +41,16 @@
 }
 
 .paraquien-img-container img {
-    width: 250px;
+    width: 200px;
     height: 600px;
     object-fit: cover;
 }
+
 .image-wrapper {
     position: relative;
-    height: 550px; /* Adjust based on your preference */
+    height: 650px;
     overflow: hidden;
+    
 }
 
 .image-wrapper img {
@@ -56,34 +58,49 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    
 }
-
-.hover-text {
+.image-wrapper:before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    opacity: .5;
+}
+
+.image-wrapper:hover:before {
+    opacity: 1;
+}
+
+.image-wrapper:hover .hover-text {
+    opacity: 1;
+}
+
+.hover-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255); /* Choose text color that contrasts well with your images */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    font-size: 2rem; /* Adjust based on your preference */
+    transition: all 0.3s ease;
+    font-size: 2.6rem;
     font-weight: 600;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-align: center;
-    padding: 10px;
+    transform: rotate(270deg); 
+    
+    white-space: nowrap; /* Prevent text from wrapping */
 }
-.hover-text >p{
-    position: absolute;
-    left: 12rem;
-    transform: rotate(270deg);
-    font-size: 3rem;
-}
+
 .image-wrapper:hover .hover-text {
     opacity: 1;
+    
 }
