@@ -1,0 +1,81 @@
+.carousel {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    min-height: 400px;
+    background-color: #191919;
+    color: #fff;
+    position: relative;
+    
+}
+
+.carousel-slide {
+    padding: 20px;
+    text-align: center;
+}
+.carousel-title {
+    
+    font-style: oblique 14deg;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'anton', sans-serif;
+    letter-spacing: 3px;
+
+}
+.carousel-content {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(202, 199, 199);
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    width: 70%;
+
+}
+.carousel-slide-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+    min-height: 200px;
+}
+.carousel-buttons {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+    justify-content: center;
+}
+.prev, .next {
+    padding: .7rem 4rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 4px;
+    font-style: italic;
+    width: 15rem;
+}
+
+.prev:hover, .next:hover {
+    background-color: #5f5f5f;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

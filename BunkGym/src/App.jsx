@@ -15,6 +15,10 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Programs from './components/Programs/Programs';
 import Reasons from './components/Reasons/Reasons';
 import Reasons2 from './components/Reasons2/Reasons2';
+import Bunkgreen from './components/Bunkgreen/Bunkgreen';
+import Quienes from './components/Quienes/Quienes';
+import Carousel from './components/Carousel/Carousel';
+import Idea from './components/Idea/Idea';
 
 function App() {
   return (
@@ -42,6 +46,7 @@ function Home() {
       <ImageSection />
       <Experiencia360 />
       <Paraquien />
+      <Bunkgreen />
       <MasBunkgym />
       <Call />
     </>
@@ -51,7 +56,10 @@ function Home() {
 function QuienesSomos() {
   return (
     <>
+      <Quienes />
       <Bunkteam />
+      <Carousel/>
+      <Idea/>
       <Call />
     </>
   );

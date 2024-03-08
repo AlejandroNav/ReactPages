@@ -1,0 +1,37 @@
+.quienes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../assets/reason2.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.quienes-title {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+
+    font-size: 5rem;
+    font-family: 'anton', serif;
+    font-style: oblique 14deg;
+    letter-spacing: 3px;
+    width: 76%;
+
+}
+
+.quienes-title-container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

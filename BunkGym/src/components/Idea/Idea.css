@@ -1,0 +1,33 @@
+.idea-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.idea-text {
+    width: 50%;
+    padding: 3rem;
+}
+
+
+.infographic img {
+    width: 80%;
+}
+.idea-title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'anton', serif;
+    letter-spacing: 4px;
+    font-style: italic;
+}
+.idea-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: #696969;
+    font-style: italic;
+}
