@@ -14,7 +14,7 @@ const Header = () => {
                     <li className='header-menu-item header-menu-item-text' >Home</li>
                 </Link>
                 <Link to="/quienesSomos"  style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <li className='header-menu-item header-menu-item-text'>Quienes somos</li>
+                    <li className='header-menu-item header-menu-item-text'>Nosotros</li>
                 </Link>
                 <Link to="/particulares"  style={{ textDecoration: 'none', color: 'inherit' }}>
                     <li className='header-menu-item  header-menu-item-text'>Particulares</li>

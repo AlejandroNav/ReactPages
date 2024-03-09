@@ -1,0 +1,51 @@
+.hacemos-container {
+    padding: 4rem 2rem;
+    display: flex;
+    gap: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(231, 231, 231);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hacemos-title{
+    font-family: 'Anton', serif;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    font-style: oblique 14deg;
+	font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+.hacemos-text{
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: rgb(180, 180, 180);
+    max-width: 75%;
+    text-align: center;
+    
+}
+.lineas-negocio{
+    display: flex;
+    gap: 5rem;
+}
+.linea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(180, 180, 180);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 15rem;
+    margin: 0 auto;
+
+}
+.linea-icon{
+    width: 8rem;
+    height: 8rem;
+}

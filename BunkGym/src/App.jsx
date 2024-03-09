@@ -19,6 +19,7 @@ import Bunkgreen from './components/Bunkgreen/Bunkgreen';
 import Quienes from './components/Quienes/Quienes';
 import Carousel from './components/Carousel/Carousel';
 import Idea from './components/Idea/Idea';
+import Hacemos from './components/Hacemos/Hacemos';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function QuienesSomos() {
       <Bunkteam />
       <Carousel/>
       <Idea/>
+      <Hacemos/>
       <Call />
     </>
   );
