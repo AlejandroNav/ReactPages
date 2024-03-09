@@ -1,0 +1,72 @@
+.fabrica-container {
+    color: white;
+    background-color: black;
+    padding: 4rem 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fabrica-title {
+    /* Add any specific styles for the title if needed */
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'anton', serif;
+    font-style: oblique 14deg;
+    letter-spacing: 3px;
+    
+}
+
+.fabrica-text {
+    /* Add any specific styles for the text if needed */
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(202, 199, 199);
+    line-height: 1.4;
+    
+}
+
+.fabrica-img-container {
+    width: 45%;
+    margin: 1rem 0;
+    position: relative;
+    
+}
+
+.fabrica-img {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    position: relative;
+    border-radius: 5px;
+
+}
+.fabrica-img-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+.fabrica-frame{
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.fabrica-frame2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 1;
+    background: linear-gradient(210.41deg, #f0f0f0db 1.14%, #333333 100.75%);
+    border-radius: 5px;
+}

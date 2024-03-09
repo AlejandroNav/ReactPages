@@ -1,0 +1,53 @@
+
+.nuestro-equipo-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+    gap: 2rem;
+}
+.nuestro-equipo-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 13%;
+    height: 300px;
+}
+.nuestro-equipo-lista{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.nuestro-equipo-imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nuestro-equipo-nombre{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.nuestro-equipo-titulo{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.nuestro-equipo-text    {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #777777;
+}

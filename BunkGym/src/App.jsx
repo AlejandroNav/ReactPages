@@ -20,6 +20,9 @@ import Quienes from './components/Quienes/Quienes';
 import Carousel from './components/Carousel/Carousel';
 import Idea from './components/Idea/Idea';
 import Hacemos from './components/Hacemos/Hacemos';
+import Clientes from './components/Clientes/Clientes';
+import NuestraFabrica from './components/NuestraFabrica/NuestraFabrica';
+import NuestroEquipo from './components/NuestroEquipo/NuestroEquipo';
 
 function App() {
   return (
@@ -62,7 +65,10 @@ function QuienesSomos() {
       <Carousel/>
       <Idea/>
       <Hacemos/>
-      
+      <Clientes/>
+      <NuestraFabrica/>
+      <NuestroEquipo/>
+      <Bunkgreen />
       <Call />
     </>
   );

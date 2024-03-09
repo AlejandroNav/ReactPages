@@ -48,7 +48,7 @@
 
 .image-wrapper {
     position: relative;
-    height: 650px;
+    height: 750px;
     overflow: hidden;
     
 }
@@ -60,44 +60,26 @@
     transition: transform 0.3s ease;
     
 }
-.image-wrapper:before {
-    content: '';
+
+.hover-text {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    opacity: .5;
-}
-
-.image-wrapper:hover:before {
-    opacity: 1;
-}
-
-.image-wrapper:hover .hover-text {
-    opacity: 1;
-}
-
-.hover-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(255, 255, 255);
+    opacity: 1;
     transition: all 0.3s ease;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 600;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-align: center;
-    transform: rotate(270deg); 
-    
-    white-space: nowrap; /* Prevent text from wrapping */
+    transform: rotate(270deg);
+    white-space: nowrap
 }
 
 .image-wrapper:hover .hover-text {

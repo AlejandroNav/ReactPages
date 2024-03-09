@@ -1,0 +1,96 @@
+.clientes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    gap: 2rem;
+    padding: 0 15%;
+    position: relative;
+    overflow: hidden;
+}
+.clientes-title {
+    padding-top: 4.8rem;
+    font-size: 5rem;
+    font-weight: 200;
+    font-family: 'anton', serif;
+    font-style: oblique 14deg;
+    letter-spacing: 3px;
+    color: black;
+}
+.clientes-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(43, 43, 43);
+}
+.clientes-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.clientes-img-container img {
+    width: 200px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.clientes-img-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.469); /* Black with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+.overlay-text {
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    rotate: 270deg;
+    font-family: 'Anton', sans-serif;
+    white-space: nowrap
+}
+
+.adorno1 {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+
+.adorno2 {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.adorno3 {
+    position: absolute;
+    top: 60%;
+    left: -10%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
