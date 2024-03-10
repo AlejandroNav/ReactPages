@@ -1,0 +1,38 @@
+.bunkgym-razones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 3rem;
+    
+}
+
+.razones-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    /* Ajusta según necesites */
+}
+
+.bunkgym-razones-title  {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    font-style: oblique 14deg;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+
+}
+.razones{
+    font-size: 2rem;
+    color: #525252;
+}

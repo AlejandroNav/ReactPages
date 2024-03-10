@@ -3,7 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    position: relative;
+    
+    overflow: hidden;
 }
 .carrusel-container {
     display: flex;
@@ -12,16 +16,48 @@
     width: 50%;
     height: 60vh; /* Ajusta la altura según tus necesidades */x;
     position: relative;
-    overflow: hidden;
-}
-
-.carrusel-img {
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+.carrusel-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -15px; /* Adjust as necessary */
+    left: -15px; /* Adjust as necessary */
+    background: linear-gradient(to bottom, #c5c5c5, #000000);
+    z-index: -1;
+    pointer-events: none; /* Makes the frame click-through */
+}
+.carrusel-frame2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15px; /* Adjust as necessary */
+    left: 15px; /* Adjust as necessary */
+    border: #000000 1px solid;
+    background: linear-gradient(to bottom, #ffffff, #bcbcbc);
+    z-index: -2;
+    pointer-events: none; /* Makes the frame click-through */
+}
+.carrusel-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+.carrousel-adorno1 {
+    position: absolute;
+    width: 500px;
+    left: 76%;
+    top: 60%;
+}
+.carrousel-adorno2 {
+    position: absolute;
+    width: 300px;
+    left: 5%;
+}
 .carrusel-arrow {
     position: absolute;
     top: 50%;
@@ -51,6 +87,9 @@
     position: absolute;
     bottom: 10px;
     overflow: hidden;
+    background-color: #0000004d;
+    padding: .5rem;
+    border-radius: 5px;
 
 }
 .carrusel-dot{
@@ -59,8 +98,8 @@
     border-radius: 2px;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    background-color: rgb(71, 71, 71);
     margin: 0 0.4rem;
     cursor: pointer;
 }
@@ -69,7 +108,7 @@
     cursor: pointer;
 }
 .active{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
 }
 /* New styles for animation */
 .carrusel-container.animate-enter {

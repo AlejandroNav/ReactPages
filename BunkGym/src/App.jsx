@@ -24,6 +24,8 @@ import Clientes from './components/Clientes/Clientes';
 import NuestraFabrica from './components/NuestraFabrica/NuestraFabrica';
 import NuestroEquipo from './components/NuestroEquipo/NuestroEquipo';
 import Particular from './components/Particular/Particular';
+import Elige from './components/Elige/Elige';
+import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
 
 function App() {
   return (
@@ -79,6 +81,8 @@ function Particulares() {
   return (
     <>
       <Particular />
+      <Elige/>
+      <BunkGymRazones />
       <Bunkgreen />
       <Bunkgreen />
       <Call />

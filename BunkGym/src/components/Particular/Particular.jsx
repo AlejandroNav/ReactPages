@@ -7,6 +7,7 @@ import blanco from '../../assets/blancoGym.jpeg';
 import imagen11 from '../../assets/11.png';
 import imagen12 from '../../assets/12.png';
 import gymrender    from '../../assets/marca.png';
+import outside2    from '../../assets/outside2.avif';
 
 import './Particular.css'
 const Particular = () => {
@@ -45,9 +46,10 @@ const Particular = () => {
     return (
         <div className='particular'>
             <div className='particular-container'>
-                <h1 className='particular-title'>Particulares</h1>
+                <h1 className='particular-title' style={{ backgroundImage: `url(${outside2})` }}>Particulares</h1>
+                <div className='particular-text-container'>                    <p className='particular-text'>¿Imaginas tener tu gimnasio en casa 100% personalizado y adaptado a ti y a tu familia? Bunkgym lo hace posible. </p>
+ </div>
                 <div className='particular-text-container'>
-                    <p className='particular-text'>¿Imaginas tener tu gimnasio en casa 100% personalizado y adaptado a ti y a tu familia? Bunkgym lo hace posible. </p>
                     <p className='particular-text'>Se dueño de tu propio gimnasio, creado por tus propias reglas. No tendrás que lidiar con gimnasios convencionales abarrotados de gente, aguantando el ambiente sudoroso y asfixiante y preocupándote por las medidas sanitarias del espacio.  </p>
                 </div>
             </div>

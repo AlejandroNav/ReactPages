@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Carruseles.css';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import adorno from '../../assets/adorno1.avif';
+import adorno2 from '../../assets/adorno2.avif';
 
 const Carruseles = ({ data }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,7 +23,11 @@ const Carruseles = ({ data }) => {
 
     return (
         <div className='outer-container'>
+            <div><img src={adorno} alt="adorno" className='carrousel-adorno1' /></div>
+            <div><img src={adorno2} alt="adorno" className='carrousel-adorno2' /></div>
             <div className='carrusel-container'>
+            <div className='carrusel-frame'></div>
+            <div className='carrusel-frame2'></div>
                 <BsArrowLeftShort className='carrusel-arrow arrow-left' onClick={prevSlide} />
                 <img src={data.slides[currentSlide].src} alt={data.slides[currentSlide].alt} className='carrusel-img' />
                 <BsArrowRightShort className='carrusel-arrow arrow-right' onClick={nextSlide} />
