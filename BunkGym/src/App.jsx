@@ -23,6 +23,7 @@ import Hacemos from './components/Hacemos/Hacemos';
 import Clientes from './components/Clientes/Clientes';
 import NuestraFabrica from './components/NuestraFabrica/NuestraFabrica';
 import NuestroEquipo from './components/NuestroEquipo/NuestroEquipo';
+import Particular from './components/Particular/Particular';
 
 function App() {
   return (
@@ -62,12 +63,12 @@ function QuienesSomos() {
     <>
       <Quienes />
       <Bunkteam />
-      <Carousel/>
-      <Idea/>
-      <Hacemos/>
-      <Clientes/>
-      <NuestraFabrica/>
-      <NuestroEquipo/>
+      <Carousel />
+      <Idea />
+      <Hacemos />
+      <Clientes />
+      <NuestraFabrica />
+      <NuestroEquipo />
       <Bunkgreen />
       <Call />
     </>
@@ -77,8 +78,10 @@ function QuienesSomos() {
 function Particulares() {
   return (
     <>
-      <Planes />
-      <Testimonials />
+      <Particular />
+      <Bunkgreen />
+      <Bunkgreen />
+      <Call />
     </>
   );
 }
@@ -98,6 +101,11 @@ function Gimnasios() {
     <>
       <Reasons />
       <Planes />
+      <Programs />
+      <Reasons2 />
+      <Planes />
+      <Planes />
+      <Testimonials />
     </>
   );
 }

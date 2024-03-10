@@ -1,0 +1,103 @@
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.carrusel-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    height: 60vh; /* Ajusta la altura según tus necesidades */x;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrusel-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #000000;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    border-radius: 50%;
+}
+.carrusel-arrow:hover {
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+.arrow-left {
+    left: 2rem;
+}
+.arrow-right {
+    right: 2rem;
+}
+.carrusel-indicators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    overflow: hidden;
+
+}
+.carrusel-dot{
+    width: 35px; /* Adjust as necessary */
+    height: 9px; /* Adjust as necessary */
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+.carrusel-dot:hover{
+    background-color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(0, 0, 0);
+}
+/* New styles for animation */
+.carrusel-container.animate-enter {
+    animation: slideIn 0.5s forwards;
+}
+
+.carrusel-container.animate-exit {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
