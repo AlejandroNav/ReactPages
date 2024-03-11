@@ -1,5 +1,5 @@
 .mas-bunkgym-container {
-    background-image: linear-gradient(to top, #808080 0%, #ffffff 10%);
+    background-image: linear-gradient(to top, #3e3e3e 10%, #bdbdbd 100%);
     padding: 2rem 20%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -10,7 +10,6 @@
 
 
 .mas-bunkgym-container p {
-    color: #666;
     /* Lighter grey color for paragraphs */
     line-height: 1.6;
     margin-bottom: 16px;
@@ -24,6 +23,7 @@
     margin-bottom: 12px;
     color: #000000;
 }
+
 .mas-bunkgym-subtitle {
     font-size: 1.5rem;
     font-family: 'Merriweather', serif;
@@ -32,7 +32,8 @@
     color: #000000;
     text-align: center;
 }
-.mas-bunkgym-list{
+
+.mas-bunkgym-list {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -40,9 +41,10 @@
     font-size: 1.1rem;
     min-height: 22rem;
 }
-.mas-bunkgym-item{
+
+.mas-bunkgym-item {
     font-weight: bold;
-    color: #333;    
+    color: #070707;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -50,22 +52,32 @@
     background-color: rgb(235, 235, 235);
 }
 
-.mas-bunkgym-plus{
+.mas-bunkgym-plus {
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 1rem;
 }
-.mas-bunkgym-wrapper{
+
+.mas-bunkgym-wrapper {
     display: flex;
     align-items: start;
     gap: 1rem;
 }
-.mas-bunkgym-list{
+
+.mas-bunkgym-list {
     flex: 1 1;
 }
-.mas-bunkgym-img{
+
+.mas-bunkgym-img {
     flex: 1 1;
     width: 50%;
     height: 400px;
     object-fit: cover;
+}
+
+.mas-bunkgym-text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000000;
+    font-style: italic;
 }

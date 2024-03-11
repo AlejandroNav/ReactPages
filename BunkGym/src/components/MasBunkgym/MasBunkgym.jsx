@@ -33,7 +33,7 @@ const MasBunkgym = () => {
     return (
         <div className="mas-bunkgym-container">
             <h2 className='stroke-text-black-title'>MÁS BUNGYM</h2>
-            <p className='paraquien-text'>No solo hacemos gimnasios en contenedores de barco. Ofrecemos todas las soluciones fitness desde un mismo lugar.</p>
+            <p className='mas-bunkgym-text'>No solo hacemos gimnasios en contenedores de barco. Ofrecemos todas las soluciones fitness desde un mismo lugar.</p>
 
             <div className='mas-bunkgym-wrapper'>
                 <img src={gymrender} className='mas-bunkgym-img' />
@@ -45,7 +45,7 @@ const MasBunkgym = () => {
                                 {item.title}
                             </h3>
                             {expandedItem === index && (
-                                <p className='paraquien-text'>{item.content} </p>
+                                <p className='mas-bunkgym-text'>{item.content} </p>
 
                             )}
                         </React.Fragment>

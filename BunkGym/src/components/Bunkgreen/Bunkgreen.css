@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(15, 15, 15);
-    color: azure;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1rem;
 }
 .bunkgreen-container {
@@ -20,13 +20,13 @@
 .bunkgreen-subtitle {
     font-size: 2rem;
     font-style: italic;
-    color: rgb(202, 199, 199);
+    color: rgb(56, 56, 56);
         
 }
 .bunkgreen-content {
     font-size: 1.5rem;
     font-style: italic;
-    color: rgb(202, 199, 199);
+    color: rgb(48, 48, 48);
     line-height: 1.2;
 }
 .bunkgreen-title {
@@ -36,8 +36,8 @@
     font-style: oblique 14deg;
     letter-spacing: 7px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #cdff04;
-    color: rgba(44, 255, 54, 0);
+    -webkit-text-stroke-color: #add900;
+    color: rgba(204, 204, 204, 0);
 
 }
 .bunkgreen-img-container {
@@ -61,13 +61,13 @@
 .bunkgreen-text {
     font-size: 1.5rem;
     font-style: italic;
-    color: rgb(202, 199, 199);  
+    color: rgb(46, 46, 46);  
     line-height: 1.2;
     text-align: center;
     padding: 1rem;
     
 }
 .green-accent{
-    color: #cdff04;
+    color: #add900;
     font-weight: bold;
 }

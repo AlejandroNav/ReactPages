@@ -81,9 +81,8 @@ function Particulares() {
   return (
     <>
       <Particular />
-      <Elige/>
+      <ImageSection />
       <BunkGymRazones />
-      <Bunkgreen />
       <Bunkgreen />
       <Call />
     </>
@@ -93,9 +92,7 @@ function Particulares() {
 function Crossfit() {
   return (
     <>
-      <Programs />
-      <Reasons2 />
-      <Reasons />
+
     </>
   );
 }
