@@ -54,6 +54,7 @@ function Home() {
       <Experiencia360 />
       <Paraquien />
       <Bunkgreen />
+      <Reasons />
       <MasBunkgym />
       <Call />
     </>

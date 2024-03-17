@@ -47,17 +47,19 @@ const Particular = () => {
         <div className='particular'>
             <div className='particular-container'>
                 <div className='particular-title-container' style={{ backgroundImage: `url(${outside2})` }}>
-                    <h1>Particular</h1>
-
                     <div className='particular-text-container1'>
                         <p className='particular-text1'>¿Imaginas tener tu gimnasio en casa 100% personalizado y adaptado a ti y a tu familia?</p>
-
                     </div>
                     <p className='particular-subtitle2'>Bunkgym lo hace posible.</p>
                 </div>
 
+
+
+                
                 <div className='particular-text-container'>
                     <p className='particular-text'>Se dueño de tu propio gimnasio, creado por tus propias reglas. No tendrás que lidiar con gimnasios convencionales abarrotados de gente, aguantando el ambiente sudoroso y asfixiante y preocupándote por las medidas sanitarias del espacio.  </p>
+                    <p className='particular-text'> Te presentamos una nueva forma de entrenar, disfrutar y vivir, en la que serás propietario de un espacio exclusivo, donde tanto tú como tus familiares y amigos podréis compartir un momento divertido a la vez de tomar el control de su bienestar.
+                    </p>
                 </div>
             </div>
             {/* Carrusel simple con Flexbox */}
@@ -66,12 +68,7 @@ const Particular = () => {
                 <img className='simple-image' src={amarilloGym} alt="Amarillo Gym" />
                 <img className='simple-image' src={blanco} alt="Blanco" />
             </div>
-            <div className='particular-container'>
-                <div className='particular-text-container'>
-                    <p className='particular-text'> Te presentamos una nueva forma de entrenar, disfrutar y vivir, en la que serás propietario de un espacio exclusivo, donde tanto tú como tus familiares y amigos podréis compartir un momento divertido a la vez de tomar el control de su bienestar.
-                    </p>
-                </div>
-            </div>
+
             <Carruseles data={carouselData2} />
         </div>
     )
