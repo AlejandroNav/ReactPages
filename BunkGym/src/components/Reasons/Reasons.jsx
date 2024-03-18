@@ -34,6 +34,7 @@ const Reasons = () => {
     return (
         <div className='reasonsouter-container'>
             <h1 className="reasons-big-title">MÁS BUNGYM</h1>
+            <p className='reasons-subtitle'>Si Bunkgym no se adapta a ti, por precio, falta de espacio o características, tenemos más opciones.</p>
             <div className='reasons'>
                 <div className="reasons-left">
                     <img src={reason1} alt="" />
@@ -44,7 +45,8 @@ const Reasons = () => {
 
                 <div className='reasons-right'>
                     <section className='reasons-title'>
-                        <p>No solo hacemos gimnasios en contenedores de barco. Ofrecemos todas las soluciones fitness desde un mismo lugar.</p>
+                        <p className='reasons-title-text'>Si tienes una habitación, garaje o espacio, podemos crearte tu gimnasio en casa, totalmente a medida o aportarte la máquina que necesitas para que el deporte forme parte de tu estilo de vida..</p>
+                        <p className='reasons-title-text'>Todas las soluciones fitness desde un mismo lugar. </p>
                     </section>
                     <section className='reasons-text'>
                         <ul>

@@ -68,15 +68,15 @@
 
 
 .reasons-title{
-    width: 100%;
-    height: 100%;
     margin-bottom:2rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 90%;
     font-style: italic;
     color: rgb(255, 255, 255);
 }
-
+.reasons-title-text{
+    margin-top: 1.2rem;
+}
 
 
 .reasons-item {

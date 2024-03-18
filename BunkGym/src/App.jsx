@@ -26,6 +26,7 @@ import NuestroEquipo from './components/NuestroEquipo/NuestroEquipo';
 import Particular from './components/Particular/Particular';
 import Elige from './components/Elige/Elige';
 import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
+import ClientesParticular from './components/ClientesParticular/ClientesParticular';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/quienesSomos" element={<QuienesSomos />} />
           <Route path="/particulares" element={<Particulares />} />
+          <Route path="/ayuntamientos" element={<Ayuntamientos />} />
           <Route path="/crossfit" element={<Crossfit />} />
           <Route path="/gimnasios" element={<Gimnasios />} />
         </Routes>
@@ -55,7 +57,6 @@ function Home() {
       <Paraquien />
       <Bunkgreen />
       <Reasons />
-      <MasBunkgym />
       <Call />
     </>
   );
@@ -84,8 +85,18 @@ function Particulares() {
       <Particular />
       <ImageSection />
       <BunkGymRazones />
+      <Reasons />
       <Bunkgreen />
       <Call />
+      <ClientesParticular/>
+    </>
+  );
+}
+
+function Ayuntamientos() {
+  return (
+    <>
+
     </>
   );
 }
@@ -101,12 +112,12 @@ function Crossfit() {
 function Gimnasios() {
   return (
     <>
-      <Reasons />
       <Planes />
       <Programs />
       <Reasons2 />
       <Planes />
       <Planes />
+      
       <Testimonials />
     </>
   );

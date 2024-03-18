@@ -55,21 +55,18 @@ const Particular = () => {
 
 
 
-                
-                <div className='particular-text-container'>
-                    <p className='particular-text'>Se dueño de tu propio gimnasio, creado por tus propias reglas. No tendrás que lidiar con gimnasios convencionales abarrotados de gente, aguantando el ambiente sudoroso y asfixiante y preocupándote por las medidas sanitarias del espacio.  </p>
-                    <p className='particular-text'> Te presentamos una nueva forma de entrenar, disfrutar y vivir, en la que serás propietario de un espacio exclusivo, donde tanto tú como tus familiares y amigos podréis compartir un momento divertido a la vez de tomar el control de su bienestar.
-                    </p>
-                </div>
-            </div>
-            {/* Carrusel simple con Flexbox */}
-            <div className='simple-carrusel'>
-                <img className='simple-image' src={grisGym} alt="Gris Gym" />
-                <img className='simple-image' src={amarilloGym} alt="Amarillo Gym" />
-                <img className='simple-image' src={blanco} alt="Blanco" />
-            </div>
 
-            <Carruseles data={carouselData2} />
+                <section className='particular-section'>
+                    <div className='particular-text-container'>
+                        <p className='particular-text'>Se dueño de tu propio gimnasio, creado por tus propias reglas. No tendrás que lidiar con gimnasios convencionales abarrotados de gente, aguantando el ambiente sudoroso y asfixiante y preocupándote por las medidas sanitarias del espacio.  </p>
+                        <p className='particular-text'> Te presentamos una nueva forma de entrenar, disfrutar y vivir, en la que serás propietario de un espacio exclusivo, donde tanto tú como tus familiares y amigos podréis compartir un momento divertido a la vez de tomar el control de su bienestar.
+                        </p>
+                    </div>
+                    <div className='particular-img-container'>
+                        <Carruseles data={carouselData2} />
+                    </div>
+                </section>
+            </div>
         </div>
     )
 }
