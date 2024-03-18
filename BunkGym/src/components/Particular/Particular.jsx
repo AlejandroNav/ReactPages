@@ -7,38 +7,25 @@ import blanco from '../../assets/blancoGym.jpeg';
 import imagen11 from '../../assets/11.png';
 import imagen12 from '../../assets/12.png';
 import gymrender from '../../assets/marca.png';
-import outside2 from '../../assets/outside2.avif';
-
+import outside2 from '../../assets/particularhero.png';
+import particulargym1 from '../../assets/particulargym1.png';
+import particulargym2 from '../../assets/particulargym2.png';
+import particulargym3 from '../../assets/particulargym3.png';
 import './Particular.css'
 const Particular = () => {
-    const carouselData = {
-        "slides": [
-            {
-                "src": grisGym,
-                "alt": "Image 1 for carousel"
-            },
-            {
-                "src": amarilloGym,
-                "alt": "Image 2 for carousel"
-            },
-            {
-                "src": blanco,
-                "alt": "Image 3 for carousel"
-            }
-        ]
-    };
+
     const carouselData2 = {
         "slides": [
             {
-                "src": imagen11,
+                "src": particulargym1,
                 "alt": "Image 1 for carousel"
             },
             {
-                "src": imagen12,
+                "src": particulargym2,
                 "alt": "Image 2 for carousel"
             },
             {
-                "src": gymrender,
+                "src": particulargym3,
                 "alt": "Image 3 for carousel"
             }
         ]

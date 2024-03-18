@@ -1,14 +1,9 @@
 import React from 'react'
 import './Bunkgreen.css'
-import amarilloGym from '../../assets/amarilloGym.jpeg'
-import green1 from '../../assets/green1.png'
-import green2 from '../../assets/green2.png'
-import green3 from '../../assets/green3.png'
-import green4 from '../../assets/green4.png'
-import green5 from '../../assets/icon1.png'
-import green6 from '../../assets/icon2.png'
-import green7 from '../../assets/icon3.png'
-import green8 from '../../assets/icon4.png'
+import green5 from '../../assets/bunkgreen1.png'
+import green6 from '../../assets/bunkgreen2.png'
+import green7 from '../../assets/bunkgreen3.png'
+import green8 from '../../assets/bunkgreen4.png'
 
 const Bunkgreen = () => {
     return (

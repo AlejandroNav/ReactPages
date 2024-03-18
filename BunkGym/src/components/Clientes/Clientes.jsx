@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './Clientes.css'
-import paraquien1 from '../../assets/clientegobierno.jpg'
-import paraquien2 from '../../assets/clienteempresas.avif'
-import paraquien3 from '../../assets/clientesParticulares.avif'
-import paraquien4 from '../../assets/clientesGym.jpg'
-import paraquien5 from '../../assets/clientesEducativos.jpg'
-import paraquien6 from '../../assets/gym6.jpg'
+import paraquien1 from '../../assets/paraquien1.png'
+import paraquien2 from '../../assets/paraquien2.png'
+import paraquien3 from '../../assets/paraquien3.png'
+import paraquien4 from '../../assets/paraquien4.png'
+import paraquien5 from '../../assets/paraquien5.png'
+import paraquien6 from '../../assets/paraquien6.png'
 import adorno from '../../assets/adorno1.avif'
 import adorno2 from '../../assets/adorno2.avif'
 
@@ -18,7 +18,7 @@ const Clientes = () => {
         { src: paraquien3, text: 'PARTICULARES' },
         { src: paraquien4, text: 'CENTROS DEPORTIVOS' },
         { src: paraquien5, text: 'CENTROS EDUCATIVOS' },
-        { src: paraquien6, text: 'PERSONAL TRAINERS' },
+        { src: paraquien6, text: 'COMUNIDADES DE VECINOS' },
     ];
 
     return (

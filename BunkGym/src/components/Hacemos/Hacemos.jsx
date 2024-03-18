@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hacemos.css'; // Ensure this CSS is updated for the new structure
 import ContainerIcon from '../../assets/12.png';
-import ConstructionIcon from '../../assets/gym5.avif';
-import DistributionIcon from '../../assets/grisGym.jpeg';
+import ConstructionIcon from '../../assets/ConstructionIcon.png';
+import DistributionIcon from '../../assets/DistributionIcon.png';
 
 const Hacemos = () => {
     // Array of line of business objects

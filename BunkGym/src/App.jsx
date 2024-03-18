@@ -27,6 +27,7 @@ import Particular from './components/Particular/Particular';
 import Elige from './components/Elige/Elige';
 import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
 import ClientesParticular from './components/ClientesParticular/ClientesParticular';
+import Ayunta from './components/Ayunta/Ayunta';
 
 function App() {
   return (
@@ -88,7 +89,7 @@ function Particulares() {
       <Reasons />
       <Bunkgreen />
       <Call />
-      <ClientesParticular/>
+      <ClientesParticular />
     </>
   );
 }
@@ -96,7 +97,8 @@ function Particulares() {
 function Ayuntamientos() {
   return (
     <>
-
+      <Ayunta />
+      <Bunkgreen />
     </>
   );
 }
@@ -117,7 +119,7 @@ function Gimnasios() {
       <Reasons2 />
       <Planes />
       <Planes />
-      
+
       <Testimonials />
     </>
   );
