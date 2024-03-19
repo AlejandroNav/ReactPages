@@ -28,6 +28,7 @@ import Elige from './components/Elige/Elige';
 import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
 import ClientesParticular from './components/ClientesParticular/ClientesParticular';
 import Ayunta from './components/Ayunta/Ayunta';
+import Personaliza from './components/Personaliza/Personaliza';
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function Particulares() {
     <>
       <Particular />
       <ImageSection />
+      <Personaliza/>
       <BunkGymRazones />
       <Reasons />
       <Bunkgreen />

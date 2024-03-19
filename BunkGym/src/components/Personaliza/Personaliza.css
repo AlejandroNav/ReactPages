@@ -1,0 +1,81 @@
+.personaliza-container{
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+    overflow: hidden;
+}
+.personaliza-title{
+    font-size: 5.3rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    font-style: oblique 14deg;
+    padding-top: 2rem;
+}
+
+
+
+.personaliza-text{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(88, 88, 88);
+    line-height: 1.4;
+}
+.personaliza-list{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+.personaliza-list-li {
+    background: linear-gradient(to bottom, rgb(167, 167, 167), rgb(9, 9, 9)); /* Degradado de plata a negro */
+    color: white; /* Texto en color blanco para contraste */
+    list-style: none; /* Remueve los estilos por defecto de lista */
+    padding: 0px; /* Espacio alrededor del texto */
+    margin: 0 1rem 10px 0; /* Margen superior e inferior para separar los elementos */
+    border-radius: 50%; /* Borde redondo */
+    text-align: center; /* Centra el texto */
+    width: 220px; /* Ancho del contenedor */
+    height: 220px; /* Altura del contenedor */
+    display: flex; /* Usamos flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-size: 1.2em; /* Ajusta el tamaño de fuente según prefieras */
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño del contenedor */
+    flex-direction: column; /* Orienta el contenido en columna */
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    font-style: oblique 14deg;
+    position: relative;
+}
+.personaliza-list-li::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dotted rgb(0, 0, 0); /* Adorno de borde punteado */
+    z-index: 2;
+    width: 245px;
+    height: 245px;
+}
+.personaliza-list-li::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0); /* Adorno de borde punteado */
+    z-index: 2;
+    width: 230px;
+    height: 230px;
+}
