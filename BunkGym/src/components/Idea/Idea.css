@@ -14,6 +14,7 @@
 .infographic img {
     width: 80%;
 }
+
 .idea-title {
     font-size: 5rem;
     margin-bottom: 1rem;
@@ -24,10 +25,37 @@
     letter-spacing: 4px;
     font-style: italic;
 }
+
 .idea-subtitle {
     font-size: 1.5rem;
     line-height: 1.3;
     margin-bottom: 1rem;
     color: #696969;
     font-style: italic;
+    z-index: 4;
+}
+
+
+.idea-adorno1 {
+    width: 14rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.idea-adorno3 {
+    width: 20rem;
+    position: absolute;
+    bottom: -5rem;
+    overflow: hidden;
+    z-index: -5;
+}
+
+.idea-adorno2 {  
+    width: 20rem;
+    position: absolute;
+    bottom: 12rem;
+    left: -12rem;
 }
