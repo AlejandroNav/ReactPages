@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import adorno1 from '../../assets/adorno1.avif'
 import adorno2 from '../../assets/adorno2.avif'
 import adorno3 from '../../assets/adorno3.png'
-import marca from '../../assets/marca.png';
-import design from '../../assets/design.png';
+import marca from '../../assets/experiencia3.png';
+import design from '../../assets/experiencia2.png';
 import fabricante from '../../assets/fabricante.png';
-import trainer from '../../assets/trainer.png';
+import trainer from '../../assets/experiencia1.png';
 import './Experiencia360.css'
 
 const Experiencia360 = () => {
@@ -15,7 +15,7 @@ const Experiencia360 = () => {
         {
             frontImage: marca,
             backContent: {
-                title:'somos únicos' ,
+                title: 'somos únicos',
                 subtitle: 'Somos una marca',
                 content: 'Creada e impulsada por soñadores inconformistas que fusionan la innovación, el reciclaje y el deporte para marcar el camino hacia un estilo de vida más consciente y activo.'
             }
@@ -23,7 +23,7 @@ const Experiencia360 = () => {
         {
             frontImage: design,
             backContent: {
-                title:'somos creativos' ,
+                title: 'somos creativos',
                 subtitle: 'Somos diseñadores',
                 content: 'No solo diseñamos gimnasios, sino espacios de entrenamiento extraordinarios. Cada Bunkgym es una pieza única, creada minuciosamente para cada cliente, dónde el diseño se fusiona con la innovación.'
             }
@@ -31,7 +31,7 @@ const Experiencia360 = () => {
         {
             frontImage: fabricante,
             backContent: {
-                title:'somos creadores' ,
+                title: 'somos creadores',
                 subtitle: 'Somos fabricantes',
                 content: 'Fabricamos gimnasios, materiales y máquinas fitness con pasión en nuestra fábrica sevillana. Cada pieza es un reflejo de nuestra entrega total a la elaboración, calidad y autenticidad española.'
             }
@@ -39,7 +39,7 @@ const Experiencia360 = () => {
         {
             frontImage: trainer,
             backContent: {
-                title:'somos deportistas' ,
+                title: 'somos deportistas',
                 subtitle: 'Somos entrenadores',
                 content: 'Cada Bunkgym ha sido diseñado y testado por entrenadores profesionales con +30 años de experiencia en el mundo del fitness. Adaptamos un plan de uso exclusivo 100% para ti.'
             }
@@ -58,7 +58,9 @@ const Experiencia360 = () => {
             <img src={adorno1} className='card-adorno4 card-adornos' />
             <img src={adorno2} className='card-adorno2 card-adornos' />
             <img src={adorno3} className='card-adorno3 card-adornos' />
-            <h2 className='stroke-text-black-title'>Experiencia 360</h2> 
+            <h2 className='stroke-text-black-title'>Experiencia 360</h2>
+            <p className='section-text-360'>Ofrecemos un servicio integral, somos una marca única y exclusiva, diseñamos cada bunker y máquina, la fabricamos y te mostramos
+                cómo sacarle el mejor partido en base a tus condiciones y objetivos físicos & emocionales.</p>
             <div className='card-container-360'>
                 {cards.map((card, index) => (
                     <div key={index} className={`card-360 ${flippedCards[index] ? 'is-flipped' : ''}`} onClick={() => handleCardClick(index)}>

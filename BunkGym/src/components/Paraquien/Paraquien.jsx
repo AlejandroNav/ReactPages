@@ -35,7 +35,7 @@ const Paraquien = () => {
                         className="image-wrapper">
                         <p className='hover-text'>{image.text}</p>
                         <img src={image.src} alt="" style={{
-                            width: hoveredImage === index ? '400px' : '200px',
+                            width: hoveredImage === index ? '280px' : '200px',
                             transition: 'width 0.3s ease'
                         }} />
                         <div className=""></div>

@@ -22,6 +22,7 @@ const ImageSection = () => {
         <div className="image-section-container">
             <h2 className='image-section-title'>te presentamos nuestros BUNKGYMS</h2>
             <p className='image-section-text'>Hemos diseñado 4 tipos de BUNKGYM para 4 tipos de necesidades y de grupos de personas. </p>
+            <p className='image-section-text'>Haz clic en el bunkgym que más se adapte a tus necesidades y descubre sus características.</p>
             <div className="image-section">
                 {images.map((image, index) => (
                     <div key={index} className="image-container">

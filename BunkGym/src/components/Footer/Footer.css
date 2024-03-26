@@ -3,11 +3,10 @@
 .footer {
     color: #333;
     background-color: #000000;
-    padding: 20px 0;
 }
 
 
-.footer-logo{
+.footer-logo {
     height: 100px;
 }
 
@@ -38,10 +37,120 @@
     text-decoration: underline;
 }
 
-.footer-container{
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem; 
+    padding-left: 3rem;
+    width: 20%;
+    color: #fff;
+}
+.footer-wrapper
+{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.footer-frame{
+    margin-top: 5rem;
+    display: flex;
     gap: 1rem;
-    padding: 0 4rem;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2rem 1rem; 
+    width: 70%;
+    color: #fff;
+    padding-right: 3rem;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: start;
+    width: 35%;
+    color: #fff;
+}
+.footer-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(255, 140, 0);
+}
+.footer-ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.footer-ul li a:hover{
+    text-decoration: underline;
+}
+.span-telefono{
+    color: rgb(255, 140, 0);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.footer-button{
+    background-color: rgb(255, 140, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+
+.mini-footer {
+    width: 100%;
+    padding: 20px 0;
+   background-color: #333;
+}
+
+.mini-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.mini-footer-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini-footer-logo {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 129, 40);
+}
+
+.mini-footer-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: .4rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: oblique 14deg;
+}
+
+.mini-footer-text {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: rgb(255, 129, 40);
 }

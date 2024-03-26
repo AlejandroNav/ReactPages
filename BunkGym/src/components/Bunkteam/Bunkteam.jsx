@@ -16,13 +16,14 @@ const Bunkteam = () => {
                 <img src={adorno1} alt="" className='bunkteam-adorno2' />
                 <img src={adorno3} alt="" className='bunkteam-adorno3' />
             </h2>
-                <p className='bunkteam-subtitle'>Somos una marca de fitness focalizada en diseñar, fabricar e instalar gimnasios portátiles integrados en contenedores de barco.</p>
+            <p className='bunkteam-subtitle'>Somos una marca de fitness focalizada en diseñar, fabricar e instalar máquinas fitness y
+                gimnasios portátiles integrados en contenedores de barco.</p>
 
             <p className='bunkteam-subtitle'>Hemos llegado para dar solución a los problemas de los gimnasios convencionales,
                 mediante una experiencia más emocionante, flexible, personalizada, que ofrece la
                 libertad de entrenar en cualquier lugar siendo cualquier tipo de persona.
                 <div className='bunkteam-blur'></div></p>
-                
+
             <div className="bunkteam-figures">
                 <div className="bunkteam-figure">
                     <span>+<NumberCounter endValue={30} /></span>

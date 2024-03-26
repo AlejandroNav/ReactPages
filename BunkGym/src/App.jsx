@@ -57,8 +57,8 @@ function Home() {
       <ImageSection />
       <Experiencia360 />
       <Paraquien />
-      <Bunkgreen />
       <Reasons />
+      <Bunkgreen />
       <Call />
     </>
   );
@@ -86,7 +86,7 @@ function Particulares() {
     <>
       <Particular />
       <ImageSection />
-      <Personaliza/>
+      <Personaliza />
       <BunkGymRazones />
       <Reasons />
       <Bunkgreen />
