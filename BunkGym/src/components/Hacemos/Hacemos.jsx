@@ -20,7 +20,7 @@ const Hacemos = () => {
                 {linesOfBusiness.map((line, index) => (
                     <div key={index} className="linea">
                         <img src={line.icon} alt={`linea ${index + 1} Icon`} className='linea-icon' />
-                        <p>{line.text}</p>
+                        <p className="linea-text">{line.text}</p>
                     </div>
                 ))}
             </div>

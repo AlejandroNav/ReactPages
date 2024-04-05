@@ -15,6 +15,10 @@
     font-family: 'anton', serif;
     font-style: oblique 14deg;
     letter-spacing: 3px;
+    color: white;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
     
 }
 

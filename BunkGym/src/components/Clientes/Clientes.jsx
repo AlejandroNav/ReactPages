@@ -17,8 +17,8 @@ const Clientes = () => {
         { src: paraquien2, text: 'EMPRESAS' },
         { src: paraquien3, text: 'PARTICULARES' },
         { src: paraquien4, text: 'CENTROS DEPORTIVOS' },
-        { src: paraquien5, text: 'CENTROS EDUCATIVOS' },
         { src: paraquien6, text: 'COMUNIDADES DE VECINOS' },
+        { src: paraquien5, text: 'CENTROS EDUCATIVOS' },
     ];
 
     return (
