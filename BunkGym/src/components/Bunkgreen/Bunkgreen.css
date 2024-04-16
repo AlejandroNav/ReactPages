@@ -30,11 +30,12 @@
     line-height: 1.2;
 }
 .bunkgreen-title {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
     font-style: italic;
     font-family: 'Anton', sans-serif;
     font-style: oblique 14deg;
     letter-spacing: 7px;
+    font-weight: 700;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #add900;
     color: rgba(204, 204, 204, 0);
@@ -70,4 +71,69 @@
 .green-accent{
     color: #add900;
     font-weight: bold;
+}
+
+.titulo-general {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    font-style: oblique 14deg;
+    letter-spacing: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    color: rgba(204, 204, 204, 0);
+}
+.titulo-general-blanco {
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    font-style: oblique 14deg;
+    letter-spacing: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffffff;
+    color: rgba(204, 204, 204, 0);
+}
+
+
+.parrafo {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(61, 61, 61);
+    line-height: 1.2;
+    text-align: center;
+    padding: .5rem;
+    margin : .5rem;
+}
+.parrafo2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(136, 136, 136);
+    line-height: 1.2;
+    text-align: center;
+    padding: .3rem;
+    margin : .3rem;
+}
+.subtitulo {
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    line-height: 1.2;
+    padding: 1rem;
+    margin : 1rem;
+    letter-spacing: 1px;
+}
+.subtitulo2 {
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(196, 196, 196);
+    text-align: center;
+    line-height: 1.2;
+    padding: 1rem;
+    margin : 1rem;
+    letter-spacing: 1px;
 }

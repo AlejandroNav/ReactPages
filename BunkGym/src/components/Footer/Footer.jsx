@@ -5,7 +5,38 @@ import LogoWhite from '../../assets/bunk-white.avif'
 const Footer = () => {
     return (
         <footer className="footer">
-
+            <div class="mini-footer">
+                <div class="mini-footer-container">
+                    <div class="mini-footer-section">
+                        <div class="mini-footer-logo"></div>
+                        <div>
+                            <h4 class="mini-footer-title">SIN INTERMEDIARIOS</h4>
+                            <p class="mini-footer-text">Precios directos de fábrica</p>
+                        </div>
+                    </div>
+                    <div class="mini-footer-section">
+                        <div class="mini-footer-logo"></div>
+                        <div>
+                            <h4 class="mini-footer-title">TE ASESORAMOS</h4>
+                            <p class="mini-footer-text">Servicio 100% personalizado</p>
+                        </div>
+                    </div>
+                    <div class="mini-footer-section">
+                        <div class="mini-footer-logo"></div>
+                        <div>
+                            <h4 class="mini-footer-title">GARANTÍA</h4>
+                            <p class="mini-footer-text">Garantizamos nuestros productos</p>
+                        </div>
+                    </div>
+                    <div class="mini-footer-section">
+                        <div class="mini-footer-logo"></div>
+                        <div>
+                            <h4 class="mini-footer-title">PROYECTOS 360</h4>
+                            <p class="mini-footer-text">Nos ocupamos de todo tu proyecto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -60,38 +91,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class="mini-footer">
-                <div class="mini-footer-container">
-                    <div class="mini-footer-section">
-                        <div class="mini-footer-logo"></div>
-                        <div>
-                            <h4 class="mini-footer-title">SIN INTERMEDIARIOS</h4>
-                            <p class="mini-footer-text">Precios directos de fábrica</p>
-                        </div>
-                    </div>
-                    <div class="mini-footer-section">
-                        <div class="mini-footer-logo"></div>
-                        <div>
-                            <h4 class="mini-footer-title">TE ASESORAMOS</h4>
-                            <p class="mini-footer-text">Servicio 100% personalizado</p>
-                        </div>
-                    </div>
-                    <div class="mini-footer-section">
-                        <div class="mini-footer-logo"></div>
-                        <div>
-                            <h4 class="mini-footer-title">GARANTÍA</h4>
-                            <p class="mini-footer-text">Garantizamos nuestros productos</p>
-                        </div>
-                    </div>
-                    <div class="mini-footer-section">
-                        <div class="mini-footer-logo"></div>
-                        <div>
-                            <h4 class="mini-footer-title">PROYECTOS 360</h4>
-                            <p class="mini-footer-text">Nos ocupamos de todo tu proyecto</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </footer>
     );
 }

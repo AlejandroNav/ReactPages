@@ -12,7 +12,7 @@ const Bunkgreen = () => {
             <div className="bunkgreen-container">
                 <h2 className='bunkgreen-title'>BUNKGREEN</h2>
                 <h3 className='bunkgreen-subtitle'>SOMOS UNA EMPRESA <span className='green-accent'>RESPONSABLE</span> </h3>
-                <p className='bunkgreen-content'>Bunkgreen es el departamento de RSC de Bunkgym, con el cual abrazamos la <span className='green-accent'>sostenibilidad</span>.
+                <p className='bunkgreen-content parrafo'>Bunkgreen es el departamento de RSC de Bunkgym, con el cual abrazamos la <span className='green-accent'>sostenibilidad</span>.
                     Ofreciendo una alternativa de fitness más <span className='green-accent'>ecológico </span>
                     y amigable con el medio ambiente que reduce la huella ambiental en comparación con los gimnasios convencionales.
                 </p>

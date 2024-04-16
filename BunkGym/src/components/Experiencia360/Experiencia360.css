@@ -76,7 +76,9 @@ position: relative;}
     font-weight: 300;
     font-style: oblique 14deg;
     letter-spacing: 2px;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    line-height: 3rem;
 }
 
 .card-360 p {

@@ -1,8 +1,4 @@
 import React from 'react'
-import image1 from '../../assets/gym1.avif';
-import image2 from '../../assets/gym2.avif';
-import image3 from '../../assets/gym3.avif';
-import image4 from '../../assets/gym4.avif';
 import gymrender from '../../assets/gymrender.avif';
 import grisGym from '../../assets/grisGym.jpeg';
 import amarilloGym from '../../assets/amarilloGym.jpeg';
@@ -20,7 +16,7 @@ const ImageSection = () => {
 
     return (
         <div className="image-section-container">
-            <h2 className='image-section-title'>te presentamos nuestros BUNKGYMS</h2>
+            <h2 className='image-section-title titulo-general-blanco'>NUESTROS BUNKGYMS</h2>
             <p className='image-section-text'>Hemos diseñado 4 tipos de BUNKGYM para 4 tipos de necesidades y de grupos de personas. </p>
             <p className='image-section-text'>Haz clic en el bunkgym que más se adapte a tus necesidades y descubre sus características.</p>
             <div className="image-section">
@@ -30,9 +26,7 @@ const ImageSection = () => {
                         <div className="back-text">{image.text}</div>
                     </div>
                 ))}
-
             </div>
-
         </div>
     );
 }

@@ -8,9 +8,9 @@ import adorno3 from '../../assets/adorno3.png'
 
 const Bunkteam = () => {
     return (
-        <div className='bunkteam-container'>
+        <div className='bunkteam-container '>
 
-            <h2 className='bunkteam-title stroke-text-black-title'>
+            <h2 className='bunkteam-title titulo-general '>
                 BUNKGYM TEAM
                 <img src={adorno2} alt="" className='bunkteam-adorno1' />
                 <img src={adorno1} alt="" className='bunkteam-adorno2' />
