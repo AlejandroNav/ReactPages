@@ -8,6 +8,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .quienes-title {
@@ -24,14 +25,14 @@
 }
 
 .quienes-title-container {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.356);
+    color: rgb(0, 0, 0);
+    background-color: rgba(179, 179, 179, 0.356);
     z-index: 1;
     width: 100%;
     position: absolute;
-    top: 5rem;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:10rem 0;
 }

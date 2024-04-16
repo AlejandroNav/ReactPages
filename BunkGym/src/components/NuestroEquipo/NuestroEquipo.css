@@ -37,13 +37,15 @@
     object-fit: cover;
 }
 .nuestro-equipo-nombre{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
+    text-transform: uppercase;
+
 }
 .nuestro-equipo-titulo{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
 }

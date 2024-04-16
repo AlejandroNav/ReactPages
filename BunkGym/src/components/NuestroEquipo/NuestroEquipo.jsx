@@ -23,8 +23,8 @@ const NuestroEquipo = () => {
     return (
         <div className='nuestro-equipo'>
             <div className='nuestro-equipo-container'>
-                <h2 className='stroke-text-black-title'>NUESTRO EQUIPO</h2>
-                <p className='nuestro-equipo-text'>Estamos formados por un equipo director del más alto nivel, alineado plenamente para ofreceros la mejor de las experiencias.</p>
+                <h2 className='stroke-text-black-title titulo-general'>NUESTRO EQUIPO</h2>
+                <p className=' subtitulo'>Estamos formados por un equipo director del más alto nivel, alineado plenamente para ofreceros la mejor de las experiencias.</p>
             </div>
             <div className='nuestro-equipo-lista'>
                 {miembros.map((miembro, index) => (

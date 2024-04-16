@@ -34,10 +34,8 @@ const Particular = () => {
         <div className='particular'>
             <div className='particular-container'>
                 <div className='particular-title-container' style={{ backgroundImage: `url(${outside2})` }}>
-                    <div className='particular-text-container1'>
-                        <p className='particular-text1'>¿Imaginas tener tu gimnasio en casa 100% personalizado y adaptado a ti y a tu familia?</p>
-                    </div>
-                    <p className='particular-subtitle2'>Bunkgym lo hace posible.</p>
+                    <p className='particular-subtitle2'>¿Imaginas tener tu gimnasio en casa 100% personalizado y adaptado a ti y a tu familia?</p>
+                    <p className=' titulo-general-blanco'>Bunkgym lo hace posible.</p>
                 </div>
 
 

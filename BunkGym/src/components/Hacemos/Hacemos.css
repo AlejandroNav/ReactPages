@@ -2,7 +2,8 @@
     padding: 4rem 2rem;
     display: flex;
     gap: 2rem;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to left top, #343434, #646464, #232323, #1b1b1b, #121212, #3a3a3a, #0d0d0d, #0a0a0a, #111111, #151515, #1a1a1a, #1e1e1e);
+
     color: rgb(231, 231, 231);
     flex-direction: column;
     justify-content: center;
@@ -57,7 +58,7 @@
     width: 100%;
     padding: 1rem 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: rgba(0, 0, 0, 0.597);
     /* Semi-transparent background */
     color: white;
 }

@@ -12,11 +12,7 @@
 }
 .personaliza-title{
     font-size: 5.3rem;
-    font-weight: bold;
-    color: #000000;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 3px;
-    font-style: oblique 14deg;
+   
     padding-top: 2rem;
 }
 
@@ -78,4 +74,26 @@
     z-index: 2;
     width: 230px;
     height: 230px;
+}
+.personaliza-list {
+    perspective: 1000px; /* Añade perspectiva para efectos 3D */
+}
+
+@keyframes rotateYAnimation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+.personaliza-list-li:hover {
+    animation: rotateYAnimation 0.8s linear 1; /* Aplica la animación al hacer hover */
+}
+.personaliza-list-li {
+    /* Tu estilo existente permanece igual */
+    transition: transform 0.8s; /* Suaviza la transición de la transformación */
+    transform-style: preserve-3d; /* Asegura que los hijos del elemento también se transformen en 3D */
 }

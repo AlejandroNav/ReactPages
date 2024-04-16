@@ -75,7 +75,7 @@ const BunkGymRazones = () => {
 
     return (
         <div className="bunkgym-razones-container">
-            <h2 className='bunkgym-razones-title'>12 RAZONES POR LAS QUE DEBES ADQUIRIR UN BUNKGYM</h2>
+            <h2 className='bunkgym-razones-title titulo-general-blanco'>12 RAZONES POR LAS QUE DEBES ADQUIRIR UN BUNKGYM</h2>
 
 
             <div className="doce-razones-columns">

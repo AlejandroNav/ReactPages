@@ -26,9 +26,9 @@ const Clientes = () => {
             <img src={adorno} className="adorno1" alt="" />
             <img src={adorno} className="adorno2" alt="" />
             <img src={adorno} className="adorno3" alt="" />
-            <h2 className='clientes-title'>NUESTROS CLIENTES</h2>
-            <p className='clientes-text'>Nuestros clientes son una amplia variedad de personas y organizaciones comprometidas con la promoción de un estilo activo y saludable.</p>
-            <p className='clientes-text'>A continuación os presentamos los grupos de clientes principales con los que hemos trabajado hasta ahora.</p>
+            <h2 className='clientes-title titulo-general'>NUESTROS CLIENTES</h2>
+            <p className='clientes-text parrafo'>Nuestros clientes son una amplia variedad de personas y organizaciones comprometidas con la promoción de un estilo activo y saludable.</p>
+            <p className='clientes-text parrafo'>A continuación os presentamos los grupos de clientes principales con los que hemos trabajado hasta ahora.</p>
 
             <ul className="clientes-img-container">
                 {images.map((image, index) => (

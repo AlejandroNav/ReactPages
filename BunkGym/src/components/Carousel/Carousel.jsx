@@ -30,7 +30,7 @@ const Carousel = () => {
     return (
         <div className="carousel">
             <div className="carousel-slide-wrapper">
-                <h2 className='carousel-title'>{slides[currentSlide].title}</h2>
+                <h2 className=' titulo-general-blanco'>{slides[currentSlide].title}</h2>
                 <p className='carousel-content'>{slides[currentSlide].content}</p>
             </div>
             <div className='carousel-buttons'>

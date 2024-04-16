@@ -17,8 +17,8 @@ const NuestraFabrica = () => {
     return (
         <div className="">
             <div className="fabrica-container">
-                <h1 className="fabrica-title">NUESTRA FABRICA</h1>
-                <p className="fabrica-text">
+                <h1 className="fabrica-title titulo-general-blanco">NUESTRA FáBRICA</h1>
+                <p className="fabrica-text parrafo">
                     Fabricamos gimnasios, materiales y máquinas fitness con pasión, dedicación y profesionalidad en nuestra fábrica sevillana. Cada pieza es un reflejo de nuestra entrega total a la elaboración, calidad y autenticidad española.
                 </p>
             </div>
