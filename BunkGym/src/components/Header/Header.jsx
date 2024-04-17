@@ -20,13 +20,13 @@ const Header = () => {
                     <li className='header-menu-item  header-menu-item-text'>Clientes</li>
                 </Link>
                 <Link to="/crossfit"  style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <li className='header-menu-item  header-menu-item-text'>Crossfit</li>
+                    <li className='header-menu-item  header-menu-item-text'>BunkGym</li>
                 </Link>
                 <Link to="/gimnasios"  style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <li className='header-menu-item  header-menu-item-text'>Gimnasios</li>
+                    <li className='header-menu-item  header-menu-item-text'>+ Productos  </li>
                 </Link>
                 <Link to="/comunidades"  style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <li className='header-menu-item header-menu-item-text'>Comunidades</li>
+                    <li className='header-menu-item header-menu-item-text'>Contacto</li>
                 </Link>
             </ul>
         </div>

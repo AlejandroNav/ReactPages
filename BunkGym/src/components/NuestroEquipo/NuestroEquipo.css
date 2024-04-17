@@ -31,19 +31,60 @@
 }
 
 .nuestro-equipo-imagen{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    background-color: rgb(87, 231, 236);
+    position: relative;
+}
+
+.nuestro-equipo-imagen {
+    width: 170px;
+    height: 180px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    background-color: rgb(87, 231, 236);
+    position: relative;
+    overflow: hidden; /* Asegúrate de que el pseudo-elemento no se salga del contorno del borde redondeado */
+}
+
+.nuestro-equipo-card .imagen-container {
+    position: relative;
+    width: 170px;
+    height: 180px;
+}
+
+.nuestro-equipo-imagen-fondo, .nuestro-equipo-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
     object-fit: cover;
 }
+
+.nuestro-equipo-imagen-fondo {
+    filter: blur(1px); /* Opcional: efecto de desenfoque para la imagen de fondo */
+    transform: translate(10px, 10px); /* Desplaza la imagen de fondo */
+    z-index: 5; /* Asegura que la imagen de fondo esté detrás */
+}
+
+
 .nuestro-equipo-nombre{
     font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
-
 }
+
+
+
+
 .nuestro-equipo-titulo{
     font-size: 1rem;
     font-weight: 400;
@@ -56,4 +97,9 @@
     text-align: center;
     letter-spacing: 1px;
     color: #2e2e2e;
+}
+
+.nuestro-equipo-subtitulo{
+    width: 75%;
+
 }

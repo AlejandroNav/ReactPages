@@ -66,7 +66,7 @@ const Experiencia360 = () => {
                     <div key={index} className={`card-360 ${flippedCards[index] ? 'is-flipped' : ''}`} onClick={() => handleCardClick(index)}>
                         <div className="card-front">
                             <img src={card.frontImage} alt={`Card Image ${index}`} />
-                            <h3 className="card-title-flipped">{card.backContent.title} <br /> {card.backContent.subtitle}</h3>
+                            <h3 className="card-title-flipped">{card.backContent.title}</h3>
                             
                         </div>
                         <div className="card-back">

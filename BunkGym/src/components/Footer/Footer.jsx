@@ -4,6 +4,10 @@ import './Footer.css'; // Importamos los estilos CSS del footer
 
 import LogoWhite from '../../assets/bunk-white.avif'
 import footermo from '../../assets/footermo.png'
+import footerwa from '../../assets/footerwa.png'
+import footertre from '../../assets/footertre.png'
+import footerhe from '../../assets/footerhe.png'
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -20,7 +24,7 @@ const Footer = () => {
                     </div>
                     <div class="mini-footer-section">
                         <div class="mini-footer-logo">
-
+                            <img src={footerhe} class="footermo" alt="" srcset="" />
                         </div>
                         <div>
                             <h4 class="mini-footer-title">TE ASESORAMOS</h4>
@@ -29,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div class="mini-footer-section">
                         <div class="mini-footer-logo">
-
+                            <img src={footerwa} class="footermo" alt="" srcset="" />
                         </div>
                         <div>
                             <h4 class="mini-footer-title">GARANTÍA</h4>
@@ -38,7 +42,7 @@ const Footer = () => {
                     </div>
                     <div class="mini-footer-section">
                         <div class="mini-footer-logo">
-
+                            <img src={footertre} class="footermo" alt="" srcset="" />
                         </div>
                         <div>
                             <h4 class="mini-footer-title">PROYECTOS 360</h4>

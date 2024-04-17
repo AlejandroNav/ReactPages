@@ -43,7 +43,7 @@ const Bunkteam = () => {
                 </div>
             </div>
             <div className="bunkteam-buttons">
-                <button className="bunkteam-button">Conocenos más</button>
+                <button className="bunkteam-button">Conócenos más</button>
             </div>
         </div>
     )
