@@ -100,7 +100,7 @@ const Footer = () => {
                     <div className="footer-section">
                         <h3 className='footer-title'>Novedades y descuentos<br></br> exclusivos</h3>
                         <p>Ingresa tu correo electrónico</p>
-                        <button className='footer-button'>Suscribirme?</button>
+                        <button className='footer-button'>Suscribirme</button>
                         <h3 className='footer-title'>Siguenos</h3>
                     </div>
                 </div>

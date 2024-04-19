@@ -17,12 +17,15 @@
   justify-content: center;
   padding: 1rem;
   align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enables horizontal scrolling if the images overflow the container */
 }
 
 .image-container {
   position: relative;
-  width: 350px;
-  height: 350px;
+  flex: 1; /* Allows the box to grow */
+  min-width: 150px; /* Minimum width before wrapping */
+  height: 300px; /* Fixed height */
   overflow: hidden;
 }
 

@@ -9,6 +9,7 @@
     align-items: center;
     gap: 2rem;
     padding: 0 15%;
+    overflow: hidden;
 }
 
 .paraquien-title {
@@ -48,7 +49,7 @@
 
 .image-wrapper {
     position: relative;
-    height: 750px;
+    height: 650px;
     overflow: hidden;
     
 }

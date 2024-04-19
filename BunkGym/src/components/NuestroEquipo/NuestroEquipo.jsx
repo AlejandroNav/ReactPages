@@ -8,7 +8,7 @@ import imagenJavier from '../../assets/fotopersona.png';
 import imagenSevillano from '../../assets/fotopersona.png';
 import imagenJorge from '../../assets/fotopersona.png';
 import imagenDavid from '../../assets/fotopersona.png';
-import exampleimage  from '../../assets/27.png';
+import exampleimage from '../../assets/27.png';
 
 const NuestroEquipo = () => {
     // Definir los miembros del equipo
@@ -33,8 +33,9 @@ const NuestroEquipo = () => {
                 {miembros.map((miembro, index) => (
                     <div key={index} className='nuestro-equipo-card'>
                         <div className='imagen-container'>
-                            <img src={miembro.imagenFondo} alt={`Fondo de ${miembro.nombre}`} className='nuestro-equipo-imagen-fondo'/>
-                            <img src={miembro.imagen} alt={miembro.nombre} className='nuestro-equipo-imagen'/>
+                            <img src={miembro.imagen} alt={miembro.nombre} className='nuestro-equipo-imagen' />
+                            <div className='imagen-frame'></div>
+                            <div className='imagen-frame2'></div>
                         </div>
                         <h3 className='nuestro-equipo-nombre'>{miembro.nombre}</h3>
                         <p className='nuestro-equipo-titulo'>{miembro.titulo}</p>
