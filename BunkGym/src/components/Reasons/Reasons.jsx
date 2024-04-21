@@ -5,6 +5,7 @@ import reason2 from '../../assets/reason2.png'
 import reason3 from '../../assets/reason3.png'
 import reason4 from '../../assets/reason4.png'
 import palomita from '../../assets/tick.png'
+import palomita2 from '../../assets/tick2.png'
 
 const Reasons = () => {
     const [expandedItem, setExpandedItem] = useState(null);
@@ -34,7 +35,7 @@ const Reasons = () => {
     return (
         <div className='reasonsouter-container'>
             <h1 className="reasons-big-title titulo-general-blanco">MÁS BUNGYM </h1>
-            <p className='subtitulo2'>Si Bunkgym no se adapta a ti, por precio, falta de espacio o características, tenemos más opciones.</p>
+            <p className='parrafo2'>Si Bunkgym no se adapta a ti, por precio, falta de espacio o características, tenemos más opciones.</p>
             <div className='reasons'>
                 <div className="reasons-left">
                     <img src={reason1} alt="" />
@@ -45,15 +46,15 @@ const Reasons = () => {
 
                 <div className='reasons-right'>
                     <section className='reasons-title'>
-                        <p className='reasons-title-text parrafo2'>Si tienes una habitación, garaje o espacio, podemos crearte tu gimnasio en casa, totalmente a medida o aportarte la máquina que necesitas para que el deporte forme parte de tu estilo de vida..</p>
-                        <p className='reasons-title-text parrafo2'>Todas las soluciones fitness desde un mismo lugar. </p>
+                        <p className='reasons-title-text '>Si tienes una habitación, garaje o espacio, podemos crearte tu gimnasio en casa, totalmente a medida o aportarte la máquina que necesitas para que el deporte forme parte de tu estilo de vida..</p>
+                        <p className='reasons-title-text '>Todas las soluciones fitness desde un mismo lugar. </p>
                     </section>
                     <section className='reasons-text'>
                         <ul>
                             {items.map((item, index) => (
                                 <li key={index} className="reasons-item" onClick={() => handleItemClick(index)}>
                                     <div className="reasons-item-header">
-                                        <img src={palomita} alt="" className="tick-icon" />
+                                        <img src={palomita2} alt="" className="tick-icon" />
                                         <p>{item.title}</p>
                                     </div>
                                     {expandedItem === index && (

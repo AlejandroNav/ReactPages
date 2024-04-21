@@ -28,6 +28,7 @@
     font-style: italic;
     color: rgb(48, 48, 48);
     line-height: 1.2;
+    width: 90%;
 }
 .bunkgreen-title {
     font-size: 5.2rem;
@@ -60,12 +61,13 @@
     width: 200px;
 }
 .bunkgreen-text {
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 1.2rem;
     color: rgb(46, 46, 46);  
     line-height: 1.2;
     text-align: center;
     padding: 1rem;
+    text-transform: uppercase;
+    font-family: roboto;
     
 }
 .green-accent{

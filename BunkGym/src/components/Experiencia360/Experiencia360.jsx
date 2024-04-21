@@ -56,10 +56,9 @@ const Experiencia360 = () => {
         <div className="card-section-360">
             <img src={adorno1} className='card-adorno1 card-adornos' />
             <img src={adorno1} className='card-adorno4 card-adornos' />
-            <img src={adorno2} className='card-adorno2 card-adornos' />
             <img src={adorno3} className='card-adorno3 card-adornos' />
             <h2 className='stroke-text-black-title titulo-general'>Experiencia 360</h2>
-            <p className='parrafo subtitulo'>Ofrecemos un servicio integral, somos una marca única y exclusiva, diseñamos cada bunker y máquina, la fabricamos y te mostramos
+            <p className='parrafo experiencia-parrafo'>Ofrecemos un servicio integral, somos una marca única y exclusiva, diseñamos cada bunker y máquina, la fabricamos y te mostramos
                 cómo sacarle el mejor partido en base a tus condiciones y objetivos físicos & emocionales.</p>
             <div className='card-container-360'>
                 {cards.map((card, index) => (

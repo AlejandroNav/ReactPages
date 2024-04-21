@@ -51,14 +51,14 @@
     position: relative;
     height: 650px;
     overflow: hidden;
-    
+
 }
 
 .image-wrapper img {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-    
+
 }
 
 .hover-text {
@@ -84,5 +84,25 @@
 
 .image-wrapper:hover .hover-text {
     opacity: 1;
-    
+
+}
+
+.inspiracional-section {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    gap: 2rem;
+    padding: 0 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+.inspiracional-text {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: rgb(43, 43, 43);
 }

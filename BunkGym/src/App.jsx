@@ -91,7 +91,7 @@ function Particulares() {
       <Reasons />
       <Bunkgreen />
       <Call />
-      <ClientesParticular />
+      <Clientes />
     </>
   );
 }
