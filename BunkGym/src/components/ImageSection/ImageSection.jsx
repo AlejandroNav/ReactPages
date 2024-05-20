@@ -3,15 +3,21 @@ import gymrender from '../../assets/gymrender.avif';
 import grisGym from '../../assets/grisGym.jpeg';
 import amarilloGym from '../../assets/amarilloGym.jpeg';
 import blancoGym from '../../assets/blancoGym.jpeg';
+
+import CROSSFIT from '../../assets/CROSSFIT.png';
+import STRONG from '../../assets/STRONG.png';
+import BUNK360 from '../../assets/360.png';
+import INCONFORMISTA from '../../assets/INCONFORMISTA.png';
+
 import './ImageSection.css'
 
 const ImageSection = () => {
     // Array of image objects
     const images = [
-        { src: gymrender, text: 'BUNKGYM CROSSFIT ' },
-        { src: grisGym, text: 'BUNKGYM STRONG  ' },
-        { src: amarilloGym, text: 'BUNKGYM 360 ' },
-        { src: blancoGym, text: 'BUNKGYM INCONFORMISTA  ' },
+        { src: CROSSFIT, text: 'BUNKGYM CROSSFIT ' },
+        { src: STRONG, text: 'BUNKGYM STRONG  ' },
+        { src: BUNK360, text: 'BUNKGYM 360 ' },
+        { src: INCONFORMISTA, text: 'BUNKGYM INCONFORMISTA  ' },
     ];
 
     return (
