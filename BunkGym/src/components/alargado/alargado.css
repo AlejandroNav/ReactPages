@@ -1,0 +1,13 @@
+.alargado-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.alargado-image {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    height: auto;
+}

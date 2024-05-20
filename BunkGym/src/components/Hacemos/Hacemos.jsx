@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hacemos.css'; // Ensure this CSS is updated for the new structure
-import ContainerIcon from '../../assets/12.png';
+import ContainerIcon from '../../assets/360.png';
 import ConstructionIcon from '../../assets/ConstructionIcon.png';
 import DistributionIcon from '../../assets/DistributionIcon.png';
 

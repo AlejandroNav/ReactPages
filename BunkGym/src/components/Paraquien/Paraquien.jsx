@@ -45,7 +45,9 @@ const Paraquien = () => {
                 </ul>
             </div>
             <div className='inspiracional-section'>
-                <h2 className="inspiracional-text">"No solo entrenamos cuerpos, fortalecemos mentes."</h2>
+                <h2 className="inspiracional-text">SOMOS ESPECIALISTAS EN CONSTRUIR GIMNASIOS MÓVILES EN
+                    CONTENEDORES MARITIMOS
+                </h2>
             </div>
         </div>
     );

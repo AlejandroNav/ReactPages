@@ -29,8 +29,6 @@ const NuestroEquipo = () => {
                     <h2 className='stroke-text-black-title titulo-general'>NUESTRO EQUIPO</h2>
                     <img src={adorno} alt="adorno" className='adorno-equipo1' />
                     <img src={adorno} alt="adorno" className='adorno-equipo2' />
-                    <img src={adorno} alt="adorno" className='adorno-equipo3' />
-                    <img src={adorno} alt="adorno" className='adorno-equipo4' />
                     <p className='parrafo nuestro-equipo-subtitulo'>
                         Estamos formados por un equipo director del más alto nivel, alineado plenamente para ofreceros la mejor de las experiencias.
                     </p>
@@ -51,7 +49,9 @@ const NuestroEquipo = () => {
 
             </div>
             <div className='nuestro-equipo-footer'>
-                <h2 className='nuestro-equipo-footer-frase'>"Empieza tu viaje hacia un tú más fuerte hoy."</h2>
+                <h2 className='nuestro-equipo-footer-frase'>HEMOS NACIDO POR Y PARA MEJORAR E INNOVAR EN EL
+                    MUNDO DEL FITNESS
+                </h2>
             </div>
         </div>
     );

@@ -29,6 +29,8 @@ import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
 import ClientesParticular from './components/ClientesParticular/ClientesParticular';
 import Ayunta from './components/Ayunta/Ayunta';
 import Personaliza from './components/Personaliza/Personaliza';
+import Alargado from './components/alargado/alargado';
+import Mosaico from './components/Mosaico/Mosaico';
 
 function App() {
   return (
@@ -53,9 +55,11 @@ function Home() {
   return (
     <>
       <Hero />
+      <Alargado />
       <Bunkteam />
       <ImageSection />
       <Experiencia360 />
+      <Mosaico />
       <Paraquien />
       <Reasons />
       <Bunkgreen />
@@ -70,6 +74,7 @@ function QuienesSomos() {
       <Quienes />
       <Bunkteam />
       <Carousel />
+      <Mosaico />
       <Idea />
       <Hacemos />
       <Clientes />

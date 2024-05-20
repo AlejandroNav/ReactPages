@@ -105,4 +105,9 @@
     font-size: 2.5rem;
     font-style: italic;
     color: rgb(43, 43, 43);
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
 }

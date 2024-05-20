@@ -96,9 +96,9 @@
 }
 .bunkteam-adorno2{
     position: absolute;
-    width: 100%;
-    top: 29rem;
-    left:0rem;
+    width: 100px;
+    top: 20rem;
+    left:55rem;
     z-index: 1;
     overflow: hidden;
 }

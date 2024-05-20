@@ -112,37 +112,24 @@
     font-style: italic;
     text-transform: uppercase;
     font-family: anton;
+    width: 70%;
+    line-height: 1.2;
 
 }
 
 .adorno-equipo1{
     position: absolute;
     top: 0rem;
-    left: 0%;
+    left: 4%;
     z-index: -1;
-    width: 400px;
+    width: 100px;
 }
 
 .adorno-equipo2{
     position: absolute;
     top: 0rem;
-    left: 76%;
+    left: 90%;
     z-index: -1;
-    width: 400px;
+    width: 100px;
 }
 
-.adorno-equipo3{
-    position: absolute;
-    top: 10rem;
-    left: 0%;
-    z-index: -1;
-    width: 400px;
-}
-
-.adorno-equipo4{
-    position: absolute;
-    top: 10rem;
-    left: 76%;
-    z-index: -1;
-    width: 400px;
-}

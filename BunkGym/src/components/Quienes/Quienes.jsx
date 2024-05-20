@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './Quienes.css';
-import reason2 from '../../assets/reason2.png';
 
 const Quienes = () => {
     return (
