@@ -90,6 +90,7 @@ function Particulares() {
   return (
     <>
       <Particular />
+      <Mosaico />
       <ImageSection />
       <Personaliza />
       <BunkGymRazones />

@@ -38,6 +38,14 @@
     font-style: oblique 14deg;
     line-height: 1.3;
 }
+.particular-text-title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #1f1f1f;
+    letter-spacing: 1px;
+    font-style: oblique 14deg;
+    line-height: 1.3;
+}
 .particular-text1 {
     font-size: 1.6rem;
     color: #ffffff;

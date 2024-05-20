@@ -63,14 +63,14 @@ const BunkGymRazones = () => {
                                 </p>
                                 {expandedItem === index ?
                                     <p className="doce-razones-item-content">{item.content}</p> :
-                                    <p className="doce-razones-item-content placeholder">+</p>}
+                                    <p className="doce-razones-item-content placeholder">v</p>}
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
             <div className="bunkgym-razones-footer">
-                <h2>¡CONECTATE CON NUESTRA COMUNIDAD!</h2>
+                <h2>Adaptamos tu bunkgym 100% a ti y a tu familia</h2>
             </div>
         </div>
     );
