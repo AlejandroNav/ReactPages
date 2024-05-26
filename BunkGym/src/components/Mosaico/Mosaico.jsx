@@ -4,7 +4,7 @@ import './Mosaico.css'
 const Mosaico = () => {
     return (
         <div className='mosaico-container'>
-            <h2 className='mosaico-title'>BELLEZA, USABILIDAD, OPTIMIZACIÓN, ROBUSTEZ Y ADAPTATABILIDAD A TU ALCANCE</h2>
+            <h2 className='mosaico-title'>BELLEZA, USABILIDAD, OPTIMIZACIÓN, ROBUSTEZ Y ADAPTATABILIDAD A TU ALCANCE TPRUSDFSDAGFAG</h2>
             <div className='mosaico-imgs'>
                 <div id="div1"></div>
                 <div id="div2"></div>
