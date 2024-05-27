@@ -34,7 +34,7 @@ const Reasons = () => {
 
     return (
         <div className='reasonsouter-container'>
-            <h1 className="reasons-big-title titulo-general-blanco">MÁS BUNGYM </h1>
+            <h1 className="reasons-big-title titulo-general-blanco">MÁS BUNKGYM </h1>
             <p className='parrafo2'>Si Bunkgym no se adapta a ti, por precio, falta de espacio o características, tenemos más opciones.</p>
             <div className='reasons'>
                 <div className="reasons-left">

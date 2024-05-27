@@ -12,22 +12,27 @@
 
 .image-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
   align-items: center;
-  flex-wrap: nowrap; /* Prevent wrapping to the next line */
   overflow-x: auto; /* Enables horizontal scrolling if the images overflow the container */
 }
 
 .image-container {
   position: relative;
-  flex: 1; /* Allows the box to grow */
-  min-width: 150px; /* Minimum width before wrapping */
-  height: 300px; /* Fixed height */
+  width: 100%; /* Adjust percentage as needed */
   overflow: hidden;
 }
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
 
 .image-section-title {
   text-align: center;
@@ -52,12 +57,6 @@
   line-height: 1.2;
 }
 
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
 
 .image-container:hover img {
   transform: scale(1.1);

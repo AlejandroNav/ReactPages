@@ -32,7 +32,7 @@ const MasBunkgym = () => {
 
     return (
         <div className="mas-bunkgym-container">
-            <h2 className='stroke-text-black-title'>MÁS BUNGYM</h2>
+            <h2 className='stroke-text-black-title'>MÁS BUNKGYM</h2>
             <p className='mas-bunkgym-text'>No solo hacemos gimnasios en contenedores de barco. Ofrecemos todas las soluciones fitness desde un mismo lugar.</p>
 
             <div className='mas-bunkgym-wrapper'>

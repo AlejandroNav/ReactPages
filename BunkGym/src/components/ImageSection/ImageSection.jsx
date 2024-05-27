@@ -1,23 +1,19 @@
-import React from 'react'
-import gymrender from '../../assets/gymrender.avif';
-import grisGym from '../../assets/grisGym.jpeg';
-import amarilloGym from '../../assets/amarilloGym.jpeg';
-import blancoGym from '../../assets/blancoGym.jpeg';
 
-import CROSSFIT from '../../assets/CROSSFIT.png';
-import STRONG from '../../assets/STRONG.png';
-import BUNK360 from '../../assets/360.png';
-import INCONFORMISTA from '../../assets/INCONFORMISTA.png';
+
+import strongy from '../../assets/strongy.png';
+import crossy from '../../assets/crossy.png';
+import inco from '../../assets/inco.png';
+import bunky from '../../assets/bunky.png';
 
 import './ImageSection.css'
 
 const ImageSection = () => {
     // Array of image objects
     const images = [
-        { src: CROSSFIT, text: 'BUNKGYM CROSSFIT ' },
-        { src: STRONG, text: 'BUNKGYM STRONG  ' },
-        { src: BUNK360, text: 'BUNKGYM 360 ' },
-        { src: INCONFORMISTA, text: 'BUNKGYM INCONFORMISTA  ' },
+        { src: crossy, text: 'BUNKGYM CROSSFIT ' },
+        { src: strongy, text: 'BUNKGYM STRONG  ' },
+        { src: bunky, text: 'BUNKGYM 360 ' },
+        { src: inco, text: 'BUNKGYM INCONFORMISTA  ' },
     ];
 
     return (

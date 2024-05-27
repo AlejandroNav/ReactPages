@@ -88,15 +88,15 @@
 
 .bunkteam-adorno1{
     position: absolute;
-    width: 100%;
-    top: -10rem;
+    width: 400px;
+    top: -7rem;
     left:37rem;
     z-index: 1;
     overflow: hidden;
 }
 .bunkteam-adorno2{
     position: absolute;
-    width: 100px;
+    width: 80px;
     top: 20rem;
     left:55rem;
     z-index: 1;
