@@ -29,6 +29,7 @@ import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
 import ClientesParticular from './components/ClientesParticular/ClientesParticular';
 import Ayunta from './components/Ayunta/Ayunta';
 import Personaliza from './components/Personaliza/Personaliza';
+import Personalizados from './components/Personalizados/Personalizados';
 import Alargado from './components/alargado/alargado';
 import Mosaico from './components/Mosaico/Mosaico';
 
@@ -92,6 +93,7 @@ function Particulares() {
       <Particular />
       <Mosaico />
       <ImageSection />
+      <Personalizados />
       <Personaliza />
       <BunkGymRazones />
       <Reasons />
