@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 0rem;
     overflow: hidden;
 }
 .particular-title-container {
@@ -45,6 +45,10 @@
     letter-spacing: 1px;
     font-style: oblique 14deg;
     line-height: 1.3;
+    font-weight: 700;
+    width: 40%;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 .particular-text1 {
     font-size: 1.6rem;
@@ -105,4 +109,13 @@
 }
 .particular-img-container {
    width: 80%;
+}
+.particular-section2 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 2rem;
+    overflow: hidden;
+    width: 94%;
+
 }

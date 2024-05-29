@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './BunkGymRazones.css';
-import footermo from '../../assets/footermo.png'
-import footerwa from '../../assets/footerwa.png'
-import footertre from '../../assets/footertre.png'
-import footerhe from '../../assets/footerhe.png'
+import footermo from '../../assets/greycheck.png'
+import footertre from '../../assets/greycheck.png'
+import footerhe from '../../assets/greycheck.png'
 
 const BunkGymRazones = () => {
     const [expandedItem, setExpandedItem] = useState(null);
@@ -63,7 +62,7 @@ const BunkGymRazones = () => {
                                 </p>
                                 {expandedItem === index ?
                                     <p className="doce-razones-item-content">{item.content}</p> :
-                                    <p className="doce-razones-item-content placeholder">v</p>}
+                                    <p className="doce-razones-item-content placeholder"> > </p>}
                             </div>
                         </div>
                     ))}

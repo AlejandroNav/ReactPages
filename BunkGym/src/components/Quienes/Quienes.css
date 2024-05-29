@@ -25,8 +25,8 @@
 }
 
 .quienes-title-container {
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.356);
+    color: rgb(255, 255, 255);
+    background-color: rgba(29, 29, 29, 0.397);
     z-index: 1;
     width: 100%;
     position: absolute;
