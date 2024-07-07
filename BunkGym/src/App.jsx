@@ -29,7 +29,7 @@ import Personalizados from './components/Personalizados/Personalizados';
 import Alargado from './components/alargado/alargado';
 import Mosaico from './components/Mosaico/Mosaico';
 import CrossTitle from './components/CrossTitle/CrossTitle';
-
+import CarruselLargo from './components/CarruselLargo/CarruselLargo';
 function App() {
   return (
     <Router>
@@ -113,7 +113,8 @@ function Ayuntamientos() {
 function Crossfit() {
   return (
     <>
-      <CrossTitle/>
+      <CrossTitle />
+      <CarruselLargo />
     </>
   );
 }
@@ -126,7 +127,6 @@ function Gimnasios() {
       <Reasons2 />
       <Planes />
       <Planes />
-
       <Testimonials />
     </>
   );

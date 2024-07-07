@@ -23,11 +23,9 @@ const Carruseles = ({ data }) => {
 
     return (
         <div className='outer-container'>
-            <div><img src={adorno} alt="adorno" className='carrousel-adorno1' /></div>
-            <div><img src={adorno2} alt="adorno" className='carrousel-adorno2' /></div>
             <div className='carrusel-container'>
-            <div className='carrusel-frame'></div>
-            <div className='carrusel-frame2'></div>
+                <div className='carrusel-frame'></div>
+                <div className='carrusel-frame2'></div>
                 <BsArrowLeftShort className='carrusel-arrow arrow-left' onClick={prevSlide} />
                 <img src={data.slides[currentSlide].src} alt={data.slides[currentSlide].alt} className='carrusel-img' />
                 <BsArrowRightShort className='carrusel-arrow arrow-right' onClick={nextSlide} />

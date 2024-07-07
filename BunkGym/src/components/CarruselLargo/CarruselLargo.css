@@ -1,0 +1,14 @@
+.crossfit-img-container {
+
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.crossfit-container-carru {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+}
