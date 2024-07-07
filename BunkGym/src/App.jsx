@@ -28,6 +28,7 @@ import Personaliza from './components/Personaliza/Personaliza';
 import Personalizados from './components/Personalizados/Personalizados';
 import Alargado from './components/alargado/alargado';
 import Mosaico from './components/Mosaico/Mosaico';
+import CrossTitle from './components/CrossTitle/CrossTitle';
 
 function App() {
   return (
@@ -112,7 +113,7 @@ function Ayuntamientos() {
 function Crossfit() {
   return (
     <>
-
+      <CrossTitle/>
     </>
   );
 }

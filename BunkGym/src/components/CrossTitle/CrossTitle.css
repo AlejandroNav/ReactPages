@@ -1,0 +1,13 @@
+.cross-title-container {
+    min-height: 500px;
+    background-image: linear-gradient(to top, #3e3e3e 10%, #bdbdbd 100%);
+    padding: 2rem 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cross-title-wrapper{
+    
+}
