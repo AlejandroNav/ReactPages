@@ -4,7 +4,7 @@ const Personaliza = () => {
     return (
         <div className="personalizados-container">
             <h1 className="personalizados-title titulo-general">
-                PERSONALIZA TU BUNKGYM
+                PERSONALIZA TU BUNKGYM 1
             </h1>
             <p className="personalizados-text parrafo">
                 En Bunkgym, nos adaptamos a ti como tu rutina de entrenamiento debería

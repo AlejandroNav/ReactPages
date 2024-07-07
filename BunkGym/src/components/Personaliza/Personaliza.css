@@ -1,100 +1,84 @@
-.personaliza-container{
-    min-height: 100vh;
+.personaliza-container {
     background-color: rgb(255, 255, 255);
-
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding: 0 5%;
     overflow: hidden;
 }
-.personaliza-title{
+
+.personaliza-title {
     font-size: 5.3rem;
-   
     padding-top: 2rem;
 }
 
-
-
-.personaliza-text{
+.personaliza-text {
     font-size: 1.5rem;
     font-style: italic;
     color: rgb(88, 88, 88);
     line-height: 1.4;
 }
-.personaliza-list{
+
+.personaliza-list-container {
     display: flex;
-
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-bottom: 3rem;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    background-color: black;
 }
-.personaliza-list-li {
-    background: linear-gradient(to bottom, rgb(167, 167, 167), rgb(9, 9, 9)); /* Degradado de plata a negro */
-    color: white; /* Texto en color blanco para contraste */
-    list-style: none; /* Remueve los estilos por defecto de lista */
-    padding: 0px; /* Espacio alrededor del texto */
-    margin: 0 1rem 10px 0; /* Margen superior e inferior para separar los elementos */
-    border-radius: 50%; /* Borde redondo */
-    text-align: center; /* Centra el texto */
-    width: 220px; /* Ancho del contenedor */
-    height: 220px; /* Altura del contenedor */
-    display: flex; /* Usamos flexbox para alinear el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    font-size: 1.2em; /* Ajusta el tamaño de fuente según prefieras */
-    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño del contenedor */
-    flex-direction: column; /* Orienta el contenido en columna */
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 3px;
-    font-style: oblique 14deg;
-    position: relative;
-}
-.personaliza-list-li::before {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    border: 2px dotted rgb(0, 0, 0); /* Adorno de borde punteado */
-    z-index: 2;
-    width: 245px;
-    height: 245px;
-}
-.personaliza-list-li::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid rgb(0, 0, 0); /* Adorno de borde punteado */
-    z-index: 2;
-    width: 230px;
-    height: 230px;
-}
+
 .personaliza-list {
-    perspective: 1000px; /* Añade perspectiva para efectos 3D */
-}
-
-@keyframes rotateYAnimation {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por defecto */
+    gap: 10px; /* Ajusta el espacio entre los elementos si es necesario */
+    list-style-type: none; /* Quita los puntos de la lista */
 }
 
 
-.personaliza-list-li:hover {
-    animation: rotateYAnimation 0.8s linear 1; /* Aplica la animación al hacer hover */
-}
 .personaliza-list-li {
-    /* Tu estilo existente permanece igual */
-    transition: transform 0.8s; /* Suaviza la transición de la transformación */
-    transform-style: preserve-3d; /* Asegura que los hijos del elemento también se transformen en 3D */
+    list-style: none;
+    /* Remueve los estilos por defecto de lista */
+    margin: 0 1rem 10px 0;
+    /* Margen superior e inferior para separar los elementos */
+
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-style: oblique 14deg;
+    font-size: 1.6rem;
+    color: #ccc;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0 1rem;
+    height: 60px;
+    /* Ajusta la altura según sea necesario */
+}
+
+.imgabajo {
+    width: 30px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 30px;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1000px) {
+    .personaliza-list {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas pequeñas */
+    }
+    .personaliza-list-li{
+        font-size: 1.3rem;
+       
+        padding-top: .5rem;
+    }
 }

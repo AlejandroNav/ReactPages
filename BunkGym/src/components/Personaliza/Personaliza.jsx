@@ -1,25 +1,61 @@
-import React from 'react'
+
 import './Personaliza.css'
+import downArrow from '../../assets/down.png'
+
+
+import strongy from '../../assets/strongy.png';
+import crossy from '../../assets/crossy.png';
+import inco from '../../assets/inco.png';
+import bunky from '../../assets/bunky.png';
+
+const items = [
+    'Color exterior',
+    'Color interior',
+    'Máquinas',
+    'Personalización de máquinas',
+    'Equipo de música',
+    'Alarma / Cámaras de seguridad',
+    'Color interior: Wifi',
+    'Máquinas: Complementos externos',
+    'Personalización de máquinas: nuevos módulos',
+    'Equipo de música: Energía solar'
+];
+const images = [
+    { src: bunky, text: 'BUNKGYM CROSSFIT ' },
+    { src: strongy, text: 'BUNKGYM STRONG  ' },
+    { src: inco, text: 'BUNKGYM 360 ' },
+    { src: crossy, text: 'BUNKGYM INCONFORMISTA  ' },
+];
+
 const Personaliza = () => {
     return (
         <div className="personaliza-container">
-            <h1 className="personaliza-title titulo-general">PERSONALIZA TU BUNKGYM</h1>
+            <h1 className="personaliza-title titulo-general">PERSONALIZA TU BUNKGYM 2</h1>
             <p className="personaliza-text parrafo">En Bunkgym, nos adaptamos a ti como tu rutina de entrenamiento debería hacerlo.
                 A continuación te mostramos las partes de tu Bunkgym
                 que puedes personalizar
             </p>
-            <ul className="personaliza-list">
-                <li className='personaliza-list-li'>Color exterior</li>
-                <li className='personaliza-list-li'>Color interior</li>
-                <li className='personaliza-list-li' >Máquinas</li>
-                <li className='personaliza-list-li'>Personalización de máquinas</li>
-                <li className='personaliza-list-li'>Equipo de música</li>
-                <li className='personaliza-list-li'>Alarma / Cámaras de seguridad</li>
-                <li className='personaliza-list-li'>Color interior: Wifi</li>
-                <li className='personaliza-list-li'    >Máquinas: Complementos externos</li>
-                <li className='personaliza-list-li'    >Personalización de máquinas: nuevos módulos</li>
-                <li className='personaliza-list-li'>Equipo de música: Energía solar</li>
-            </ul>
+
+            <div className="">
+                <div className="image-section">
+                    {images.map((image, index) => (
+                        <div key={index} className="image-container">
+                            <img src={image.src} alt={`Image ${index + 1}`} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className='personaliza-list-container'>
+                <ul className="personaliza-list">
+                    {items.map((item, index) => (
+                        <li key={index} className="personaliza-list-li">
+                            <img src={downArrow} alt="Down arrow" className="imgabajo" />
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
