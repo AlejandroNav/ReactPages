@@ -1,5 +1,6 @@
 import './Quecontiene.css'
 import down from '../../assets/down.png'
+import greycheck from '../../assets/greycheck.png'
 
 const Quecontiene = () => {
     const elementosGimnasio = [
@@ -43,8 +44,8 @@ const Quecontiene = () => {
                 <ul className='quecontiene-elementos'>
                     {elementosGimnasio.map((elemento, index) => (
                         <li key={index} className='quecontiene-elemento'>
-                            <img src= {down} alt='Paloma' className='quecontiene-logo' />
-                            <p className='white-text'>{elemento}</p>
+                            <img src= {greycheck} alt='Paloma' className='quecontiene-logo' />
+                            <p className='white-text quecontine-texto'>{elemento}</p>
                         </li>
                     ))}
                 </ul>

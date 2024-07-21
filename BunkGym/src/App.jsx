@@ -32,6 +32,7 @@ import CrossTitle from './components/CrossTitle/CrossTitle';
 import CarruselLargo from './components/CarruselLargo/CarruselLargo';
 import Quetipo from './components/Quetipo/Quetipo';
 import Quecontiene from './components/Quecontiene/Quecontiene';
+import Quienpuede from './components/Quienpuede/Quienpuede';
 function App() {
   return (
     <Router>
@@ -122,6 +123,7 @@ function Crossfit() {
       <Quetipo />
       <Quecontiene/>
       <Personaliza />
+      <Quienpuede />
       <Bunkgreen />
       <Call />
     </>

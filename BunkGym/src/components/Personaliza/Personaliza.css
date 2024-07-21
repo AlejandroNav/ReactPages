@@ -7,11 +7,13 @@
     align-items: center;
     gap: 2rem;
     overflow: hidden;
+    margin-top: 2rem;
 }
 
 .personaliza-title {
     font-size: 5.3rem;
     padding-top: 2rem;
+    
 }
 
 .personaliza-text {

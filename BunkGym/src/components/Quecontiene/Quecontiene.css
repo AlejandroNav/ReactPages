@@ -5,7 +5,6 @@
     align-items: center;
     background-color: black;
 }
-
 .quecontiene-title-container,
 .quecontiene-text-container,
 .quecontiene-elementos {
@@ -18,17 +17,34 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:2rem;
-
+    padding: 0rem 3rem;
+    padding-bottom: 3rem;
 }
-
 .quecontiene-elemento {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
-
 .quecontiene-logo {
     max-width: 50px;
     height: auto;
+}
+.quecontine-texto{
+    text-align: start;
+}
+@media screen and (max-width: 1150px) {
+    .quecontiene-elementos {
+        grid-template-columns: repeat(3, 1fr);
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .quecontiene-elementos {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    
 }
