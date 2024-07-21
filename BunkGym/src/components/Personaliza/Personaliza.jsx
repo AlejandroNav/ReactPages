@@ -30,7 +30,7 @@ const images = [
 const Personaliza = () => {
     return (
         <div className="personaliza-container">
-            <h1 className="personaliza-title titulo-general">PERSONALIZA TU BUNKGYM 2</h1>
+            <h1 className="personaliza-title titulo-general">PERSONALIZA TU BUNKGYM</h1>
             <p className="personaliza-text parrafo">En Bunkgym, nos adaptamos a ti como tu rutina de entrenamiento debería hacerlo.
                 A continuación te mostramos las partes de tu Bunkgym
                 que puedes personalizar

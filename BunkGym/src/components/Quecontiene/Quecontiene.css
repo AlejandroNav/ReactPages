@@ -1,0 +1,34 @@
+.quecontiene-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.quecontiene-title-container,
+.quecontiene-text-container,
+.quecontiene-elementos {
+    padding-bottom: 3rem;
+}
+.quecontiene-text-container{
+    width: 80%;
+}
+.quecontiene-elementos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:2rem;
+
+}
+
+.quecontiene-elemento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quecontiene-logo {
+    max-width: 50px;
+    height: auto;
+}

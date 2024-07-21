@@ -13,12 +13,36 @@
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
-
-
-
-
-
+.quetipo-elementos{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-size: .9rem;
+}
 .quetipo-logo {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
 }   
+@media screen and (max-width: 1150px) {
+    .quetipo-logo {
+        max-width: 150px;
+        height: auto;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .quetipo-text-container{
+        width: 90%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}

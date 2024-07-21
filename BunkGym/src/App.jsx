@@ -31,6 +31,7 @@ import Mosaico from './components/Mosaico/Mosaico';
 import CrossTitle from './components/CrossTitle/CrossTitle';
 import CarruselLargo from './components/CarruselLargo/CarruselLargo';
 import Quetipo from './components/Quetipo/Quetipo';
+import Quecontiene from './components/Quecontiene/Quecontiene';
 function App() {
   return (
     <Router>
@@ -107,6 +108,8 @@ function Ayuntamientos() {
     <>
       <Ayunta />
       <Bunkgreen />
+      <Call />
+      <Clientes />
     </>
   );
 }
@@ -117,6 +120,10 @@ function Crossfit() {
       <CrossTitle />
       <CarruselLargo />
       <Quetipo />
+      <Quecontiene/>
+      <Personaliza />
+      <Bunkgreen />
+      <Call />
     </>
   );
 }
