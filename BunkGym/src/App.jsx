@@ -30,6 +30,7 @@ import Alargado from './components/alargado/alargado';
 import Mosaico from './components/Mosaico/Mosaico';
 import CrossTitle from './components/CrossTitle/CrossTitle';
 import CarruselLargo from './components/CarruselLargo/CarruselLargo';
+import Quetipo from './components/Quetipo/Quetipo';
 function App() {
   return (
     <Router>
@@ -115,6 +116,7 @@ function Crossfit() {
     <>
       <CrossTitle />
       <CarruselLargo />
+      <Quetipo />
     </>
   );
 }

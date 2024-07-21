@@ -174,7 +174,49 @@ table {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #141414;
+	text-align: center;
 }
+.stroke-text-white-title {    
+	font-family: 'Anton', serif;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    font-style: oblique 14deg;
+	font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+	text-align: center;
+}
+
+.grey-text{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-size: 1.5rem;
+    color: rgb(88, 88, 88); 
+    text-align: center;
+    font-style: italic;
+}
+.black-text{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-size: 1.5rem;
+    color: rgb(18, 18, 18); 
+    text-align: center;
+    font-style: italic;
+}
+.white-text{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-size: 1.5rem;
+    color: rgb(224, 224, 224); 
+    text-align: center;
+    font-style: italic;
+}
+
+
 .blur{
 	position: absolute;
 	width: 22rem;
