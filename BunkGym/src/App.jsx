@@ -33,6 +33,7 @@ import CarruselLargo from './components/CarruselLargo/CarruselLargo';
 import Quetipo from './components/Quetipo/Quetipo';
 import Quecontiene from './components/Quecontiene/Quecontiene';
 import Quienpuede from './components/Quienpuede/Quienpuede';
+import { elementosGimnasio1, elementosGimnasio2, titles, texts } from '../src/data/queContieneData.js';
 function App() {
   return (
     <Router>
@@ -45,6 +46,9 @@ function App() {
           <Route path="/ayuntamientos" element={<Ayuntamientos />} />
           <Route path="/crossfit" element={<Crossfit />} />
           <Route path="/gimnasios" element={<Gimnasios />} />
+          <Route path="/360" element={<Crossfit360 />} />
+          <Route path="/strong" element={<Strong />} />
+          <Route path="/inconformista" element={<Inconformista />} />
         </Routes>
         <Footer />
       </div>
@@ -121,7 +125,11 @@ function Crossfit() {
       <CrossTitle />
       <CarruselLargo />
       <Quetipo />
-      <Quecontiene/>
+      <Quecontiene
+        title={titles[0]}
+        text={texts[0]}
+        elementos={elementosGimnasio1}
+      />
       <Personaliza />
       <Quienpuede />
       <Bunkgreen />
@@ -129,7 +137,49 @@ function Crossfit() {
     </>
   );
 }
-
+function Crossfit360() {
+  return (
+    <>
+      <Quetipo />
+      <Quecontiene
+        title={titles[1]}
+        text={texts[1]}
+        elementos={elementosGimnasio2}
+      />
+      <Personaliza />
+      <Quienpuede />
+      <Call />
+    </>
+  );
+}
+function Strong() {
+  return (
+    <>
+      <Quecontiene
+        title={titles[2]}
+        text={texts[2]}
+        elementos={elementosGimnasio1}
+      />
+      <Personaliza />
+      <Quienpuede />
+      <Call />
+    </>
+  );
+}
+function Inconformista() {
+  return (
+    <>
+      <Quecontiene
+        title={titles[3]}
+        text={texts[3]}
+        elementos={elementosGimnasio2}
+      />
+      <Personaliza />
+      <Quienpuede />
+      <Call />
+    </>
+  );
+}
 function Gimnasios() {
   return (
     <>

@@ -1,58 +1,30 @@
-import './Quecontiene.css'
-import down from '../../assets/down.png'
-import greycheck from '../../assets/greycheck.png'
+import React from 'react';
+import './Quecontiene.css';
+import greycheck from '../../assets/greycheck.png';
 
-const Quecontiene = () => {
-    const elementosGimnasio = [
-        'Bench Press',
-        'Peck Deck',
-        'Poleas',
-        'Mancuernas',
-        'Barra Olímpica',
-        'Cajones de Salto',
-        'Remos',
-        'Cuerdas de Batalla',
-        'Kettlebells',
-        'Anillas','Bench Press',
-        'Peck Deck',
-        'Poleas',
-        'Mancuernas',
-        'Barra Olímpica',
-        'Cajones de Salto',
-        'Remos',
-        'Cuerdas de Batalla',
-        'Kettlebells',
-        'Anillas'
-    ];
-
-
-
+const Quecontiene = ({ title, text, elementos }) => {
     return (
         <div className='quecontiene-container'>
-
             <div className='quecontiene-title-container stroke-text-white-title'>
-                <h1 className='quecontiene-title'>¿QUÉ CONTIENE BUNKGYM CROSSFIT?</h1>
+                <h1 className='quecontiene-title'>{title}</h1>
             </div>
-
             <div className='quecontiene-text-container'>
                 <p className='quecontiene-text white-text'>
-                    Bunkgym Crossfit tiene todo lo necesario para realizar tus entrenamientos en excelencia con todo el equipamiento de un box de crossfit.
+                    {text}
                 </p>
             </div>
-
             <div className='quecontiene-elementos-container'>
                 <ul className='quecontiene-elementos'>
-                    {elementosGimnasio.map((elemento, index) => (
+                    {elementos.map((elemento, index) => (
                         <li key={index} className='quecontiene-elemento'>
-                            <img src= {greycheck} alt='Paloma' className='quecontiene-logo' />
+                            <img src={greycheck} alt='Paloma' className='quecontiene-logo' />
                             <p className='white-text quecontine-texto'>{elemento}</p>
                         </li>
                     ))}
                 </ul>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default Quecontiene
+export default Quecontiene;
