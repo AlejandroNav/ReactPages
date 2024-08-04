@@ -29,9 +29,15 @@ const Quienpuede = () => {
                     Bunkgym es para deportistas principiantes, avanzados y de élite. Bunkgym es para todos los que apuesten por el deporte, la salud y cuidar de su cuerpo.
                 </p>
             </div>
+            <div className='quienpuede-text-container'>
+                <p className='quienpuede-text grey-text'>
+                    ¿Con qué sector te identificas?
+
+                </p>
+            </div>
             <div className='quienpuede-elementos-container'>
                 <ul className='quienpuede-elementos'>
-                {clientes.map((cliente, index) => (
+                    {clientes.map((cliente, index) => (
                         <li key={index} className='quienpuede-elemento'>
                             <img src={cliente.imagen} alt={cliente.nombre} className='quienpuede-logo' />
                             <p className='grey-text'>{cliente.nombre}</p>

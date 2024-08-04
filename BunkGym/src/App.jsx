@@ -34,11 +34,14 @@ import Quetipo from './components/Quetipo/Quetipo';
 import Quecontiene from './components/Quecontiene/Quecontiene';
 import Quienpuede from './components/Quienpuede/Quienpuede';
 import { elementosGimnasio1, elementosGimnasio2, titles, texts } from '../src/data/queContieneData.js';
+import { otroData } from '../src/data/otroData.js';import Otros from './components/Otros/Otros.jsx';
+import ScrollToTop from './scrollToTop';
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/quienesSomos" element={<QuienesSomos />} />
@@ -121,35 +124,38 @@ function Ayuntamientos() {
 
 function Crossfit() {
   return (
-    <>
-      <CrossTitle />
-      <CarruselLargo />
-      <Quetipo />
-      <Quecontiene
-        title={titles[0]}
-        text={texts[0]}
-        elementos={elementosGimnasio1}
-      />
-      <Personaliza />
-      <Quienpuede />
-      <Bunkgreen />
-      <Call />
-    </>
+      <>
+          <CrossTitle />
+          <CarruselLargo />
+          <Quetipo />
+          <Quecontiene
+              title={otroData[0].title}
+              text={otroData[0].text}
+              elementos={elementosGimnasio1}
+          />
+          <Personaliza />
+          <Quienpuede />
+          <Otros data={otroData} currentIndex={0} />
+          <Bunkgreen />
+          <Call />
+      </>
   );
 }
+
 function Crossfit360() {
   return (
-    <>
-      <Quetipo />
-      <Quecontiene
-        title={titles[1]}
-        text={texts[1]}
-        elementos={elementosGimnasio2}
-      />
-      <Personaliza />
-      <Quienpuede />
-      <Call />
-    </>
+      <>
+          <Quetipo />
+          <Quecontiene
+              title={otroData[1].title}
+              text={otroData[1].text}
+              elementos={elementosGimnasio2}
+          />
+          <Personaliza />
+          <Quienpuede />
+          <Otros data={otroData} currentIndex={1} />
+          <Call />
+      </>
   );
 }
 function Strong() {
