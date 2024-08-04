@@ -34,6 +34,21 @@
     transition: 0.3s;
     object-fit: cover;
 }
+
+.Otros-img {
+    /* Ensure the image maintains its width */
+    width: 100%; /* or any specific width you need */
+    display: block; /* Ensure the image is treated as a block-level element */
+    margin-top: 1rem;
+}
+
+/* New style for link to ensure image styling is maintained */
+.Otros-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
 .Otros-img-wrapper{
     width: 28%;
     height: 350px;
@@ -55,4 +70,27 @@
 }
 .Otros-img:hover{
     transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1150px) {
+    .Otros-img-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .Otros-img-wrapper{
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Otros-img-wrapper{
+        width: 78%;
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
 }

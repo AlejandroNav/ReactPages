@@ -23,7 +23,7 @@ export const otroData = [
         index: 2
     },
     {
-        title: "INCONFORMISTA",
+        title: "BUNKGYM INCONFORMISTA",
         image: inconformistaImage,
         text: "Bunkgym Inconformista",
         index: 3

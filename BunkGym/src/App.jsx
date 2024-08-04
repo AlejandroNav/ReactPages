@@ -168,6 +168,7 @@ function Strong() {
       />
       <Personaliza />
       <Quienpuede />
+      <Otros data={otroData} currentIndex={2} />
       <Call />
     </>
   );
@@ -182,6 +183,7 @@ function Inconformista() {
       />
       <Personaliza />
       <Quienpuede />
+      <Otros data={otroData} currentIndex={3} />
       <Call />
     </>
   );
