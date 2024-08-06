@@ -34,7 +34,9 @@ import Quetipo from './components/Quetipo/Quetipo';
 import Quecontiene from './components/Quecontiene/Quecontiene';
 import Quienpuede from './components/Quienpuede/Quienpuede';
 import { elementosGimnasio1, elementosGimnasio2, titles, texts } from '../src/data/queContieneData.js';
-import { otroData } from '../src/data/otroData.js';import Otros from './components/Otros/Otros.jsx';
+import { otroData } from '../src/data/otroData.js'; import Otros from './components/Otros/Otros.jsx';
+import { elementos360, elementosCrossfit, elementosInconforme, elementosStrong } from './data/quienesData';
+
 import ScrollToTop from './scrollToTop';
 function App() {
   return (
@@ -124,38 +126,60 @@ function Ayuntamientos() {
 
 function Crossfit() {
   return (
-      <>
-          <CrossTitle />
-          <CarruselLargo />
-          <Quetipo />
-          <Quecontiene
-              title={otroData[0].title}
-              text={otroData[0].text}
-              elementos={elementosGimnasio1}
-          />
-          <Personaliza />
-          <Quienpuede />
-          <Otros data={otroData} currentIndex={0} />
-          <Bunkgreen />
-          <Call />
-      </>
+    <>
+      <CrossTitle />
+      <CarruselLargo />
+      <Quetipo
+        elementos={elementosCrossfit}
+        title="Crossfit"
+        info=""
+      />
+      <Quetipo
+        elementos={elementos360}
+        title="360"
+        info="Bunkgym 360 es el gimnasio más polivalente que se adapta a todo tipo de perfiles, cubriendo todas las necesidades que una persona que quiere practicar deporte puede necesitar combinando musculación y cardio en un mismo espacio." />
+      <Quetipo
+        elementos={elementosStrong}
+        title="Strong"
+        info="Bunkgym Strong es para aquellos que van a todo o nada, que entrenan al fallo y se enfocan en maximizar su fuerza a través del entrenamiento de powerlifting con entrenamientos pesados que te llevarán al límite.
+" />
+      <Quetipo
+        elementos={elementosInconforme}
+        title="Inconformista"
+        info="Bunkgym Inconformista es para aquellos que no solamente les vale con entrenar, sino que quieren tener un espacio único y a su medida para lograr su mejor versión entrenando en un lugar creado para ellos." />
+
+
+      <Quecontiene
+        title={otroData[0].title}
+        text={otroData[0].text}
+        elementos={elementosGimnasio1}
+      />
+
+      <Personaliza />
+      <Quienpuede />
+      <Otros data={otroData} currentIndex={0} />
+      <Bunkgreen />
+      <Call />
+    </>
   );
 }
 
 function Crossfit360() {
   return (
-      <>
-          <Quetipo />
-          <Quecontiene
-              title={otroData[1].title}
-              text={otroData[1].text}
-              elementos={elementosGimnasio2}
-          />
-          <Personaliza />
-          <Quienpuede />
-          <Otros data={otroData} currentIndex={1} />
-          <Call />
-      </>
+    <>
+      <Quetipo
+        elementos={elementos360}
+        title="360" />
+      <Quecontiene
+        title={otroData[1].title}
+        text={otroData[1].text}
+        elementos={elementosGimnasio2}
+      />
+      <Personaliza />
+      <Quienpuede />
+      <Otros data={otroData} currentIndex={1} />
+      <Call />
+    </>
   );
 }
 function Strong() {
