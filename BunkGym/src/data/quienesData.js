@@ -6,6 +6,13 @@ import tipos21 from "../assets/tipos-21.png";
 import tipos22 from "../assets/tipos-22.png";
 import tipos23 from "../assets/tipos-23.png";
 import tipos24 from "../assets/tipos-24.png";
+import tipos25 from "../assets/tipos-25.png";
+import tipos26 from "../assets/tipos-26.png";
+import tipos27 from "../assets/tipos-27.png";
+import tipos28 from "../assets/tipos-28.png";
+import tipos29 from "../assets/tipos-29.png";
+import tipos30 from "../assets/tipos-30.png";
+import tipos31 from "../assets/tipos-31.png";
 
 // Define each set of elementos
 export const elementosCrossfit = [
@@ -19,8 +26,8 @@ export const elementosCrossfit = [
 ];
 
 export const elementos360 = [
-    { nombre: 'Culturistas', logo: tipos18 },
-    { nombre: 'Fitness', logo: tipos19 },
+    { nombre: 'Culturistas', logo: tipos25 },
+    { nombre: 'Fitness', logo: tipos26 },
     { nombre: 'Atletas', logo: tipos20 },
     { nombre: 'Adolescentes', logo: tipos21 },
     { nombre: 'Personas mayores', logo: tipos22 },

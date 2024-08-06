@@ -1,7 +1,7 @@
-import crossfitImage from '../assets/crossfit.png';
-import threeSixtyImage from '../assets/360.png';
-import strongImage from '../assets/strong.png';
-import inconformistaImage from '../assets/inconformista.png';
+import crossfitImage from '../assets/bunkgreen2.png';
+import threeSixtyImage from '../assets/bunkgreen2.png';
+import strongImage from '../assets/bunkgreen2.png';
+import inconformistaImage from '../assets/bunkgreen2.png';
 
 export const otroData = [
     {

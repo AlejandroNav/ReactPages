@@ -6,7 +6,7 @@ const Quetipo = ({ title, elementos }) => {
     return (
         <div className='quetipo-container'>
             <div className='quetipo-title-container stroke-text-black-title'>
-                
+
                 <h1 className='quetipo-title'>¿QUIÉN ENTRENA EN UN BUNKGYM {title.toUpperCase()}?</h1>
             </div>
             <div className='quetipo-text-container'>
