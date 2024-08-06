@@ -38,6 +38,7 @@ import { otroData } from '../src/data/otroData.js'; import Otros from './compone
 import { elementos360, elementosCrossfit, elementosInconforme, elementosStrong } from './data/quienesData';
 
 import ScrollToTop from './scrollToTop';
+import Cr360title from './components/Cr360title/Cr360title.jsx';
 function App() {
   return (
     <Router>
@@ -132,29 +133,14 @@ function Crossfit() {
       <Quetipo
         elementos={elementosCrossfit}
         title="Crossfit"
-        info=""
+        info="Bunkgym Crossfit está preparado para atletas híbridos y deportistas de resistencia que quieran desatar su potencial entrenando en un espacio funcional,
+                    combinando ejercicios de fuerza, resistencia, equilibrio y velocidad"
       />
-      <Quetipo
-        elementos={elementos360}
-        title="360"
-        info="Bunkgym 360 es el gimnasio más polivalente que se adapta a todo tipo de perfiles, cubriendo todas las necesidades que una persona que quiere practicar deporte puede necesitar combinando musculación y cardio en un mismo espacio." />
-      <Quetipo
-        elementos={elementosStrong}
-        title="Strong"
-        info="Bunkgym Strong es para aquellos que van a todo o nada, que entrenan al fallo y se enfocan en maximizar su fuerza a través del entrenamiento de powerlifting con entrenamientos pesados que te llevarán al límite.
-" />
-      <Quetipo
-        elementos={elementosInconforme}
-        title="Inconformista"
-        info="Bunkgym Inconformista es para aquellos que no solamente les vale con entrenar, sino que quieren tener un espacio único y a su medida para lograr su mejor versión entrenando en un lugar creado para ellos." />
-
-
       <Quecontiene
         title={otroData[0].title}
         text={otroData[0].text}
         elementos={elementosGimnasio1}
       />
-
       <Personaliza />
       <Quienpuede />
       <Otros data={otroData} currentIndex={0} />
@@ -167,9 +153,12 @@ function Crossfit() {
 function Crossfit360() {
   return (
     <>
+    <Cr360title/>
+      <CarruselLargo />
       <Quetipo
         elementos={elementos360}
-        title="360" />
+        title="360"
+        info="Bunkgym 360 es el gimnasio más polivalente que se adapta a todo tipo de perfiles, cubriendo todas las necesidades que una persona que quiere practicar deporte puede necesitar combinando musculación y cardio en un mismo espacio." />
       <Quecontiene
         title={otroData[1].title}
         text={otroData[1].text}
@@ -184,7 +173,11 @@ function Crossfit360() {
 }
 function Strong() {
   return (
-    <>
+    <><CarruselLargo />
+      <Quetipo
+        elementos={elementosStrong}
+        title="Strong"
+        info="Bunkgym Strong es para aquellos que van a todo o nada, que entrenan al fallo y se enfocan en maximizar su fuerza a través del entrenamiento de powerlifting con entrenamientos pesados que te llevarán al límite." />
       <Quecontiene
         title={titles[2]}
         text={texts[2]}
@@ -199,7 +192,12 @@ function Strong() {
 }
 function Inconformista() {
   return (
-    <>
+    <><CarruselLargo />
+      <Quetipo
+        elementos={elementosInconforme}
+        title="Inconformista"
+        info="Bunkgym Inconformista es para aquellos que no solamente les vale con entrenar, sino que quieren tener un espacio único y a su medida para lograr su mejor versión entrenando en un lugar creado para ellos." />
+
       <Quecontiene
         title={titles[3]}
         text={texts[3]}

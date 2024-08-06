@@ -12,7 +12,9 @@ import tipos27 from "../assets/tipos-27.png";
 import tipos28 from "../assets/tipos-28.png";
 import tipos29 from "../assets/tipos-29.png";
 import tipos30 from "../assets/tipos-30.png";
-import tipos31 from "../assets/tipos-31.png";
+import tipos31 from "../assets/tipos-31.png" ;
+import tipos32 from "../assets/tipos-32.png";
+import tipos33 from "../assets/tipos-33.png";
 
 // Define each set of elementos
 export const elementosCrossfit = [
@@ -26,26 +28,26 @@ export const elementosCrossfit = [
 ];
 
 export const elementos360 = [
-    { nombre: 'Culturistas', logo: tipos25 },
-    { nombre: 'Fitness', logo: tipos26 },
-    { nombre: 'Atletas', logo: tipos20 },
-    { nombre: 'Adolescentes', logo: tipos21 },
-    { nombre: 'Personas mayores', logo: tipos22 },
-    { nombre: 'Pérdida de peso', logo: tipos23 }
+    { nombre: 'Culturistas', logo: tipos26 },
+    { nombre: 'Fitness', logo: tipos27 },
+    { nombre: 'Atletas', logo: tipos28 },
+    { nombre: 'Adolescentes', logo: tipos29 },
+    { nombre: 'Personas mayores', logo: tipos30 },
+    { nombre: 'Pérdida de peso', logo: tipos31 }
 ];
 
 export const elementosStrong = [
-    { nombre: 'Powerlifters', logo: tipos18 },
-    { nombre: 'Culturistas', logo: tipos19 },
-    { nombre: 'Fitness', logo: tipos20 }
+    { nombre: 'Powerlifters', logo: tipos25 },
+    { nombre: 'Culturistas', logo: tipos26 },
+    { nombre: 'Fitness', logo: tipos27 }
 ];
 
 export const elementosInconforme = [
-    { nombre: 'Principiantes', logo: tipos18 },
+    { nombre: 'Principiantes', logo: tipos27 },
     { nombre: 'Avanzados', logo: tipos19 },
-    { nombre: 'Profesionales', logo: tipos20 },
-    { nombre: 'Niñ@s', logo: tipos21 },
-    { nombre: 'Jóvenes', logo: tipos22 },
-    { nombre: 'Mayores', logo: tipos23 },
-    { nombre: 'Discapacitados', logo: tipos24 }
+    { nombre: 'Profesionales', logo: tipos25 },
+    { nombre: 'Niñ@s', logo: tipos32 },
+    { nombre: 'Jóvenes', logo: tipos29 },
+    { nombre: 'Mayores', logo: tipos30 },
+    { nombre: 'Discapacitados', logo: tipos33 }
 ];

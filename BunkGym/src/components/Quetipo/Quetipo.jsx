@@ -2,7 +2,7 @@
 
 import './Quetipo.css';
 
-const Quetipo = ({ title, elementos }) => {
+const Quetipo = ({ title, elementos ,info}) => {
     return (
         <div className='quetipo-container'>
             <div className='quetipo-title-container stroke-text-black-title'>
@@ -11,8 +11,7 @@ const Quetipo = ({ title, elementos }) => {
             </div>
             <div className='quetipo-text-container'>
                 <p className='quetipo-text grey-text'>
-                    Bunkgym {title} está preparado para atletas híbridos y deportistas de resistencia que quieran desatar su potencial entrenando en un espacio funcional,
-                    combinando ejercicios de fuerza, resistencia, equilibrio y velocidad.
+                    {info}
                 </p>
             </div>
             <div className='quetipo-elementos-container'>
