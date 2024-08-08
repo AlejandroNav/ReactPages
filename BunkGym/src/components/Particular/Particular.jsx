@@ -1,11 +1,10 @@
-import React from 'react'
+
 import Carruseles from '../Carruseles/Carruseles'
 import outside2 from '../../assets/particularhero.png';
 import particulargym1 from '../../assets/div6.png';
 import particulargym2 from '../../assets/div9.png';
 import particulargym3 from '../../assets/div4.png';
 import div7 from '../../assets/div7.png';
-import particulargym4 from '../../assets/particulargym3.png';
 import strong from '../../assets/STRONG.png';
 import crossfit from '../../assets/CROSSFIT.png';
 import './Particular.css'
@@ -51,9 +50,11 @@ const Particular = () => {
                 <section className='particular-section2'>
 
                 </section>
+                <section><p className='particular-text-title'> invierte en ti, date el capricho que mereces.</p></section>
                 <section className='particular-section'>
+
                     <div className='particular-text-container'>
-                    <p className='particular-text-title'> invierte en ti, date el capricho que mereces.</p>
+
                         <p className='particular-text'>Se dueño de tu propio gimnasio, creado por tus propias reglas. No tendrás que lidiar con gimnasios convencionales abarrotados de gente, aguantando el ambiente sudoroso y asfixiante y preocupándote por las medidas sanitarias del espacio.  </p>
                         <p className='particular-text'> Te presentamos una nueva forma de entrenar, disfrutar y vivir, en la que serás propietario de un espacio exclusivo, donde tanto tú como tus familiares y amigos podréis compartir un momento divertido a la vez de tomar el control de su bienestar.
                         </p>

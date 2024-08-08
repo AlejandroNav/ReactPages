@@ -14,6 +14,8 @@
 }
 .bunkteam-title{
     position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
 }
 .bunkteam-subtitle{
     position: relative;
@@ -32,6 +34,7 @@
     width: 80%;
     z-index: 1;
     padding-bottom: 3rem;
+    margin-top: 2rem;
 }
 .bunkteam-figure{
     display: flex;

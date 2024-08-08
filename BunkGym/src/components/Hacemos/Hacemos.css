@@ -34,12 +34,12 @@
 
 .lineas-negocio {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .linea {
     position: relative;
-    width: 350px;
+    width: 450px;
     height: 350px;
     overflow: hidden;
 }
@@ -67,7 +67,19 @@
     height: 8rem;
 }
 .linea-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.3;
     text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: .4rem;
+    font-family: 'anton', serif;
+    font-style: oblique 14deg;
+    letter-spacing: 3px;
+
 }
+.linea:hover img {
+    transform: scale(1.3);
+    /* Simple zoom effect on hover */
+  }  

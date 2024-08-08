@@ -46,11 +46,13 @@
     font-style: oblique 14deg;
     line-height: 1.3;
     font-weight: 700;
-    width: 100%;
-    
-    margin-top: 0rem;
-    margin-bottom: 3rem;
+    width: 100%; 
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     margin-left: 0rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 6px;
+    font-style: oblique 14deg;
 }
 .particular-text1 {
     font-size: 1.6rem;
@@ -96,20 +98,15 @@
     height: 220px;
     object-fit: cover;
 }
-
-
-
-
-
-
 .particular-section {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 2rem;
     overflow: hidden;
 }
 .particular-img-container {
+    padding-top: 1.6rem;
    width: 80%;
 }
 .particular-section2 {

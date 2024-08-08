@@ -4,7 +4,6 @@ import reason1 from '../../assets/reason1.png'
 import reason2 from '../../assets/reason2.png'
 import reason3 from '../../assets/reason3.png'
 import reason4 from '../../assets/reason4.png'
-import palomita from '../../assets/tick.png'
 import palomita2 from '../../assets/tick2.png'
 
 const Reasons = () => {
@@ -37,11 +36,13 @@ const Reasons = () => {
             <h1 className="reasons-big-title titulo-general-blanco">MÁS BUNKGYM </h1>
             <p className='parrafo2'>Si Bunkgym no se adapta a ti, por precio, falta de espacio o características, tenemos más opciones.</p>
             <div className='reasons'>
-                <div className="reasons-left">
-                    <img src={reason1} alt="" />
-                    <img src={reason2} alt="" />
-                    <img src={reason3} alt="" />
-                    <img src={reason4} alt="" />
+                <div className='reasons-left-container'>
+                    <div className="reasons-left">
+                        <img src={reason1} alt="" />
+                        <img src={reason2} alt="" />
+                        <img src={reason3} alt="" />
+                        <img src={reason4} alt="" />
+                    </div>
                 </div>
 
                 <div className='reasons-right'>

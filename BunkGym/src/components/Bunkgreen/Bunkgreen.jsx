@@ -33,7 +33,7 @@ const Bunkgreen = () => {
                 </div>
                 <div className="bunkgreen-img-wrapper">
                     <img src={green8} alt="bunkgreen" className='bunkgreen-img' />
-                    <p className="bunkgreen-text">Por cada Bunkgym que fabricamos plantamos 1 árbol</p>
+                    <p className="bunkgreen-text">Por cada Bunkgym que fabricamos plantamos 1&nbsp;árbol</p>
                 </div>
             </div>
         </div>

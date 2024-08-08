@@ -13,12 +13,12 @@ const items = [
     'Color interior',
     'Máquinas',
     'Personalización de máquinas',
-    'Equipo de música',
+    'Sistema musical',
     'Alarma / Cámaras de seguridad',
-    'Color interior: Wifi',
+    'Sistema de Wifi',
     'Máquinas: Complementos externos',
     'Personalización de máquinas: nuevos módulos',
-    'Equipo de música: Energía solar'
+    'Energía solar'
 ];
 const images = [
     { src: bunky, text: 'BUNKGYM CROSSFIT ' },

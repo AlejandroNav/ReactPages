@@ -13,15 +13,19 @@
 .personaliza-title {
     font-size: 5.3rem;
     padding-top: 2rem;
-    
+
 }
 
 .personaliza-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-style: italic;
     color: rgb(88, 88, 88);
     line-height: 1.4;
     width: 80%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-style: oblique 14deg;
+    text-transform: uppercase;
 }
 
 .personaliza-list-container {
@@ -38,9 +42,12 @@
 .personaliza-list {
     padding: 0 6rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas por defecto */
-    gap: 10px; /* Ajusta el espacio entre los elementos si es necesario */
-    list-style-type: none; /* Quita los puntos de la lista */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas por defecto */
+    gap: 10px;
+    /* Ajusta el espacio entre los elementos si es necesario */
+    list-style-type: none;
+    /* Quita los puntos de la lista */
 }
 
 
@@ -77,11 +84,13 @@
 /* Media query para pantallas pequeñas */
 @media (max-width: 1000px) {
     .personaliza-list {
-        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas pequeñas */
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambia a dos columnas en pantallas pequeñas */
     }
-    .personaliza-list-li{
+
+    .personaliza-list-li {
         font-size: 1.3rem;
-       
+
         padding-top: .5rem;
     }
 }

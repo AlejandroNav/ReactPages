@@ -45,7 +45,7 @@ const Experiencia360 = () => {
             }
         },
     ];
-    // IMAGENES QUE SE VOILTEEN Y MUESTREN EL TEXTO SOLO 4 CARDS
+
     const handleCardClick = (index) => {
         const newFlippedCards = [...flippedCards]; // Create a copy of the flipped cards array
         newFlippedCards[index] = !newFlippedCards[index]; // Toggle the flip state of the clicked card
@@ -58,15 +58,17 @@ const Experiencia360 = () => {
             <img src={adorno1} className='card-adorno4 card-adornos' />
             <img src={adorno3} className='card-adorno3 card-adornos' />
             <h2 className='stroke-text-black-title titulo-general'>Experiencia 360</h2>
-            <p className='parrafo experiencia-parrafo'>Ofrecemos un servicio integral, somos una marca única y exclusiva, diseñamos cada bunker y máquina, la fabricamos y te mostramos
-                cómo sacarle el mejor partido en base a tus condiciones y objetivos físicos & emocionales.</p>
+            <div className='parrafo-experience-container'>
+                <p className='parrafo experiencia-parrafo'>Ofrecemos un servicio integral, somos una marca única y exclusiva, diseñamos cada bunker y máquina, la fabricamos y te mostramos
+                    cómo sacarle el mejor partido en base a tus condiciones y objetivos físicos & emocionales.</p>
+            </div>
             <div className='card-container-360'>
                 {cards.map((card, index) => (
                     <div key={index} className={`card-360 ${flippedCards[index] ? 'is-flipped' : ''}`} onClick={() => handleCardClick(index)}>
                         <div className="card-front">
                             <img src={card.frontImage} alt={`Card Image ${index}`} />
                             <h3 className="card-title-flipped">{card.backContent.subtitle}</h3>
-                            
+
                         </div>
                         <div className="card-back">
                             <h3>{card.backContent.subtitle}</h3>

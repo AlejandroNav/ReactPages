@@ -103,7 +103,6 @@ function Particulares() {
       <Particular />
       <Mosaico />
       <ImageSection />
-      <Personalizados />
       <Personaliza />
       <BunkGymRazones />
       <Reasons />
