@@ -9,16 +9,26 @@ import inco from '../../assets/inco.png';
 import bunky from '../../assets/bunky.png';
 
 const items = [
-    'Color exterior',
-    'Color interior',
-    'Máquinas',
-    'Personalización de máquinas',
-    'Sistema musical',
-    'Alarma / Cámaras de seguridad',
-    'Sistema de Wifi',
-    'Máquinas: Complementos externos',
-    'Personalización de máquinas: nuevos módulos',
-    'Energía solar'
+    "Color exterior",
+    "Color interior",
+    "Serigrafía",
+    "Rotulación",
+    "Iluminación interior",
+    "Climatización",
+    "Acceso y uso 100% autónomo",
+    "Conectividad",
+    "Alarma",
+    "Video vigilancia",
+    "Energía solar",
+    "Control de accesos",
+    "Tipo de altavoces",
+    "Control domótico 360",
+    "Accesorios de exterior",
+    "Decoración exterior",
+    "Iluminación exterior",
+    "Ampliación de módulos",
+    "Ampliación de máquinas y complementos",
+    "Sistema de vídeo y voz para entrenamientos"
 ];
 const images = [
     { src: bunky, text: 'BUNKGYM CROSSFIT ' },

@@ -8,7 +8,7 @@ import yellow2 from '../assets/black5.png';
 export const otroData = [
     {
         title: "BUNKGYM CROSSFIT",
-        image: whiteCrossfit,
+        image: redStrong,
         text: "Bunkgym Crossfit lo tiene todo",
         index: 0
     },
@@ -20,13 +20,13 @@ export const otroData = [
     },
     {
         title: "BUNKGYM STRONG",
-        image: redStrong,
+        image: blackInco,
         text: "La última maquinaria en powerlifting ",
         index: 2
     },
     {
         title: "BUNKGYM INCONFORMISTA",
-        image: blackInco,
+        image: whiteCrossfit,
         text: "Bunkgym Inconformista",
         index: 3
     }

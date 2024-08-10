@@ -9,32 +9,24 @@
 
 .cross-title-wrapper {
     width: 100%;
-    height: 900px;
-    background-image: url('../../assets/crossfit-backgorund.png'); /* Ruta a la imagen */
+    height: 700px;
+     /*background-image: url('../../assets/crossfit-backgorund.png'); /* Ruta a la imagen */
+    background-image: url('../../assets/crossfit1.png');
     background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
 }
-.cross-title {
-    text-align: center;
-    font-size: 6.7rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0);
-    font-family: 'Anton', sans-serif;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #ffffff;
-    letter-spacing: 6px;
-    font-style: oblique 14deg;
-    margin-top: 6rem;
-}
 
 .cross-subtitle{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: 'roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.873);
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    
     font-style: italic;
     width: 80%;
     padding: 1rem 0  3rem 0;

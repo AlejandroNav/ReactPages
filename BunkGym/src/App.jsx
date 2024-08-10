@@ -166,6 +166,7 @@ function Crossfit360() {
       <Personaliza />
       <Quienpuede />
       <Otros data={otroData} currentIndex={1} />
+      <Bunkgreen />
       <Call />
     </>
   );
@@ -185,6 +186,7 @@ function Strong() {
       <Personaliza />
       <Quienpuede />
       <Otros data={otroData} currentIndex={2} />
+      <Bunkgreen />
       <Call />
     </>
   );
@@ -205,6 +207,7 @@ function Inconformista() {
       <Personaliza />
       <Quienpuede />
       <Otros data={otroData} currentIndex={3} />
+      <Bunkgreen />
       <Call />
     </>
   );
