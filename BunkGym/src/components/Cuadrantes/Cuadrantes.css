@@ -1,0 +1,66 @@
+.cuadrantes-container {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cuadrante-upper,
+.cuadrante-lower {
+    display: flex;
+}
+
+.upper-left,
+.lower-left {
+    flex: 1;
+}
+
+.upper-right,
+.lower-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper-left img,
+.lower-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.upper-right p,
+.lower-left ul {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.lower-left ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.lower-left ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.lower-left ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+
+    .cuadrante-upper,
+    .cuadrante-lower {
+        flex-direction: column;
+    }
+}

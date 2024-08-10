@@ -39,6 +39,7 @@ import { elementos360, elementosCrossfit, elementosInconforme, elementosStrong }
 
 import ScrollToTop from './scrollToTop';
 import Cr360title from './components/Cr360title/Cr360title.jsx';
+import Cuadrantes from './components/Cuadrantes/Cuadrantes.jsx';
 function App() {
   return (
     <Router>
@@ -51,6 +52,7 @@ function App() {
           <Route path="/particulares" element={<Particulares />} />
           <Route path="/ayuntamientos" element={<Ayuntamientos />} />
           <Route path="/crossfit" element={<Crossfit />} />
+          <Route path="/crossfit2" element={<Crossfit2 />} />
           <Route path="/gimnasios" element={<Gimnasios />} />
           <Route path="/360" element={<Crossfit360 />} />
           <Route path="/strong" element={<Strong />} />
@@ -148,7 +150,18 @@ function Crossfit() {
     </>
   );
 }
-
+function Crossfit2() {
+  return (
+    <>
+      <CrossTitle />
+      <Cuadrantes/>
+      <Personaliza />
+      <Otros data={otroData} currentIndex={0} />
+      <Bunkgreen />
+      <Call />
+    </>
+  );
+}
 function Crossfit360() {
   return (
     <>
