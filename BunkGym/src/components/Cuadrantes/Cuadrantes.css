@@ -57,14 +57,6 @@
     padding-left: 1rem;
 }
 
-.lower-left ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #333;
-    font-size: 1.2rem;
-}
-
 
 .stronger-cuadrantes {
     font-weight: bold;
@@ -94,7 +86,7 @@
 
 @media (max-width: 1168px) {
     .texto-cuadrantes{
-        margin:3rem;
+        margin: 1rem 3rem;
         text-align: center;
     }
     .texto-cuadrantes-elementos{
@@ -104,6 +96,24 @@
     .cuadrante-lower {
         flex-direction: column;
     }
+    .lower-left ul {
+        padding-left: 0rem;
+    }
+    .stronger-cuadrantes {
+        padding-bottom: 1.5rem;
+    }
+    .upper-right {
+        order: 1; /* Ensure upper-right stays above lower-right */
+    }
+
+    .lower-left {
+        order: 2; /* Ensure lower-right stays below upper-right */
+        padding-right: 0; /* Remove right padding in mobile view */
+    }
+    .lower-right {
+        padding-right: 0rem;
+    }
+    
 }
 @media (max-width: 768px) {
     .texto-cuadrantes{

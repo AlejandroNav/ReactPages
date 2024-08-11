@@ -11,7 +11,7 @@ const CrossTitle = () => {
                 <h1 className='cross-title'> </h1>
             </div>
             <h3 className='cross-subtitle'>ES UN GIMNASIO CREADO Y DISEÑADO PARA QUE TODO EL MUNDO PUERDA DISFRUTAR DE ÉL, DESDE PERSONAS QUE NO HAN
-            HECHO DEPORTE NUNCA, HASTA DEPORTISTAS PROFESIONALES </h3>
+                HECHO DEPORTE NUNCA, HASTA DEPORTISTAS PROFESIONALES </h3>
 
         </div>
     )
