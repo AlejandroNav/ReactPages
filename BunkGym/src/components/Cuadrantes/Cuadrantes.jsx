@@ -1,36 +1,34 @@
 
 import './Cuadrantes.css'
-import strongy from '../../assets/strongy.png';
-import black2 from '../../assets/black2.png';
-import crossfit3 from '../../assets/crossfit3.png';
-import div5 from '../../assets/div5.png';
-import STRONG from '../../assets/STRONG.png';
+import redCrossfit from '../../assets/strongy.png';
+import whiteCrossfit from '../../assets/whiteCrossfit.png';
+
 function Cuadrantes() {
     return (
         <div className="cuadrantes-container">
             <div className="cuadrante-upper">
                 <div className="upper-left">
-                    <img src={strongy} alt="" />
+                    <img src={whiteCrossfit} alt="" />
                 </div>
                 <div className="upper-right">
                     <div>
-                        <p>Bunkgym Crossfit está diseñado para personas que se quieren
+                        <p className='texto-cuadrantes'>Bunkgym Crossfit está diseñado para personas que se quieren
                             iniciar en el crossfit, crossifiters amateur, crossfiters profesionales,
                             atletas híbridos y/o deportistas de resistencia que quieran desatar
                             su potencial entrenando en un espacio funcional, combinando
                             ejercicios de fuerza, resistencia, equilibrio y velocidad.</p>
                     </div>
                     <div>
-                        <p>
+                        <p className=' texto-cuadrantes stronger-cuadrantes'>
                             Bunkgym Crossfit se adapta a todos los públicos y necesidades:
                         </p>
                         <ul>
-                            <li>Ayuntamientos</li>
-                            <li>Comunidades de vecinos  </li>
-                            <li>Centros deportivos</li>
-                            <li>Centros educativos </li>
-                            <li>Particulares</li>
-                            <li>Empresas</li>
+                            <li className='texto-cuadrantes-elementos'>• Ayuntamientos</li>
+                            <li className='texto-cuadrantes-elementos'>• Comunidades de vecinos  </li>
+                            <li className='texto-cuadrantes-elementos'>• Centros deportivos</li>
+                            <li className='texto-cuadrantes-elementos'>• Centros educativos </li>
+                            <li className='texto-cuadrantes-elementos'>• Particulares</li>
+                            <li className='texto-cuadrantes-elementos'>• Empresas</li>
                         </ul>
                     </div>
                 </div>
@@ -39,19 +37,19 @@ function Cuadrantes() {
             <div className="cuadrante-lower">
                 <div className="lower-left">
                     <ul className='cuadrantes-ul'>
-                        <li>Diseño y fabricación Española</li>
-                        <li>20 años de garantía</li>
-                        <li>100% equipado</li>
-                        <li>Focalizado en la economía circular</li>
-                        <li>Peso: De 2.800 kgs a 4.670 kgs.</li>
-                        <li>Entrenamiento a la vez 20 personas</li>
-                        <li>Dimensiones: 6 x 2,4 x 2,8 m<sup>3</sup></li>
-                        <li>Revalorización desde su compra, fácil reventa y activo refugio</li>
+                        <li className='texto-cuadrantes-elementos'>Diseño y fabricación Española</li>
+                        <li className='texto-cuadrantes-elementos'>20 años de garantía</li>
+                        <li className='texto-cuadrantes-elementos'>100% equipado</li>
+                        <li className='texto-cuadrantes-elementos'>Focalizado en la economía circular</li>
+                        <li className='texto-cuadrantes-elementos'>Peso: De 2.800 kgs a 4.670 kgs.</li>
+                        <li className='texto-cuadrantes-elementos'>Entrenamiento a la vez 20 personas</li>
+                        <li className='texto-cuadrantes-elementos'>Dimensiones: 6 x 2,4 x 2,8 m<sup>3</sup></li>
+                        <li className='texto-cuadrantes-elementos'>Revalorización desde su compra, fácil reventa y activo refugio</li>
                     </ul>
 
                 </div>
                 <div className="lower-right">
-                    <img src={strongy} alt="" />
+                    <img src={redCrossfit} alt="" />
                 </div>
             </div>
         </div>

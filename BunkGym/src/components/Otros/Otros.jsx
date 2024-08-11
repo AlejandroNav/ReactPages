@@ -34,10 +34,9 @@ const Otros = ({ data, currentIndex }) => {
                 {filteredData.map((item, index) => (
                     <div className='Otros-img-wrapper' key={index}>
                         <Link to={getRoutePath(item.index)} style={{ textDecoration: 'none', color: 'inherit' }} className="Otros-link">
-                            <h4 className='Otros-img-title'>{item.title}</h4>
                             <img src={item.image} alt={`Otros ${index}`} className='Otros-img' />
+                            <h4 className='Otros-img-title'>{item.title}</h4>
                         </Link>
-                        <p className='Otros-img-text'>{item.text}</p>
                     </div>
                 ))}
             </div>

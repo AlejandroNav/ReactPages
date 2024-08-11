@@ -50,7 +50,7 @@
     width: 100%;
 }
 .Otros-img-wrapper{
-    width: 28%;
+    width: 31%;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -59,9 +59,18 @@
     gap: 1rem;
 }
 .Otros-img-title{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 1rem;
+    font-family: Anton;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: oblique 14deg;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 1rem 0rem;
+
 }
 .Otros-img-text{
     font-size: 1.2rem;

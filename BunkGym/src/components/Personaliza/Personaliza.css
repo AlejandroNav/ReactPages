@@ -19,7 +19,7 @@
 .personaliza-text {
     font-size: 1.8rem;
     font-style: italic;
-    color: rgb(88, 88, 88);
+    color: rgb(17, 17, 17);
     line-height: 1.4;
     width: 80%;
     font-family: 'Anton', sans-serif;
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem;
     width: 100%;
     background-color: black;
@@ -54,7 +54,7 @@
 
 .personaliza-list-li {
     list-style: none;
-    margin:0;
+    margin: 0;
     font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
     font-style: oblique 14deg;
@@ -79,17 +79,53 @@
     height: 30px;
 }
 
+.image-section2 {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping to the next line */
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    overflow-x: auto;
+    /* Enables horizontal scrolling if the images overflow the container */
+}
+
+.image-container2 {
+    position: relative;
+    width: 100%;
+    /* Adjust percentage as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .personaliza-list {
         grid-template-columns: repeat(2, 1fr);
         /* Cambia a dos columnas en pantallas pequeñas */
+
+    }
+    .image-section2 {
+        display: none;
+    }
+
+    .hide-small {
+        display: none;
     }
 
     .personaliza-list-li {
         font-size: 1.3rem;
-
         padding-top: .5rem;
     }
 }

@@ -48,9 +48,9 @@ const Personaliza = () => {
             </p>
 
             <div className="">
-                <div className="image-section">
+                <div className="image-section2">
                     {images.map((image, index) => (
-                        <div key={index} className="image-container">
+                        <div key={index} className="image-container2 hide-small">
                             <img src={image.src} alt={`Image ${index + 1}`} />
                         </div>
                     ))}

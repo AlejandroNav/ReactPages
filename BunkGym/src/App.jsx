@@ -40,6 +40,7 @@ import { elementos360, elementosCrossfit, elementosInconforme, elementosStrong }
 import ScrollToTop from './scrollToTop';
 import Cr360title from './components/Cr360title/Cr360title.jsx';
 import Cuadrantes from './components/Cuadrantes/Cuadrantes.jsx';
+import Caracteristicas from './components/Caracteristicas/Caracteristicas.jsx';
 function App() {
   return (
     <Router>
@@ -156,6 +157,7 @@ function Crossfit2() {
       <CrossTitle />
       <Cuadrantes/>
       <Personaliza />
+      <Caracteristicas/>
       <Otros data={otroData} currentIndex={0} />
       <Bunkgreen />
       <Call />
