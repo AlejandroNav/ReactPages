@@ -1,19 +1,18 @@
-
-
-import strongy from '../../assets/strongy.png';
-import crossy from '../../assets/crossy.png';
+import strongy from '../../assets/blackStrong.png';
+import crossy from '../../assets/redCrossfit.png';
 import inco from '../../assets/inco.png';
-import bunky from '../../assets/bunky.png';
+import bunky from '../../assets/yellow360.png';
+import { Link } from 'react-router-dom';
 
 import './ImageSection.css'
 
 const ImageSection = () => {
-    // Array of image objects
+    // Array of image objects with corresponding links
     const images = [
-        { src: crossy, text: 'BUNKGYM CROSSFIT ' },
-        { src: strongy, text: 'BUNKGYM STRONG  ' },
-        { src: bunky, text: 'BUNKGYM 360 ' },
-        { src: inco, text: 'BUNKGYM INCONFORMISTA  ' },
+        { src: crossy, text: 'BUNKGYM CROSSFIT', link: '/crossfit' },
+        { src: strongy, text: 'BUNKGYM STRONG', link: '/strong' },
+        { src: bunky, text: 'BUNKGYM 360', link: '/360' },
+        { src: inco, text: 'BUNKGYM INCONFORMISTA', link: '/inconformista' },
     ];
 
     return (
@@ -24,8 +23,10 @@ const ImageSection = () => {
             <div className="image-section">
                 {images.map((image, index) => (
                     <div key={index} className="image-container">
-                        <img src={image.src} alt={`Image ${index + 1}`} />
-                        <div className="back-text">{image.text}</div>
+                        <Link to={image.link}>
+                            <img src={image.src} alt={`Image ${index + 1}`} />
+                            <div className="back-text">{image.text}</div>
+                        </Link>
                     </div>
                 ))}
             </div>
@@ -33,5 +34,4 @@ const ImageSection = () => {
     );
 }
 
-
-export default ImageSection
+export default ImageSection;

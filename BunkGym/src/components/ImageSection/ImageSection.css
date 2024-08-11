@@ -47,6 +47,7 @@
   padding: 1rem;
   margin: 1rem 0 0 0;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 .image-section-text {
@@ -55,6 +56,7 @@
   color: rgb(220, 220, 220);
   margin: 8px 15%;
   line-height: 1.2;
+  text-align: center;
 }
 
 
@@ -85,4 +87,35 @@
 .image-container .back-text {
   visibility: visible;
   opacity: 1;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .image-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:0rem;
+    width: 70%;
+    padding:  0 0 2rem 0;
+  }
+  .image-container {
+    padding:  2rem 0 0 0;
+  }
+
+
+  .image-section-container {
+    padding-bottom: 1rem;
+    background: radial-gradient(circle, rgba(116, 116, 116, 1) 0%, rgb(79, 79, 79) 35%, rgba(105, 105, 105, 1) 69%, rgb(63, 63, 63) 100%);
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  
+}
+
+@media screen and (max-width: 480px) {
+  
 }
