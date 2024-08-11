@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Paraquien.css'
 import paraquien1 from '../../assets/paraquien1.png'
 import paraquien2 from '../../assets/paraquien2.png'
@@ -8,7 +8,6 @@ import paraquien5 from '../../assets/paraquien5.png'
 import paraquien6 from '../../assets/paraquien6.png'
 
 const Paraquien = () => {
-    const [hoveredImage, setHoveredImage] = useState(null);
 
     const images = [
         { src: paraquien1, text: 'AYUNTAMIENTOS' },
@@ -29,16 +28,9 @@ const Paraquien = () => {
 
                 <ul className="paraquien-img-container">
                     {images.map((image, index) => (
-                        <li key={index}
-
-                            onMouseEnter={() => setHoveredImage(index)}
-                            onMouseLeave={() => setHoveredImage(null)}
-                            className="image-wrapper">
+                        <li key={index} className="image-wrapper">
                             <p className='hover-text'>{image.text}</p>
-                            <img src={image.src} alt="" style={{
-                                width: hoveredImage === index ? '280px' : '210px',
-                                transition: 'width 0.3s ease'
-                            }} />
+                            <img src={image.src} alt={`Para quien ${image.text}`} />
                             <div className=""></div>
                         </li>
                     ))}
@@ -53,5 +45,4 @@ const Paraquien = () => {
     );
 }
 
-
-export default Paraquien
+export default Paraquien;

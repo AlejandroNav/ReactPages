@@ -40,7 +40,7 @@ const Clientes = () => {
                             <p className='overlay-text'>{image.text}</p>
                         </div>
                         <img src={image.src} alt={image.text} style={{
-                            width: hoveredImage === index ? '400px' : '200px',
+                            width: hoveredImage === index ? '300px' : '180px',
                             transition: 'width 0.3s ease',
                             height: '600px',
                             objectFit: 'cover',
