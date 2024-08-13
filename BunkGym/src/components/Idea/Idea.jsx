@@ -1,6 +1,7 @@
 import React from 'react';
 import './Idea.css';
 import infographic from '../../assets/infographic.png';
+import lidea from '../../assets/lidea.gif';
 import adorno1 from '../../assets/adorno1.avif';
 import adorno2 from '../../assets/adorno2.avif';
 import adorno3 from '../../assets/adorno3.png';

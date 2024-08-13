@@ -40,6 +40,11 @@
     width: 60%;
     text-align: center;
 }
+.paraquien-img{
+    filter: brightness(20%);
+    position: relative;
+    z-index: 1;
+}
 
 .paraquien-img-container img {
     width: 200px;
@@ -84,6 +89,7 @@
     text-align: center;
     transform: rotate(270deg);
     white-space: nowrap;
+    z-index: 2;
 }
 
 .image-wrapper:hover .hover-text {

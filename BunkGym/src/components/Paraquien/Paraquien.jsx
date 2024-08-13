@@ -30,7 +30,7 @@ const Paraquien = () => {
                     {images.map((image, index) => (
                         <li key={index} className="image-wrapper">
                             <p className='hover-text'>{image.text}</p>
-                            <img src={image.src} alt={`Para quien ${image.text}`} />
+                            <img src={image.src} alt={`Para quien ${image.text}`} className='paraquien-img' />
                             <div className=""></div>
                         </li>
                     ))}

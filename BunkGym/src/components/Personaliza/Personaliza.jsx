@@ -9,25 +9,23 @@ import inco from '../../assets/inco.png';
 import bunky from '../../assets/bunky.png';
 
 const items = [
-    "Color exterior",
-    "Acceso y uso 100% autónomo",
-    "Energía solar",
+    "Color exterior", "Conectividad","Energía solar",
     "Color interior",
-    "Conectividad",
+    "Alarma",
     "Control de accesos",
     "Serigrafía",
-    "Alarma",
+    "Video vigilancia",
     "Tipo de altavoces",
     "Rotulación",
     "Video vigilancia",
     "Control domótico 360",
     "Iluminación interior",
     "Iluminación exterior",
-    "Accesorios de exterior",
+    "Ampliación de complementos",
     "Climatización",
     "Decoración exterior",
     "Ampliación de módulos",
-    "Ampliación de máquinas y complementos",
+    "Acceso y uso 100% autónomo",
     "Sistema de vídeo y voz para entrenamientos"
 ];
 

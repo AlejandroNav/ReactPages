@@ -1,12 +1,13 @@
 
 import Carruseles from '../Carruseles/Carruseles'
 import outside2 from '../../assets/particularhero.png';
-import particulargym1 from '../../assets/div6.png';
+import particulargym1 from '../../assets/blackStrong.png';
 import particulargym2 from '../../assets/div9.png';
 import particulargym3 from '../../assets/div4.png';
 import div7 from '../../assets/div7.png';
-import strong from '../../assets/STRONG.png';
-import crossfit from '../../assets/CROSSFIT.png';
+import strong from '../../assets/redCrossfit.png';
+import crossfit from '../../assets/yellow360.png';
+import whiteCrossfit2 from '../../assets/whiteCrossfit.png';
 import './Particular.css'
 const Particular = () => {
 
@@ -36,6 +37,10 @@ const Particular = () => {
             ,
             {
                 "src": crossfit,
+                "alt": "Image 3 for carousel"
+            },
+            {
+                "src": whiteCrossfit2,
                 "alt": "Image 3 for carousel"
             }
         ]
