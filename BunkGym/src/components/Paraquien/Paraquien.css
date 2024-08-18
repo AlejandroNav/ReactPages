@@ -41,7 +41,7 @@
     text-align: center;
 }
 .paraquien-img{
-    filter: brightness(20%);
+    filter: brightness(60%);
     position: relative;
     z-index: 1;
 }

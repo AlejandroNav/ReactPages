@@ -9,24 +9,25 @@ import inco from '../../assets/inco.png';
 import bunky from '../../assets/bunky.png';
 
 const items = [
-    "Color exterior", "Conectividad","Energía solar",
+    "Color exterior", "Conectividad","Accesorios de exterior",
     "Color interior",
     "Alarma",
-    "Control de accesos",
+    "Decoración exterior",
     "Serigrafía",
     "Video vigilancia",
-    "Tipo de altavoces",
-    "Rotulación",
-    "Video vigilancia",
-    "Control domótico 360",
-    "Iluminación interior",
     "Iluminación exterior",
+    "Rotulación",
+    "Energía solar",
+    "Ampliación de maquinas",
+    "Iluminación interior",
+    "Control de accesos",
     "Ampliación de complementos",
     "Climatización",
-    "Decoración exterior",
+    "Tipo de altavoces",
     "Ampliación de módulos",
     "Acceso y uso 100% autónomo",
-    "Sistema de vídeo y voz para entrenamientos"
+    "Control domótico 360",
+    "Sistema de vídeo y voz "
 ];
 
 const images = [

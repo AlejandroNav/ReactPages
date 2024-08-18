@@ -41,6 +41,7 @@ import ScrollToTop from './scrollToTop';
 import Cr360title from './components/Cr360title/Cr360title.jsx';
 import Cuadrantes from './components/Cuadrantes/Cuadrantes.jsx';
 import Caracteristicas from './components/Caracteristicas/Caracteristicas.jsx';
+
 function App() {
   return (
     <Router>
@@ -155,9 +156,9 @@ function Crossfit2() {
   return (
     <>
       <CrossTitle />
-      <Cuadrantes/>
-      <Personaliza />
-      <Caracteristicas/>
+      <Cuadrantes />
+      <Caracteristicas />
+      <Personaliza /> 
       <Otros data={otroData} currentIndex={0} />
       <Bunkgreen />
       <Call />
@@ -167,7 +168,7 @@ function Crossfit2() {
 function Crossfit360() {
   return (
     <>
-    <Cr360title/>
+      <Cr360title />
       <CarruselLargo />
       <Quetipo
         elementos={elementos360}

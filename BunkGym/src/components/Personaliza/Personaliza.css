@@ -40,7 +40,6 @@
 }
 
 .personaliza-list {
-    padding: 0 4rem 0 12%;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr);
@@ -58,7 +57,7 @@
     font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
     font-style: oblique 14deg;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #ccc;
     border-radius: 5px;
     /* Bordes redondeados */
