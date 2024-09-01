@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './Caracteristicas.css';
-import redCrossfit from '../../assets/redCrossfit.png';
-import whiteCrossfit from '../../assets/whiteCrossfit.avif';
-import largeredcross1 from '../../assets/largeredcross1.png';
-import crosswhite1 from '../../assets/crosswhite1.png';
-import crossyellow1 from '../../assets/crossyellow1.png';
+import whiteCrossfit from '../../assets/whiteCrossfit.png';
+
 
 
 const Caracteristicas = () => {
@@ -85,7 +82,6 @@ const Caracteristicas = () => {
                 </div>
                 <div className='caracteristicas-frame'>
                     <div className='caracteristicas-img-container'>
-                        <img src={crosswhite1} alt="" />
                         <img src={whiteCrossfit} alt="" />
                     </div>
                 </div>

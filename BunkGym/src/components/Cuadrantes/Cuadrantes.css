@@ -52,7 +52,10 @@
     margin-bottom: 1rem;
     line-height: 1.6;
 }
-
+.lower-left {
+    padding-left: 2rem;
+    max-width: 35%;
+}
 .lower-left ul {
     list-style-type: none;
     padding-left: 5.5rem;
@@ -119,7 +122,11 @@
     .lower-left {
         order: 2; /* Ensure lower-right stays below upper-right */
         padding-right: 0; /* Remove right padding in mobile view */
-    }
+
+        max-width: 100%; /* Set max-width to 100% to prevent overflow in mobile view */
+     
+            padding-left: 0rem;}
+         
     .lower-right {
         padding-right: 0rem;
     }

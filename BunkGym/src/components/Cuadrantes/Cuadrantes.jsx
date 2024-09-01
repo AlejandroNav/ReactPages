@@ -29,7 +29,7 @@ function Cuadrantes() {
                     <div>
                         
                         <ul><li>
-                            <p className='texto-cuadrantes-negrita'>Bunkgym Crossfit ofrece:</p>
+                            <p className='texto-cuadrantes-negrita'>Bunkgym Crossfit es ideal para:</p>
                         </li>
                             <li className='texto-cuadrantes-elementos'>• Ayuntamientos</li>
                             <li className='texto-cuadrantes-elementos'>• Comunidades de vecinos  </li>
