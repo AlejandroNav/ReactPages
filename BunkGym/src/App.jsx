@@ -132,20 +132,9 @@ function Crossfit() {
   return (
     <>
       <CrossTitle />
-      <CarruselLargo />
-      <Quetipo
-        elementos={elementosCrossfit}
-        title="Crossfit"
-        info="Bunkgym Crossfit está preparado para atletas híbridos y deportistas de resistencia que quieran desatar su potencial entrenando en un espacio funcional,
-                    combinando ejercicios de fuerza, resistencia, equilibrio y velocidad"
-      />
-      <Quecontiene
-        title={otroData[0].title}
-        text={otroData[0].text}
-        elementos={elementosGimnasio1}
-      />
-      <Personaliza />
-      <Quienpuede />
+      <Cuadrantes />
+      <Caracteristicas />
+      <Personaliza /> 
       <Otros data={otroData} currentIndex={0} />
       <Bunkgreen />
       <Call />
