@@ -3,6 +3,7 @@ import './Cuadrantes.css'
 import redCrossfit from '../../assets/strongy.png';
 import whiteCrossfit from '../../assets/whiteCrossfit.png';
 import crossyellow1 from '../../assets/crossyellow1.png';
+import whiteCrossfitAvif from '../../assets/whiteCrossfit.avif';
 
 function Cuadrantes() {
     return (

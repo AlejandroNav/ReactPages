@@ -31,6 +31,7 @@
     align-items: start;
     width: 100%;
     height: 100%;
+    background-color: rgb(225, 225, 225);
 }
 
 .caracteristicas-frame {
@@ -44,7 +45,7 @@
     
 }
 .caracteristicas-frame1{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,17 +55,12 @@
     padding-top: 10rem;
 }
 
-.interactive-list {
-    list-style-type: none;
-    width: 100%;
-}
 .caracteristicas-img-container {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     object-fit: cover;
-    
 }
 
 .caracteristicas-img-container img {
@@ -74,7 +70,10 @@
     margin: 0;
     object-fit: cover;
 }
-
+.interactive-list {
+    list-style-type: none;
+    width: 100%;
+}
 
 .item-title{
     font-size: 1.1rem;

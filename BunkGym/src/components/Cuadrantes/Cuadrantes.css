@@ -16,6 +16,7 @@
 .cuadrante-upper,
 .cuadrante-lower {
     display: flex;
+    padding: 2rem;
 }
 
 .upper-left,

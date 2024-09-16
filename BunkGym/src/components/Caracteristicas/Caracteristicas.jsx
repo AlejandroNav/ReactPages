@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import './Caracteristicas.css';
-import whiteCrossfit from '../../assets/whiteCrossfit.png';
-
+import whiteCrossfit from '../../assets/whiteCrossfit.avif';
+import whiteCrossfitAvif from '../../assets/whiteCrossfit2.avif';
 
 
 const Caracteristicas = () => {
@@ -82,7 +82,7 @@ const Caracteristicas = () => {
                 </div>
                 <div className='caracteristicas-frame'>
                     <div className='caracteristicas-img-container'>
-                        <img src={whiteCrossfit} alt="" />
+                        <img src={whiteCrossfitAvif} alt="" />
                     </div>
                 </div>
             </div>
