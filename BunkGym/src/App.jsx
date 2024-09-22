@@ -25,7 +25,6 @@ import Particular from './components/Particular/Particular';
 import BunkGymRazones from './components/BunkGymRazones/BunkGymRazones';
 import Ayunta from './components/Ayunta/Ayunta';
 import Personaliza from './components/Personaliza/Personaliza';
-import Personalizados from './components/Personalizados/Personalizados';
 import Alargado from './components/alargado/alargado';
 import Mosaico from './components/Mosaico/Mosaico';
 import CrossTitle from './components/CrossTitle/CrossTitle';
@@ -53,7 +52,11 @@ function App() {
           <Route path="/quienesSomos" element={<QuienesSomos />} />
           <Route path="/particulares" element={<Particulares />} />
           <Route path="/ayuntamientos" element={<Ayuntamientos />} />
+          <Route path="/Empresas" element={<Empresas />} />
           <Route path="/crossfit" element={<Crossfit />} />
+          <Route path="/comunidadesVecinos" element={<Vecinos />} />
+          <Route path="/centrosEducativos" element={<Educativos />} />
+          <Route path="/centrosDeportivos" element={<Deportivos />} />
           <Route path="/crossfit2" element={<Crossfit2 />} />
           <Route path="/gimnasios" element={<Gimnasios />} />
           <Route path="/360" element={<Crossfit360 />} />
@@ -121,6 +124,90 @@ function Ayuntamientos() {
   return (
     <>
       <Ayunta />
+      <Mosaico />
+      <ImageSection />
+      <Personaliza />
+      <BunkGymRazones
+        gymTitle="Tu Gimnasio Personalizado"
+        gymContent="Construimos el gimnasio ideal adaptado a tus necesidades."
+        footerText="Creamos experiencias fitness únicas para tu ayuntamiento."
+      />
+      <Reasons />
+      <Bunkgreen />
+      <Call />
+      <Clientes />
+    </>
+  );
+}
+function Empresas() {
+  return (
+    <>
+      <Mosaico />
+      <ImageSection />
+      <Personaliza />
+      <BunkGymRazones
+        gymTitle="Tu Gimnasio Personalizado"
+        gymContent="Construimos el gimnasio perfecto para tu empresa."
+        footerText="Creamos experiencias fitness únicas para tu empresa."
+      />
+      <Reasons />
+      <Bunkgreen />
+      <Call />
+      <Clientes />
+    </>
+  );
+}
+
+function Vecinos() {
+  return (
+    <>
+      <Mosaico />
+      <ImageSection />
+      <Personaliza />
+      <BunkGymRazones
+        gymTitle="El Gimnasio Ideal para tu comunidad"
+        gymContent="Construimos el gimnasio ideal adaptado a tus necesidades."
+        footerText="Creamos experiencias fitness únicas para tu comunidad."
+      />
+      <Reasons />
+      <Bunkgreen />
+      <Call />
+      <Clientes />
+    </>
+  );
+}
+
+function Educativos() {
+  return (
+    <>
+      <Mosaico />
+      <ImageSection />
+      <Personaliza />
+      <BunkGymRazones
+        gymTitle="El Gimnasio Ideal para tu escuela"
+        gymContent="Construimos el gimnasio ideal adaptado a tus necesidades."
+        footerText="Creamos experiencias fitness únicas para tu centro educativo."
+      />
+      <Reasons />
+      <Bunkgreen />
+      <Call />
+      <Clientes />
+    </>
+  );
+}
+
+function Deportivos() {
+  return (
+    <>
+      <Mosaico />
+      <ImageSection />
+      <Personaliza />
+      <BunkGymRazones
+        gymTitle="Tu Gimnasio Personalizado"
+        gymContent="Construimos el gimnasio ideal adaptado a tus necesidades."
+        footerText="Creamos experiencias fitness únicas para tu centro deportivo."
+      />
+      <Reasons />
       <Bunkgreen />
       <Call />
       <Clientes />
@@ -134,7 +221,7 @@ function Crossfit() {
       <CrossTitle />
       <Cuadrantes />
       <Caracteristicas />
-      <Personaliza /> 
+      <Personaliza />
       <Otros data={otroData} currentIndex={0} />
       <Bunkgreen />
       <Call />
@@ -147,7 +234,7 @@ function Crossfit2() {
       <CrossTitle />
       <Cuadrantes />
       <Caracteristicas />
-      <Personaliza /> 
+      <Personaliza />
       <Otros data={otroData} currentIndex={0} />
       <Bunkgreen />
       <Call />
@@ -169,7 +256,6 @@ function Crossfit360() {
         elementos={elementosGimnasio2}
       />
       <Personaliza />
-      <Quienpuede />
       <Otros data={otroData} currentIndex={1} />
       <Bunkgreen />
       <Call />
@@ -189,7 +275,6 @@ function Strong() {
         elementos={elementosGimnasio1}
       />
       <Personaliza />
-      <Quienpuede />
       <Otros data={otroData} currentIndex={2} />
       <Bunkgreen />
       <Call />
@@ -210,7 +295,6 @@ function Inconformista() {
         elementos={elementosGimnasio2}
       />
       <Personaliza />
-      <Quienpuede />
       <Otros data={otroData} currentIndex={3} />
       <Bunkgreen />
       <Call />

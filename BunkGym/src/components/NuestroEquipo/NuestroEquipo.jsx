@@ -54,19 +54,17 @@ const NuestroEquipo = () => {
                 </div>
 
             </div>
-            <div className='nuestro-equipo-footer'>
-                <h2 className='nuestro-equipo-footer-frase'>HEMOS NACIDO POR Y PARA MEJORAR E INNOVAR EN EL
-                    MUNDO DEL FITNESS
-                </h2>
-            </div>
+
             <div className='nuestros-personas'>
-                <h2 className='stroke-text-black-title titulo-general'>Diseño, asesoramiento y apoyo de campeones para campeones </h2>
+                <h2 className='stroke-text-black-title titulo-general equipo-Titulo-Menor'>Diseño, asesoramiento y apoyo de campeones para campeones </h2>
 
                 <div className='personas-fila'>
                     <div className='persona-imagen-container'>
                         <img src={personalift} alt="carlos" className='persona-imagen-img' />
                     </div>
                     <div className='persona-text-container'>
+                        <h2 className='persona-text-container-h2'>Carlos Asensio </h2>
+
                         <ul className='persona-ul'>
 
                             <li>  ●   Campeón España Powerlifting AEP (4 Veces)</li>
@@ -86,6 +84,7 @@ const NuestroEquipo = () => {
                         <img src={logolift} alt="carlos" className='persona-imagen-img' />
                     </div>
                     <div className='persona-text-container'>
+                        <h2 className='persona-text-container-h2'>Carlos Asensio Jr </h2>
                         <ul className='persona-ul'>
                             <li>  ●  Campeón del Mundo Powerlifting WPC (Subjunior -100Kg) </li>
                             <li>  ●  Récord de España Powerlifting de total (Subjunior -100Kg) </li>
@@ -95,7 +94,11 @@ const NuestroEquipo = () => {
                         <img src={personalift2} alt="carlos" className='persona-imagen-img' />
                     </div>
                 </div>
-
+                <div className='nuestro-equipo-footer'>
+                    <h2 className='nuestro-equipo-footer-frase'>HEMOS NACIDO POR Y PARA MEJORAR E INNOVAR EN EL
+                        MUNDO DEL FITNESS
+                    </h2>
+                </div>
             </div>
         </div>
     );
