@@ -1,15 +1,18 @@
-import React from 'react'
-import './Ayunta.css'
+import React from 'react';
+import './Ayunta.css';
 
-const Ayunta = () => {
+const Ayunta = ({ title, outlineTitle, backgroundImage }) => {
   return (
-    <div className='ayunta-container'>
+    <div 
+      className='ayunta-container' 
+      style={{ backgroundImage: `url(${backgroundImage})` }} // Use the image URL passed from props
+    >
       <div className='ayunta-title-container'>
-        <h1 className='ayunta-title'>Transforma espacios públicos en gimnasios modernos</h1>
-        <h1 className='ayunta-title-outline'>Bunkgym, diseñado para tu comunidad</h1>
+        <h1 className='ayunta-title'>{title}</h1>
+        <h1 className='ayunta-title-outline'>{outlineTitle}</h1>
       </div>
     </div>
-  )
+  );
 }
 
-export default Ayunta
+export default Ayunta;

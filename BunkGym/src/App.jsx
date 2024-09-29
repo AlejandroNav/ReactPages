@@ -40,7 +40,11 @@ import ScrollToTop from './scrollToTop';
 import Cr360title from './components/Cr360title/Cr360title.jsx';
 import Cuadrantes from './components/Cuadrantes/Cuadrantes.jsx';
 import Caracteristicas from './components/Caracteristicas/Caracteristicas.jsx';
-
+import ayuntamientoImage from './assets/ayuntamiento.avif';
+import empresasImage from './assets/empresas.avif';
+import vecinosImage from './assets/vecinos.avif';
+import educativosImage from './assets/educativos.avif';
+import deportivosImage from './assets/deportivos.avif';
 function App() {
   return (
     <Router>
@@ -123,7 +127,11 @@ function Particulares() {
 function Ayuntamientos() {
   return (
     <>
-      <Ayunta />
+        <Ayunta 
+        title="Transforma espacios públicos en gimnasios modernos"
+        outlineTitle="Bunkgym, diseñado para tu comunidad"
+        backgroundImage={ayuntamientoImage} // Pass the imported image as a prop
+      />
       <Mosaico />
       <ImageSection />
       <Personaliza />
@@ -142,6 +150,11 @@ function Ayuntamientos() {
 function Empresas() {
   return (
     <>
+      <Ayunta 
+        title="Transforma espacios empresariales en gimnasios modernos"
+        outlineTitle="Bunkgym, creado para tu empresa"
+        backgroundImage={empresasImage} // Pass the imported image as a prop
+      />
       <Mosaico />
       <ImageSection />
       <Personaliza />
@@ -161,6 +174,11 @@ function Empresas() {
 function Vecinos() {
   return (
     <>
+      <Ayunta 
+        title="Revoluciona los espacios vecinales con gimnasios modernos"
+        outlineTitle="Bunkgym, creado para la comunidad"
+        backgroundImage={vecinosImage} // Pass the imported image as a prop
+      />
       <Mosaico />
       <ImageSection />
       <Personaliza />
@@ -180,6 +198,11 @@ function Vecinos() {
 function Educativos() {
   return (
     <>
+      <Ayunta 
+        title="Transforma espacios educativos en gimnasios modernos"
+        outlineTitle="Bunkgym, ideal para tu escuela"
+        backgroundImage={educativosImage} // Pass the imported image as a prop
+      />
       <Mosaico />
       <ImageSection />
       <Personaliza />
@@ -199,6 +222,11 @@ function Educativos() {
 function Deportivos() {
   return (
     <>
+      <Ayunta 
+        title="Adquiere un gimnasio moderno para tu Centro Deportivo"
+        outlineTitle="Bunkgym, ideal para tus necesidades"
+        backgroundImage={deportivosImage} // Pass the imported image as a prop
+      />
       <Mosaico />
       <ImageSection />
       <Personaliza />
