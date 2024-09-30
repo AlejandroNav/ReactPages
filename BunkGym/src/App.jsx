@@ -31,10 +31,9 @@ import CrossTitle from './components/CrossTitle/CrossTitle';
 import CarruselLargo from './components/CarruselLargo/CarruselLargo';
 import Quetipo from './components/Quetipo/Quetipo';
 import Quecontiene from './components/Quecontiene/Quecontiene';
-import Quienpuede from './components/Quienpuede/Quienpuede';
 import { elementosGimnasio1, elementosGimnasio2, titles, texts } from '../src/data/queContieneData.js';
 import { otroData } from '../src/data/otroData.js'; import Otros from './components/Otros/Otros.jsx';
-import { elementos360, elementosCrossfit, elementosInconforme, elementosStrong } from './data/quienesData';
+import { elementos360, elementosInconforme, elementosStrong } from './data/quienesData';
 
 import ScrollToTop from './scrollToTop';
 import Cr360title from './components/Cr360title/Cr360title.jsx';

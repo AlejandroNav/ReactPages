@@ -1,16 +1,9 @@
-import React from 'react'
+
 import '../Hero/Hero.css'
-import Header from '../Header/Header'
-import NumberCounter from '../numberCounter/numberCounter'
-import adorno1 from '../../assets/adorno1.avif'
-import adorno2 from '../../assets/adorno2.avif'
-import LogoWhite from '../../assets/bunk-white.avif'
-import calories from '../../assets/calories.avif'
-import heart from '../../assets/heart.avif'
 import mantrans from '../../assets/man-transparent.png'
 import { motion } from 'framer-motion'
 
-const Hero = ({ children, setCurrentPage }) => {
+const Hero = ({  setCurrentPage }) => {
     const transition = { duration: 2, type: 'spring' }
 
     return (
