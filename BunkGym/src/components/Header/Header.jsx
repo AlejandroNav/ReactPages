@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoWhite from '../../assets/bunk-white.avif';
 import './Header.css';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <div className='header'>
             <Link to="/" className="logo-link">
                 <img src={LogoWhite} alt="Bunkgym Logo" className="logo" />
             </Link>
-            <ul className='header-menu'>
+
+            {/* Hamburger Menu Icon for smaller screens */}
+            <div className="hamburger" onClick={toggleMenu}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            {/* Apply 'show' class when menuOpen is true */}
+            <ul className={`header-menu ${menuOpen ? 'show' : ''}`}>
                 <div className="dropdown">
                     <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
                         <li className='header-menu-item header-menu-item-text'>Home</li>
@@ -61,25 +76,6 @@ const Header = () => {
                         </Link>
                         <Link to="/inconformista" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <li className='header-menu-item header-menu-item-text'>Inconformista</li>
-                        </Link>
-                    </div>
-                </div>
-                <div className="dropdown">
-                    <Link to="/productos" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <li className='header-menu-item header-menu-item-text'>+ Productos</li>
-                    </Link>
-                    <div className="dropdown-menu">
-                        <Link to="/disenoEquipamiento" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Diseño y equipamiento fitness</li>
-                        </Link>
-                        <Link to="/asesoriaSoluciones" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Asesoría y soluciones fitness a medida</li>
-                        </Link>
-                        <Link to="/disenoGimnasios" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Diseño de gimnasios personalizados</li>
-                        </Link>
-                        <Link to="/impulsoProyectos" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Impulso de proyectos fitness</li>
                         </Link>
                     </div>
                 </div>
