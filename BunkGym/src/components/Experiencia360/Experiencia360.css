@@ -164,6 +164,7 @@
 
 
 @media screen and (max-width: 1150px) {
+
     .card-container-360 {
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
@@ -175,12 +176,28 @@
         height: 270px;
     
     }
+    .experiencia-parrafo {
+
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
     .card-adornos {
         visibility: hidden;
+    }
+    .experiencia-parrafo {
+
+        width: 95%;
+        padding: 0;
+        margin: 0;
+
+    }
+    .parrafo-experience-container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 }
 

@@ -16,6 +16,7 @@
     position: relative;
     z-index: 1;
     margin-bottom: 2rem;
+    text-align: center;
 }
 .bunkteam-subtitle{
     position: relative;
@@ -113,4 +114,25 @@
     left:-34rem;
     z-index: 1;
     overflow: hidden;
+}
+@media screen and (max-width: 1150px) {
+    .bunkteam-subtitle{
+        margin: 8px 7%;
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .bunkteam-figures {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:1rem;
+        width: 100%;
+        z-index: 1;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
 }
