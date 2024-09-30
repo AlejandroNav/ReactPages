@@ -89,14 +89,12 @@
 /* Media Query for Tablets and Phones */
 @media (max-width: 1050px) {
     .header-menu {
-        display: flex;
         flex-direction: column;
         position: fixed;
         top: 0;
         right: -60%; /* Start off-screen to the right */
         background-color: black;
         width: 60%; /* Occupy 60% of the screen width */
-        height: 100%; /* Full height */
         z-index: 1000;
         transition: right 0.3s ease-in-out;
     }
