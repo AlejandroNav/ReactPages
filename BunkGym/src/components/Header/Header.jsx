@@ -5,9 +5,14 @@ import './Header.css';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(null);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const toggleDropdown = (menu) => {
+        setDropdownOpen((prevMenu) => (prevMenu === menu ? null : menu));
     };
 
     return (
@@ -35,10 +40,14 @@ const Header = () => {
                         <li className='header-menu-item header-menu-item-text'>Nosotros</li>
                     </Link>
                 </div>
-                <div className="dropdown">
-                    <Link to="/particulares" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <li className='header-menu-item header-menu-item-text'>Clientes</li>
-                    </Link>
+
+                <div className={`special-drop dropdown ${dropdownOpen === 'clientes' ? 'open' : ''}`}>
+                    <li
+                        className='header-menu-item header-menu-item-text'
+                        onClick={() => toggleDropdown('clientes')}
+                    >
+                       Clientes <span className="submenu-indicator">▼</span>
+                    </li>
                     <div className="dropdown-menu">
                         <Link to="/particulares" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <li className='header-menu-item header-menu-item-text'>Particulares</li>
@@ -60,10 +69,13 @@ const Header = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="dropdown">
-                    <Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <li className='header-menu-item header-menu-item-text'>Bunkgyms</li>
-                    </Link>
+                <div className={`special-drop dropdown ${dropdownOpen === 'bunkgyms' ? 'open' : ''}`}>
+                    <li
+                        className='header-menu-item header-menu-item-text'
+                        onClick={() => toggleDropdown('bunkgyms')}
+                    >
+                       Bunkgyms <span className="submenu-indicator">▼</span>
+                    </li>
                     <div className="dropdown-menu">
                         <Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <li className='header-menu-item header-menu-item-text'>Crossfit</li>
