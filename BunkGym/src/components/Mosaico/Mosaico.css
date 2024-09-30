@@ -67,16 +67,16 @@
 
 .mosaico-title {
 
-		font-size: 2.5rem;
-		font-style: italic;
-		color: rgb(43, 43, 43);
-		line-height: 1.4;
-		text-align: center;
-		font-weight: 600;
-		font-family: 'Anton', sans-serif;
-		letter-spacing: 2px;
-		width: 80%;
-		margin-bottom: 1.6rem;
+	font-size: 2.5rem;
+	font-style: italic;
+	color: rgb(43, 43, 43);
+	line-height: 1.4;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 2px;
+	width: 80%;
+	margin-bottom: 1.6rem;
 }
 
 @media screen and (max-width: 1150px) {
@@ -84,14 +84,38 @@
 	.mosaico-title {
 		font-size: 2rem;
 	}
-	
+
 }
 
 @media screen and (max-width: 768px) {
 
 	.mosaico-title {
-		font-size: 1.9rem;
+		font-size: 1.8rem;
 		width: 100%;
 	}
-	
+
+	/* Hide unwanted images */
+	#div1,
+	#div6,
+	#div7 {
+		display: none;
+	}
+
+	/* Adjust grid to single column */
+	.mosaico-imgs {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 10px;
+	}
+
+	/* Let images flow naturally */
+	#div2,
+	#div3,
+	#div4,
+	#div5 {
+		grid-area: auto;
+		height: 200px;
+		/* Adjust as needed */
+		width: 100%;
+	}
 }
