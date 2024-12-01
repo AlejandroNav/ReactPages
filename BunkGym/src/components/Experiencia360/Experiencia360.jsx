@@ -33,7 +33,7 @@ const Experiencia360 = () => {
             backContent: {
                 title: 'somos creadores',
                 subtitle: 'Somos fabricantes',
-                content: 'Fabricamos gimnasios, materiales y máquinas fitness con pasión en nuestra fábrica sevillana. Cada pieza es un reflejo de nuestra entrega total a la elaboración, calidad y autenticidad española.'
+                content: 'Fabricamos gimnasios, materiales y máquinas fitness con pasión en nuestra fábrica. Cada pieza es un reflejo de nuestra entrega total a la elaboración, calidad y autenticidad española.'
             }
         },
         {

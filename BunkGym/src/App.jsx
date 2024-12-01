@@ -44,6 +44,7 @@ import empresasImage from './assets/empresas.avif';
 import vecinosImage from './assets/vecinos.avif';
 import educativosImage from './assets/educativos.avif';
 import deportivosImage from './assets/deportivos.avif';
+
 function App() {
   return (
     <Router>
@@ -64,7 +65,7 @@ function App() {
           <Route path="/gimnasios" element={<Gimnasios />} />
           <Route path="/360" element={<Crossfit360 />} />
           <Route path="/strong" element={<Strong />} />
-          <Route path="/inconformista" element={<Inconformista />} />
+          <Route path="/crossfit10" element={<Inconformista />} />
         </Routes>
         <Footer />
       </div>
@@ -313,8 +314,8 @@ function Inconformista() {
     <><CarruselLargo />
       <Quetipo
         elementos={elementosInconforme}
-        title="Inconformista"
-        info="Bunkgym Inconformista es para aquellos que no solamente les vale con entrenar, sino que quieren tener un espacio único y a su medida para lograr su mejor versión entrenando en un lugar creado para ellos." />
+        title="Crossfit 10’"
+        info="Bunkgym Crossfit 10’ es para aquellos que no solamente les vale con entrenar, sino que quieren tener un espacio único y a su medida para lograr su mejor versión entrenando en un lugar creado para ellos." />
 
       <Quecontiene
         title={titles[3]}

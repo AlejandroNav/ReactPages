@@ -9,10 +9,11 @@ import './ImageSection.css'
 const ImageSection = () => {
     // Array of image objects with corresponding links
     const images = [
-        { src: crossy, text: 'BUNKGYM CROSSFIT', link: '/crossfit' },
-        { src: strongy, text: 'BUNKGYM STRONG', link: '/strong' },
-        { src: bunky, text: 'BUNKGYM 360', link: '/360' },
-        { src: inco, text: 'BUNKGYM INCONFORMISTA', link: '/inconformista' },
+        { src: inco, text: 'BUNKGYM CROSSFIT 10"', link: '/crossfit10' },
+        { src: crossy, text: 'BUNKGYM CROSSFIT 20"', link: '/crossfit' },
+        { src: strongy, text: 'BUNKGYM STRONG 20"', link: '/strong' },
+        { src: bunky, text: 'BUNKGYM 360 20"', link: '/360' }
+        ,
     ];
 
     return (

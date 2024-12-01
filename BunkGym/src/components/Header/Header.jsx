@@ -46,7 +46,7 @@ const Header = () => {
                         className='header-menu-item header-menu-item-text'
                         onClick={() => toggleDropdown('clientes')}
                     >
-                       Clientes <span className="submenu-indicator">▼</span>
+                        Clientes <span className="submenu-indicator">▼</span>
                     </li>
                     <div className="dropdown-menu">
                         <Link to="/particulares" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -74,28 +74,80 @@ const Header = () => {
                         className='header-menu-item header-menu-item-text'
                         onClick={() => toggleDropdown('bunkgyms')}
                     >
-                       Bunkgyms <span className="submenu-indicator">▼</span>
+                        Bunkgyms <span className="submenu-indicator">▼</span>
                     </li>
                     <div className="dropdown-menu">
+                        <Link to="/crossfit10" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Crossfit 10'</li>
+                        </Link>
                         <Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Crossfit</li>
+                            <li className='header-menu-item header-menu-item-text'>Crossfit 20'</li>
                         </Link>
                         <Link to="/360" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>360</li>
+                            <li className='header-menu-item header-menu-item-text'>360 20’</li>
                         </Link>
                         <Link to="/strong" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Strong</li>
-                        </Link>
-                        <Link to="/inconformista" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <li className='header-menu-item header-menu-item-text'>Inconformista</li>
+                            <li className='header-menu-item header-menu-item-text'>Strong 20’</li>
                         </Link>
                     </div>
                 </div>
-                <div className="dropdown">
-                    <Link to="/contacto" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <li className='header-menu-item header-menu-item-text'>Contacto</li>
-                    </Link>
+
+
+
+
+                <div className={`special-drop dropdown ${dropdownOpen === 'mas' ? 'open' : ''}`}>
+                    <li
+                        className='header-menu-item header-menu-item-text'
+                        onClick={() => toggleDropdown('mas')}
+                    >
+                        Mas Productos <span className="submenu-indicator">▼</span>
+                    </li>
+                    <div className="dropdown-menu">
+                        <Link to="/crossfit10" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Diseño y equipamiento fitness
+                                </li>
+                        </Link>
+                        <Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Asesoría y soluciones a medida
+                            </li>
+                        </Link>
+                        <Link to="/360" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Diseños personalizados
+                            </li>
+                        </Link>
+                        <Link to="/strong" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Impulso de proyectos fitness
+                            </li>
+                        </Link>
+                    </div>
                 </div>
+
+
+                <div className={`special-drop dropdown ${dropdownOpen === 'contacto' ? 'open' : ''}`}>
+                    <li
+                        className='header-menu-item header-menu-item-text'
+                        onClick={() => toggleDropdown('contacto')}
+                    >
+                        Contacto <span className="submenu-indicator">▼</span>
+                    </li>
+                    <div className="dropdown-menu">
+                        <Link to="/crossfit10" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Contacto
+                                </li>
+                        </Link>
+                        <Link to="/crossfit" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Vende Bunkgym
+
+                            </li>
+                        </Link>
+                        <Link to="/360" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <li className='header-menu-item header-menu-item-text'>Garantia bunkgym
+                            </li>
+                        </Link>
+
+                    </div>
+                </div>
+
             </ul>
         </div>
     );

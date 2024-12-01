@@ -42,14 +42,13 @@
 
 .fabrica-img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 5 / 3.2; /* 2 (width) : 3 (height) = 1 : 1.5 */
     z-index: 10;
     position: relative;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    filter: drop-shadow(0px 0px 10px rgba(161, 161, 161, 0.5));
+    filter: drop-shadow(0px 0px 10px rgba(137, 137, 137, 0.5));
     transition: 0.5s;
-    
 }
 .fabrica-img:hover{
     transform: scale(1.1);
@@ -69,6 +68,7 @@
     background-color: #000000;
     padding-bottom: 4rem;
     padding: 2rem 3%;
+    
 }
 .fabrica-frame{
     border: 1px solid white;
@@ -81,6 +81,7 @@
     border-radius: 5px;
 }
 .fabrica-frame2{
+    
     width: 100%;
     height: 100%;
     position: absolute;
