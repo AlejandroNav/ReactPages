@@ -128,7 +128,7 @@ function Ayuntamientos() {
   return (
     <>
         <Ayunta 
-        title="Transforma espacios públicos en gimnasios modernos"
+        title="Impulsamos la cultura del deporte y la salud de tu municipio."
         outlineTitle="Bunkgym, diseñado para tu comunidad"
         backgroundImage={ayuntamientoImage} // Pass the imported image as a prop
       />
